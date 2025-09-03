@@ -1,9 +1,9 @@
 import { PortfolioItems } from "@/shared/constant/const";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-//TODO Layout
+
 interface PortfolioItemPageProps {
-	params: { id: string };
+	params: { locale: string; id: string };
 }
 
 export default async function PortfolioItemPage({
@@ -18,7 +18,7 @@ export default async function PortfolioItemPage({
 	return (
 		<div>
 			{/* TODO Change <-- to flaticon */}
-			<Link href={"/portfolio"}>{"<--"}</Link>
+			<Link href={`/${params.locale}/portfolio`}>{"<--"}</Link>
 			<h1>{item.title}</h1>
 			<p>{item.description}</p>
 		</div>
