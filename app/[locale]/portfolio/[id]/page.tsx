@@ -2,13 +2,11 @@ import { PortfolioItems } from "@/shared/constant/const";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-interface PortfolioItemPageProps {
-	params: { locale: string; id: string };
-}
-
 export default async function PortfolioItemPage({
 	params,
-}: PortfolioItemPageProps) {
+}: {
+	params: { locale: string; id: string };
+}) {
 	const item = PortfolioItems[Number(params.id) - 1];
 
 	if (!item) {
