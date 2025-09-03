@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "@flaticon/flaticon-uicons/css/all/all.css";
+
+/* Enable `dark:` variant when .dark is present */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--color-background: oklch(0.9702 0 0);
+	--color-foreground: oklch(0.1448 0 0);
+	--color-dark-background: oklch(0.1448 0 0);
+	--color-dark-foreground: oklch(0.9702 0 0);
+	--font-mono: var(--font-geist-mono);
+}

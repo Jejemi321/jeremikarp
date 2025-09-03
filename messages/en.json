@@ -1,0 +1,55 @@
+{
+	"Hello": "Hello World",
+	"nav": {
+		"Home": "Home",
+		"Portfolio": "Portfolio",
+		"About": "About",
+		"Services": "Services",
+		"Contact": "Contact",
+		"RightsReserved": "All rights reserved."
+	},
+	"home": {
+		"headerTop": "web",
+		"headerDown": "developer",
+		"paragraph1": "It all Starts with",
+		"paragraph2": "the first impression right?"
+	},
+	"portfolio": {
+		"Title": "Portfolio",
+		"CategoryAll": "All",
+		"CategoryWebsite": "Website",
+		"CategoryPhotography": "Photography",
+		"LoadMoreBtn": "Load more",
+		"NoItemsFound": "No items found",
+		"AtoZ": "A to Z",
+		"ZtoA": "Z to A",
+		"Newest": "Newest",
+		"Oldest": "Oldest",
+		"Favorites": "Favorites",
+		"ViewDetails": "View Details"
+	},
+	"contact": {
+		"CityCountry": "Łódź/Warsaw, Poland",
+		"ContactInfo": "Contact info",
+		"ContactForm": "Contact form",
+		"InputName": "My name is",
+		"InputEmail": "My email is",
+		"InputNumber": "My number is",
+		"InputCompany": "My company name is",
+		"InputMessages": "I will like to chat about",
+		"BtnSubmitContactForm": "Send message",
+		"Accept": "I accept the ",
+		"PrivacyPolicy": "privacy policy.",
+		"Sending": "Sending",
+		"ErrorName": "Enter your name",
+		"ErrorEmailRequired": "Enter your email",
+		"ErrorEmailInvalid": "Invalid email address",
+		"ErrorNumber": "Enter your phone number",
+		"ErrorCompany": "Enter your company name",
+		"ErrorMessage": "Enter your message",
+		"ErrorAgree": "You must accept the privacy policy",
+		"FormSending": "Sending message...",
+		"FormSuccess": "Your message has been sent successfully!",
+		"FormError": "Something went wrong. Please try again later."
+	}
+}

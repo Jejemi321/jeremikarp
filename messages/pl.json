@@ -1,0 +1,55 @@
+{
+	"Hello": "Cześć świecie",
+	"nav": {
+		"Home": "Strona Główna",
+		"Portfolio": "Portfolio",
+		"About": "O mnie",
+		"Services": "Usługi",
+		"Contact": "Kontakt",
+		"RightsReserved": "Wszelkie prawa zastrzeżone."
+	},
+	"home": {
+		"headerTop": "twórca",
+		"headerDown": "stron www",
+		"paragraph1": "Wszystko zaczyna się",
+		"paragraph2": "od pierwszego wrażenia, prawda?"
+	},
+	"portfolio": {
+		"Title": "Portfolio",
+		"CategoryAll": "Wszystko",
+		"CategoryWebsite": "Strony",
+		"CategoryPhotography": "Fotografia",
+		"LoadMoreBtn": "Załaduj więcej",
+		"NoItemsFound": "Nie znaleziono elementów",
+		"AtoZ": "Od A do Z",
+		"ZtoA": "Od Z do A",
+		"Newest": "Najnowsze",
+		"Oldest": "Najstarsze",
+		"Favorites": "Ulubione",
+		"ViewDetails": "Zobacz szczegóły"
+	},
+	"contact": {
+		"CityCountry": "Łódź/Warszawa, Polska",
+		"ContactInfo": "Informacje kontaktowe",
+		"ContactForm": "Formularz kontaktowy",
+		"InputName": "Moje imię to",
+		"InputEmail": "Mój email to",
+		"InputNumber": "Mój numer to",
+		"InputCompany": "Nazwa mojej firmy to",
+		"InputMessages": "Chciał bym porozmawiać o",
+		"BtnSubmitContactForm": "Wyślij wiadomość",
+		"Accept": "Akceptuję ",
+		"PrivacyPolicy": "politykę prywatności.",
+		"Sending": "Wysyłanie",
+		"ErrorName": "Podaj imię",
+		"ErrorEmailRequired": "Podaj e-mail",
+		"ErrorEmailInvalid": "Nieprawidłowy e-mail",
+		"ErrorNumber": "Podaj numer telefonu",
+		"ErrorCompany": "Podaj nazwę firmy",
+		"ErrorMessage": "Wpisz wiadomość",
+		"ErrorAgree": "Musisz zaakceptować politykę prywatności",
+		"FormSending": "Wysyłanie wiadomości...",
+		"FormSuccess": "Twoja wiadomość została pomyślnie wysłana!",
+		"FormError": "Coś poszło nie tak. Spróbuj ponownie później."
+	}
+}
