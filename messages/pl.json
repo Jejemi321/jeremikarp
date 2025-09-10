@@ -1,18 +1,28 @@
 {
 	"Hello": "Cześć świecie",
 	"nav": {
-		"Home": "Strona Główna",
+		"Home": "Start",
 		"Portfolio": "Portfolio",
 		"About": "O mnie",
-		"Services": "Usługi",
+		"Resume": "CV",
 		"Contact": "Kontakt",
 		"RightsReserved": "Wszelkie prawa zastrzeżone."
+	},
+	"title": {
+		"Portfolio": "Portfolio",
+		"About": "O mnie",
+		"Resume": "Cv",
+		"Contact": "Kontakt"
 	},
 	"home": {
 		"headerTop": "twórca",
 		"headerDown": "stron www",
 		"paragraph1": "Wszystko zaczyna się",
-		"paragraph2": "od pierwszego wrażenia, prawda?"
+		"paragraph2": "od pierwszego wrażenia, prawda?",
+		"paragraph3": "Pomagam startupom i właścicielom firm budować mocny wizerunek dzięki perfekcyjnemu projektowaniu i tworzeniu stron internetowych, aby zwiększali świadomość marki i swoje przychody.",
+		"SocialMedia": "Sociale",
+		"SeeMyWork": "Moje projekty",
+		"ContactWithMe": "Napisz do mnie"
 	},
 	"portfolio": {
 		"Title": "Portfolio",
@@ -31,6 +41,8 @@
 	"contact": {
 		"CityCountry": "Łódź/Warszawa, Polska",
 		"ContactInfo": "Informacje kontaktowe",
+		"WorkTime": "Pon - Pt, 10:00 - 20:00",
+
 		"ContactForm": "Formularz kontaktowy",
 		"InputName": "Moje imię to",
 		"InputEmail": "Mój email to",

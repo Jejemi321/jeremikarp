@@ -4,15 +4,25 @@
 		"Home": "Home",
 		"Portfolio": "Portfolio",
 		"About": "About",
-		"Services": "Services",
+		"Resume": "Resume",
 		"Contact": "Contact",
 		"RightsReserved": "All rights reserved."
+	},
+	"title": {
+		"Portfolio": "Portfolio",
+		"About": "About me",
+		"Resume": "Resume",
+		"Contact": "Contact me"
 	},
 	"home": {
 		"headerTop": "web",
 		"headerDown": "developer",
 		"paragraph1": "It all Starts with",
-		"paragraph2": "the first impression right?"
+		"paragraph2": "the first impression right?",
+		"paragraph3": "I'm helping startups and business owners to make a visual statement through spotless Web Design and Development so they can increase brand awareness and revenue.",
+		"SocialMedia": "Social Media",
+		"SeeMyWork": "See my work",
+		"ContactWithMe": "Let's Talk"
 	},
 	"portfolio": {
 		"Title": "Portfolio",
@@ -30,6 +40,7 @@
 	},
 	"contact": {
 		"CityCountry": "Łódź/Warsaw, Poland",
+		"WorkTime": "Mon - Fri, 10am - 8pm",
 		"ContactInfo": "Contact info",
 		"ContactForm": "Contact form",
 		"InputName": "My name is",

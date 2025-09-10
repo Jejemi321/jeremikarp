@@ -1,5 +1,7 @@
-import { PortfolioItems } from "@/shared/constant/const";
-import Link from "next/link";
+// TODO: add actual portfolio item content/animations
+import PhotographyPortfolioItemLayout from "@/shared/components/PhotographyPortfolioItemLayout";
+import WebsitePortfolioItemLayout from "@/shared/components/WebsitePortfolioItemLayout";
+import { PortfolioItems } from "@/shared/constant/PortfolioItems";
 import { notFound } from "next/navigation";
 
 export default async function PortfolioItemPage({
@@ -15,11 +17,9 @@ export default async function PortfolioItemPage({
 		notFound();
 	}
 
-	return (
-		<div>
-			<Link href={`/${locale}/portfolio`}>{"<--"}</Link>
-			<h1>{item.title}</h1>
-			<p>{item.description}</p>
-		</div>
+	return item.category === "CategoryWebsite" ? (
+		<WebsitePortfolioItemLayout el={item} locale={locale} />
+	) : (
+		<PhotographyPortfolioItemLayout el={item} locale={locale} />
 	);
 }

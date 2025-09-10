@@ -1,19 +1,16 @@
-"use client";
-
+//TODO Typy dla linków i social media
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { navItems, socialMedia } from "../constant/const";
-
-// Typy dla linków i social media
+import { socialMedia } from "../constant/const";
 
 export default function Footer() {
 	const t = useTranslations("nav");
 
 	return (
 		<>
-			<footer className='flex flex-col items-center justify-around px-2 py-1 gap-2 md:gap-0 md:flex-row'>
+			<footer className='flex flex-col items-center justify-around gap-2 px-2 py-1 md:gap-0 md:flex-row'>
 				{/* Social media */}
-				<div className='flex justify-center w-full md:w-1/3 lg:w-1/4'>
+				<div className='flex justify-center w-full md:w-1/3'>
 					<div className='flex w-1/3 justify-evenly'>
 						{socialMedia.map(el => (
 							<Link
@@ -28,13 +25,13 @@ export default function Footer() {
 				</div>
 
 				{/* Title */}
-				<div className='w-1/3  text-base sm:text-xl md:text-2xl text-center max-md:w-3/4'>
+				<div className='w-1/3 text-base text-center sm:text-xl md:text-2xl'>
 					Jeremi Karp
 				</div>
 
 				{/* Navigation links */}
-				<div className='flex justify-center w-1/3 max-md:w-3/4'>
-					<p className='opacity-75 text-xs sm:text-sm'>
+				<div className='flex justify-center w-1/3 '>
+					<p className='text-xs opacity-75 sm:text-sm'>
 						&copy; {new Date().getFullYear()} Jeremi Karp. {t("RightsReserved")}
 					</p>
 				</div>

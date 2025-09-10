@@ -21,6 +21,7 @@ const ChangeLanguage: React.FC = () => {
 
 	return (
 		<select
+			aria-label='Select Language'
 			className='outline-none cursor-pointer ColorsTransition'
 			value={currentLanguage}
 			onChange={handleChange}>
