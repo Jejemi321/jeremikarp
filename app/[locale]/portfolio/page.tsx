@@ -82,7 +82,7 @@ const Portfolio: NextPage = () => {
 			</div>
 			<div className='grid grid-cols-1 gap-4 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
 				{paginatedItems.map(el => (
-					<PortfolioItem key={el.id} el={el} />
+					<PortfolioItem key={Math.random()} el={el} />
 				))}
 			</div>
 			{totalPages > 1 && (

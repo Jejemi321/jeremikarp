@@ -1,18 +1,7 @@
-import Link from "next/link";
-import { PortfolioItemType } from "../constant/const";
+import { PortfolioItemType } from "../constant/PortfolioItems";
 
-function PhotographyPortfolioItemLayout({
-	el,
-	locale,
-}: {
-	el: PortfolioItemType;
-	locale: string;
-}) {
-	return (
-		<div className=''>
-			<Link href={`/${locale}/portfolio`}>{"<--"}</Link>
-		</div>
-	);
+function PhotographyPortfolioItemLayout({ el }: { el: PortfolioItemType }) {
+	return <></>;
 }
 
 export default PhotographyPortfolioItemLayout;

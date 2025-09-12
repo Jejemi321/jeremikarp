@@ -44,7 +44,7 @@ export const socialMedia: socialMedia[] = [
 		icon: "fi fi-brands-instagram",
 	},
 ];
-
+export const blankJpg: string = "/assets/img/portfolio/blank.jpg";
 export interface PortfolioCategory {
 	id: number;
 	name: string;

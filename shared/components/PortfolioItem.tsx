@@ -14,7 +14,7 @@ function PortfolioItem({ el }: { el: PortfolioItemType }) {
 				<Image
 					width={400}
 					height={192}
-					src='/assets/img/portfolio/blank.jpg'
+					src={el.imageCover}
 					alt='Portfolio Item'
 					className='object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105'
 				/>
@@ -50,7 +50,7 @@ function PortfolioItem({ el }: { el: PortfolioItemType }) {
 						{t(el.category)}
 					</span>
 					<span className='px-2 py-0.5 text-xs text-gray-400 dark:text-gray-500'>
-						{el.date}
+						{el.date.trim().split("-")[0]}
 					</span>
 				</div>
 			</div>

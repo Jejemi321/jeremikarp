@@ -1,7 +1,7 @@
 import { TechStackArray } from "@/shared/constant/TechStack";
 import Image from "next/image";
 
-function TechTest({ id }: { id: number }) {
+function TechIcon({ id }: { id: number }) {
 	const tech = TechStackArray[id - 1];
 	return (
 		<div>
@@ -33,4 +33,4 @@ function TechTest({ id }: { id: number }) {
 	);
 }
 
-export default TechTest;
+export default TechIcon;
