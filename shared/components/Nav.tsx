@@ -13,7 +13,7 @@ const Nav: React.FC = () => {
 	const t = useTranslations("nav");
 
 	return (
-		<nav className='sticky top-0 z-50 flex items-center justify-between transition-all duration-300 ease-in-out max-md:flex-col max-md:items-start '>
+		<nav className='sticky top-0 z-50 flex items-center justify-between transitionAll backgroundDefault max-md:flex-col max-md:items-start'>
 			{/* Logo */}
 			<Link href='/' className='m-4 text-3xl font-bold'>
 				Jeremi Karp

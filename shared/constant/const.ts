@@ -34,7 +34,7 @@ export const socialMedia: socialMedia[] = [
 	{
 		id: 3,
 		name: "Facebook",
-		link: "https://www.facebook.com/otofoto333/?locale=pl_PL",
+		link: "https://www.facebook.com/otofoto333",
 		icon: "fi fi-brands-facebook",
 	},
 	{
@@ -73,11 +73,22 @@ export interface contactInfo {
 	id: number;
 	iconClass: string;
 	name: string;
-	href?: string;
+	value: string;
+	typeHref: string;
 }
 export const contactInfo: contactInfo[] = [
-	{ id: 1, iconClass: "fi fi-rr-envelope", name: "Email" },
-	{ id: 2, iconClass: "fi fi-rr-map-marker", name: "Location" },
-	{ id: 3, iconClass: "fi fi-rr-phone-call", name: "Phone" },
-	{ id: 4, iconClass: "fi fi-rr-clock", name: "Availability" },
+	{
+		id: 1,
+		iconClass: "fi fi-rr-envelope",
+		name: "Email",
+		value: "jeremikarp@gmail.com",
+		typeHref: "mailto:",
+	},
+	{
+		id: 2,
+		iconClass: "fi fi-rr-phone-call",
+		name: "Phone",
+		value: "+48 518 299 555",
+		typeHref: "tel:",
+	},
 ];

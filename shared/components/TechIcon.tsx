@@ -5,8 +5,8 @@ function TechIcon({ id }: { id: number }) {
 	const tech = TechStackArray[id - 1];
 	return (
 		<div>
-			<div key={tech.id} className='flex items-center gap-2 mb-2'>
-				{tech.iconImg && (
+			<div key={tech?.id} className='flex items-center gap-x-2'>
+				{tech?.iconImg && (
 					<span className='relative w-6 h-6'>
 						<Image
 							src={tech.iconImg}
@@ -26,8 +26,10 @@ function TechIcon({ id }: { id: number }) {
 						)}
 					</span>
 				)}
-				{tech.iconClass && <i className={`${tech.iconClass} text-2xl`} />}
-				<span>{tech.name}</span>
+				{tech?.iconClass && (
+					<i className={`${tech.iconClass} text-2xl size-6`} />
+				)}
+				<p>{tech?.name}</p>
 			</div>
 		</div>
 	);

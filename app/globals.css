@@ -11,3 +11,20 @@
 	--color-dark-foreground: oklch(0.9702 0 0);
 	--font-mono: var(--font-geist-mono);
 }
+@layer utilities {
+	.transitionAll {
+		@apply transition-all duration-300 ease-in-out;
+	}
+	.backgroundDefault {
+		@apply bg-background dark:bg-dark-background;
+	}
+	.backgroundRotate {
+		@apply bg-foreground dark:bg-dark-foreground;
+	}
+	.textDefault {
+		@apply text-foreground dark:text-dark-foreground;
+	}
+	.textRotate {
+		@apply text-background dark:text-dark-background;
+	}
+}

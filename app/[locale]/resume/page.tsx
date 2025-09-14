@@ -1,6 +1,8 @@
+"use client";
 // TODO: add actual resume content/download link/view/animations/react-pdf???/export to pdf
 /* nagigation??
-img/role/abt me/contact info
+img/role/abt me/
+contact info
 Tech skills
 	Languages: JS, TS, HTML, CSS
 	Frameworks: React, Next.js, Tailwind, Node.js
@@ -15,17 +17,20 @@ curses
 certifiations
 hoobis
 */
+import BasicInfoResume from "@/shared/components/resume/BasicInfoResume";
+import ContactInfoResume from "@/shared/components/resume/ContactInfoResume";
+import TechSkillsResume from "@/shared/components/resume/TechSkillsResume";
 import SectionTitle from "@/shared/components/ui/SectionTitle";
-import { blankJpg } from "@/shared/constant/const";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 
 function Resume() {
-	const t = useTranslations("nav");
+	const tNav = useTranslations("nav");
 	return (
-		<div className='mx-40'>
-			<SectionTitle>{t("Resume")}</SectionTitle>
-			<Image src={blankJpg} alt='' width={100} height={100} />
+		<div className='mx-50'>
+			<SectionTitle>{tNav("Resume")}</SectionTitle>
+			<BasicInfoResume />
+			<ContactInfoResume />
+			<TechSkillsResume />
 		</div>
 	);
 }
