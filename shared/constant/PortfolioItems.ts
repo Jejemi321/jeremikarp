@@ -1,6 +1,8 @@
 import { CategoryType } from "./const";
-import PhotoPortfolioItems from "./PhotoPortfolioItems";
-import WebPortfolioItems from "./WebPortfolioItems";
+import PhotoPortfolioItems, {
+	PhotoPortfolioItemsType,
+} from "./PhotoPortfolioItems";
+import WebPortfolioItems, { WebPortfolioItemType } from "./WebPortfolioItems";
 
 export interface PortfolioItem {
 	id: number;
@@ -22,6 +24,11 @@ const photoWithIds = PhotoPortfolioItems.map((item, idx) => ({
 	id: webWithIds.length + idx + 1,
 }));
 
-export const PortfolioItems: PortfolioItem[] = [...webWithIds, ...photoWithIds];
+export type PortfolioItemType =
+	| (WebPortfolioItemType & { id: number })
+	| (PhotoPortfolioItemsType & { id: number });
 
-export type PortfolioItemType = (typeof PortfolioItems)[number];
+export const PortfolioItems: PortfolioItemType[] = [
+	...webWithIds,
+	...photoWithIds,
+];

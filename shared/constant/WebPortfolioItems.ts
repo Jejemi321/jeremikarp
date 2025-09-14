@@ -2,8 +2,8 @@
 import { PortfolioItem } from "./PortfolioItems";
 
 export interface WebPortfolioItemType extends Omit<PortfolioItem, "id"> {
-	techStack: number[];
-	imgArray: string[];
+	techStack?: number[];
+	imgArray?: string[];
 }
 const WebPortfolioItems: WebPortfolioItemType[] = [
 	{

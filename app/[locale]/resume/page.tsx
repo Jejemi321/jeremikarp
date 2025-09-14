@@ -10,7 +10,7 @@ Tech skills
 	other tools
 	showing on top best and load more
 projects
-soft skills
+soft skills??
 Languages
 education
 curses
