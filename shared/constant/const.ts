@@ -92,3 +92,4 @@ export const contactInfo: contactInfo[] = [
 		typeHref: "tel:",
 	},
 ];
+export const someConst = "abcd";
