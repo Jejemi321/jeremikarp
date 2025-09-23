@@ -1,36 +1,28 @@
 "use client";
-// TODO: add actual resume content/download link/view/animations/react-pdf???/export to pdf
-/* nagigation??
-img/role/abt me/
-contact info
-Tech skills
-	Languages: JS, TS, HTML, CSS
-	Frameworks: React, Next.js, Tailwind, Node.js
-	Tools: Git, VSCode, Vercel, Supabase, Docker
-	other tools
-	showing on top best and load more
-projects
-soft skills??
-Languages
-education
-curses
-certifiations
-hoobis
-*/
-import BasicInfoResume from "@/shared/components/resume/BasicInfoResume";
+import CertificationsResume from "@/shared/components/resume/CertificationsResume";
 import ContactInfoResume from "@/shared/components/resume/ContactInfoResume";
+import EducationResume from "@/shared/components/resume/EducationResume";
+import HobbyResume from "@/shared/components/resume/HobbyResume";
+import LanguagesResume from "@/shared/components/resume/LanguagesResume";
 import TechSkillsResume from "@/shared/components/resume/TechSkillsResume";
-import SectionTitle from "@/shared/components/ui/SectionTitle";
+import PageTitle from "@/shared/components/ui/PageTitle";
 import { useTranslations } from "next-intl";
+import ThreeProjects from "@/shared/components/ThreeProjects";
+import BasicInfo from "@/shared/components/BasicInfo";
 
 function Resume() {
 	const tNav = useTranslations("nav");
 	return (
 		<div className='mx-50'>
-			<SectionTitle>{tNav("Resume")}</SectionTitle>
-			<BasicInfoResume />
+			<PageTitle>{tNav("Resume")}</PageTitle>
+			<BasicInfo />
 			<ContactInfoResume />
 			<TechSkillsResume />
+			<ThreeProjects />
+			<LanguagesResume />
+			<EducationResume />
+			<CertificationsResume />
+			<HobbyResume />
 		</div>
 	);
 }

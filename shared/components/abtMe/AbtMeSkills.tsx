@@ -1,0 +1,35 @@
+"use client";
+import { TechStackArray } from "@/shared/constant/TechStack";
+import SectionTitle from "../ui/SectionTitle";
+import TechIcon from "../TechIcon";
+import { motion } from "framer-motion";
+
+function AbtMeSkills() {
+	return (
+		<>
+			<SectionTitle>Most Important Skills</SectionTitle>
+			<div className='grid grid-cols-1 gap-4 mb-4 sm:grid-cols-2 lg:grid-cols-3'>
+				{TechStackArray.filter(a => a?.star).map((el, i) => (
+					<motion.div
+						key={el.id}
+						initial={{ opacity: 0, y: 20 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.3, delay: i * 0.05 }}
+						className='px-4 py-3 border border-white/10 rounded-xl bg-white/5 backdrop-blur-sm shadow-sm 
+                                   hover:shadow-md hover:scale-[1.02] transition-transform cursor-default'>
+						<div className='flex items-center justify-between mb-2'>
+							<TechIcon id={el.id} />
+							<span className='text-sm font-medium'>{el.knowledge}</span>
+						</div>
+						<p className='text-sm leading-snug text-gray-300'>
+							{el.description}
+						</p>
+					</motion.div>
+				))}
+			</div>
+		</>
+	);
+}
+
+export default AbtMeSkills;

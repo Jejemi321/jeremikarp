@@ -1,12 +1,12 @@
 import { TechStackArray } from "@/shared/constant/TechStack";
-import ResumeSectionTitle from "../ui/ResumeSectionTitle";
 import TechIcon from "../TechIcon";
+import SectionTitle from "../ui/SectionTitle";
 
 function TechSkillsResume() {
 	return (
 		<>
 			<div className='flex justify-between'>
-				<ResumeSectionTitle>Tech Skills</ResumeSectionTitle>
+				<SectionTitle>Tech Skills</SectionTitle>
 				<select name='' id=''>
 					<option value=''>abc</option>
 					<option value=''>abc</option>

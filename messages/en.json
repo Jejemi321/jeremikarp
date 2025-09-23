@@ -38,6 +38,17 @@
 		"Favorites": "Favorites",
 		"ViewDetails": "View Details"
 	},
+	"portfolioWeb": {},
+
+	"portfolioProjects": {
+		"studio01Title": "studio01",
+		"studio01description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"warsaw01Title": "warsaw01",
+		"warsaw01description": "lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"jeremikarpTitle": "Jeremi Karp Portfolio",
+		"jeremikarpdescription": "lorem ipsum dolor sit amet, consectetur adipiscing elit"
+	},
+
 	"contact": {
 		"CityCountry": "Łódź/Warsaw, Poland",
 		"WorkTime": "Mon - Fri, 10am - 8pm",

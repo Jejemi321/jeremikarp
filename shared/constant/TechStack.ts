@@ -21,22 +21,19 @@ type TechStackBase = {
 	category: TechCategory;
 	docsUrl?: string;
 	since: Date; // year of first use
+	star?: boolean;
 };
-
 type TechStackWithClass = TechStackBase & {
 	iconClass: string;
 	iconImg?: never;
 	darkIconImg?: never;
 };
-
 type TechStackWithImage = TechStackBase & {
 	iconClass?: never;
 	iconImg: string;
 	darkIconImg?: string;
 };
-
 type TechStack = TechStackWithClass | TechStackWithImage;
-
 export const TechStackArray: TechStack[] = [
 	{
 		id: 1,
@@ -49,6 +46,7 @@ export const TechStackArray: TechStack[] = [
 		since: new Date(2020, 0, 1),
 		iconClass: "fi fi-brands-html5",
 		docsUrl: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+		star: true,
 	},
 	{
 		id: 2,
@@ -56,12 +54,12 @@ export const TechStackArray: TechStack[] = [
 		description: "Stylesheet language for designing web pages.",
 		knowledge: "Advanced",
 		KnowledgeWidth: "w-3/5",
-
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2022, 0, 1),
 		iconClass: "fi fi-brands-css3",
 		docsUrl: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+		star: true,
 	},
 	{
 		id: 3,
@@ -69,7 +67,6 @@ export const TechStackArray: TechStack[] = [
 		description: "CSS preprocessor for nested and maintainable styles.",
 		knowledge: "Advanced",
 		KnowledgeWidth: "w-3/5",
-
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2022, 0, 1),
@@ -82,12 +79,12 @@ export const TechStackArray: TechStack[] = [
 		description: "High-level programming language for web development.",
 		knowledge: "Advanced",
 		KnowledgeWidth: "w-3/5",
-
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2020, 0, 1),
 		iconClass: "fi fi-brands-js",
 		docsUrl: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+		star: true,
 	},
 	{
 		id: 5,
@@ -95,12 +92,12 @@ export const TechStackArray: TechStack[] = [
 		description: "Superset of JavaScript adding static typing.",
 		knowledge: "Intermediate",
 		KnowledgeWidth: "w-2/5",
-
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2023, 0, 1),
 		iconClass: "fi fi-brands-typescript",
 		docsUrl: "https://www.typescriptlang.org/docs/",
+		star: true,
 	},
 	{
 		id: 6,
@@ -108,13 +105,13 @@ export const TechStackArray: TechStack[] = [
 		description: "Library for building user interfaces.",
 		knowledge: "Advanced",
 		KnowledgeWidth: "w-3/5",
-
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2022, 0, 1),
 		iconImg: "/assets/icons/light/react-light.png",
 		darkIconImg: "/assets/icons/dark/react-dark.png",
 		docsUrl: "https://react.dev/",
+		star: true,
 	},
 	{
 		id: 7,
@@ -123,13 +120,13 @@ export const TechStackArray: TechStack[] = [
 			"React framework for server-side rendering and fullstack apps.",
 		knowledge: "Intermediate",
 		KnowledgeWidth: "w-2/5",
-
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2023, 0, 1),
 		iconImg: "/assets/icons/light/nextjs-light.png",
 		darkIconImg: "/assets/icons/dark/nextjs-dark.png",
 		docsUrl: "https://nextjs.org/docs",
+		star: true,
 	},
 	{
 		id: 8,
@@ -137,13 +134,13 @@ export const TechStackArray: TechStack[] = [
 		description: "Utility-first CSS framework for rapid UI development.",
 		knowledge: "Advanced",
 		KnowledgeWidth: "w-3/5",
-
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2022, 0, 1),
 		iconImg: "/assets/icons/light/TailwindCssLight.png",
 		darkIconImg: "/assets/icons/dark/TailwindCssDark.png",
 		docsUrl: "https://tailwindcss.com/docs",
+		star: true,
 	},
 	{
 		id: 9,
@@ -151,7 +148,6 @@ export const TechStackArray: TechStack[] = [
 		description: "Animation library for React applications.",
 		knowledge: "Intermediate",
 		KnowledgeWidth: "w-2/5",
-
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2023, 0, 1),
@@ -171,6 +167,7 @@ export const TechStackArray: TechStack[] = [
 		since: new Date(2022, 0, 1),
 		iconClass: "fi fi-brands-php",
 		docsUrl: "https://www.php.net/docs.php",
+		star: true,
 	},
 	{
 		id: 11,
@@ -183,8 +180,8 @@ export const TechStackArray: TechStack[] = [
 		since: new Date(2022, 0, 1),
 		iconClass: "fi fi-brands-mysql",
 		docsUrl: "https://www.w3schools.com/sql/",
+		star: true,
 	},
-
 	{
 		id: 12,
 		name: "Node.js",
@@ -196,6 +193,7 @@ export const TechStackArray: TechStack[] = [
 		since: new Date(2022, 0, 1),
 		iconClass: "fi fi-brands-node-js",
 		docsUrl: "https://nodejs.org/en/docs/",
+		star: true,
 	},
 	{
 		id: 13,
@@ -209,6 +207,7 @@ export const TechStackArray: TechStack[] = [
 		iconImg: "/assets/icons/light/expressjs-light.png",
 		darkIconImg: "/assets/icons/dark/expressjs-dark.png",
 		docsUrl: "https://expressjs.com/",
+		star: true,
 	},
 	{
 		id: 14,
@@ -222,6 +221,7 @@ export const TechStackArray: TechStack[] = [
 		iconImg: "/assets/icons/light/supabase-light.png",
 		darkIconImg: "/assets/icons/dark/supabase-dark.png",
 		docsUrl: "https://supabase.com/docs",
+		star: true,
 	},
 	{
 		id: 15,
@@ -249,7 +249,6 @@ export const TechStackArray: TechStack[] = [
 		darkIconImg: "/assets/icons/dark/Cloudflare-dark.png",
 		docsUrl: "https://developers.cloudflare.com/",
 	},
-
 	{
 		id: 17,
 		name: "Git",
@@ -302,5 +301,5 @@ export const TechStackArray: TechStack[] = [
 		docsUrl: "https://prettier.io/docs/en/",
 	},
 ];
-
+//TODO swiper/react-icons/hamburger-react/sooner/emailjs/i18n/tailwind scrollbar
 // Postman,Cypress,Jest,GraphQL

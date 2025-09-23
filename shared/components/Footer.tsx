@@ -30,7 +30,7 @@ export default function Footer() {
 				</div>
 
 				{/* Navigation links */}
-				<div className='flex justify-center w-1/3 '>
+				<div className='flex justify-center md:w-1/3 '>
 					<p className='text-xs opacity-75 sm:text-sm'>
 						&copy; {new Date().getFullYear()} Jeremi Karp. {t("RightsReserved")}
 					</p>

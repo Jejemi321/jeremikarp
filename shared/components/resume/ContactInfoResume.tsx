@@ -2,7 +2,7 @@
 import { contactInfo, socialMedia } from "@/shared/constant/const";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import ResumeSectionTitle from "../ui/ResumeSectionTitle";
+import SectionTitle from "../ui/SectionTitle";
 
 function ContactInfoResume() {
 	const [Show, setShow] = useState<boolean>(false);
@@ -10,7 +10,7 @@ function ContactInfoResume() {
 	return (
 		<>
 			<div className='flex justify-between'>
-				<ResumeSectionTitle>Contact Info</ResumeSectionTitle>
+				<SectionTitle>Contact Info</SectionTitle>
 				<p className='cursor-pointer' onClick={() => setShow(!Show)}>
 					{!Show ? "Show" : "Hide"}
 				</p>
@@ -21,7 +21,7 @@ function ContactInfoResume() {
 						key={el.id}
 						href={`${el.typeHref}${el.value}`}
 						target='_blank'
-						className='flex flex-col items-center justify-center space-x-2 text-gray-700 transition hover:text-blue-600'>
+						className='flex flex-col items-center justify-center space-x-2 transition hover:opacity-75'>
 						<i className={`${el.iconClass} text-lg`}></i>
 						<AnimatePresence mode='wait'>
 							<motion.p
@@ -41,7 +41,7 @@ function ContactInfoResume() {
 						key={el.id}
 						href={el.link}
 						target='_blank'
-						className='flex flex-col items-center justify-center space-x-2 text-gray-700 transition hover:text-blue-600'>
+						className='flex flex-col items-center justify-center space-x-2 transition hover:opacity-75'>
 						<i className={`${el.icon} text-lg`}></i>
 						<AnimatePresence mode='wait'>
 							<motion.p

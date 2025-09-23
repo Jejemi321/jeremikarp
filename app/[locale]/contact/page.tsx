@@ -1,14 +1,14 @@
 import ContactForm from "@/shared/components/ContactForm";
 import ContactInfo from "@/shared/components/ContactInfo";
-import SectionTitle from "@/shared/components/ui/SectionTitle";
+import PageTitle from "@/shared/components/ui/PageTitle";
 import { useTranslations } from "next-intl";
 
 function Contact() {
 	const titleT = useTranslations("title");
 
 	return (
-		<div className='mx-50'>
-			<SectionTitle>{titleT("Contact")}</SectionTitle>
+		<div className='my-20 mx-150'>
+			<PageTitle>{titleT("Contact")}</PageTitle>
 			<ContactInfo />
 			<ContactForm />
 		</div>

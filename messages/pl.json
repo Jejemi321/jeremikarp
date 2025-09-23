@@ -38,6 +38,15 @@
 		"Favorites": "Ulubione",
 		"ViewDetails": "Zobacz szczegóły"
 	},
+	"portfolioWeb": {},
+	"portfolioProjects": {
+		"studio01Title": "STUDIO01",
+		"studio01description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"warsaw01Title": "warszawa01",
+		"warsaw01description": "lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"jeremikarpTitle": "Jeremi Karp Portfolio",
+		"jeremikarpdescription": "lorem ipsum dolor sit amet, consectetur adipiscing elit"
+	},
 	"contact": {
 		"CityCountry": "Łódź/Warszawa, Polska",
 		"ContactInfo": "Informacje kontaktowe",

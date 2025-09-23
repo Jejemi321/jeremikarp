@@ -2,7 +2,7 @@
 "use client";
 import Pagination from "@/shared/components/Pagination";
 import PortfolioItem from "@/shared/components/PortfolioItem";
-import SectionTitle from "@/shared/components/ui/SectionTitle";
+import PageTitle from "@/shared/components/ui/PageTitle";
 import {
 	CategoryType,
 	PortfolioCategories,
@@ -51,7 +51,7 @@ const Portfolio: NextPage = () => {
 
 	return (
 		<div className='m-2.5'>
-			<SectionTitle>{titleT("Portfolio")}</SectionTitle>
+			<PageTitle>{titleT("Portfolio")}</PageTitle>
 
 			<div className='flex items-center justify-between mb-4'>
 				<div className='flex items-center gap-1'>
