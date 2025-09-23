@@ -82,11 +82,11 @@ function WebsitePortfolioItemLayout({ el }: { el: WebPortfolioItemType }) {
 						</div>
 
 						{/* Tech Stack */}
-						{el.techStack?.length > 0 && (
+						{el?.techStack && (
 							<div className='space-y-1'>
 								<p className='text-xl font-medium'>Tech Stack</p>
 								<div className='flex flex-wrap gap-2'>
-									{el.techStack.map(id => (
+									{el?.techStack?.map(id => (
 										<TechIcon key={id} id={id} />
 									))}
 								</div>

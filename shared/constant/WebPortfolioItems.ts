@@ -7,11 +7,11 @@ type roleType =
 	| "Backend Developer"
 	| "Designer";
 export interface WebPortfolioItemType extends Omit<PortfolioItem, "id"> {
-	techStack: number[];
-	imgArray: string[];
+	techStack?: number[];
+	imgArray?: string[];
 	starterDate?: string;
 	url?: string;
-	status: statusType;
+	status?: statusType;
 	role?: roleType;
 	performanceScore?: number;
 	accessibilityScore?: number;
