@@ -1,3 +1,4 @@
+//TODO i18n/scrollbar/responsive
 import { WebPortfolioItemType } from "../constant/WebPortfolioItems";
 import { useTranslations } from "next-intl";
 import TechIcon from "./TechIcon";

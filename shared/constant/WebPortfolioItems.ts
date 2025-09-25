@@ -1,4 +1,3 @@
-//TODO: Status - Archive, In Progress, Finish
 import { PortfolioItem } from "./PortfolioItems";
 type statusType = "Archive" | "In Progress" | "Finish";
 type roleType =

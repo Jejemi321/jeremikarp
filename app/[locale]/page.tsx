@@ -1,4 +1,4 @@
-// TODO: animations/responsive/scrollbar/i18n
+// TODO: animations/404page/optymalizacja
 import AbtMeHowIWork from "@/shared/components/abtMe/AbtMeHowIWork";
 import ContactInfo from "@/shared/components/ContactInfo";
 import HomeHeader from "@/shared/components/HomeHeader";

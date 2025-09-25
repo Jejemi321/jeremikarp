@@ -9,7 +9,7 @@ function PortfolioItem({ el }: { el: PortfolioItemType }) {
 	return (
 		<Link
 			href={`portfolio/${el.id}`}
-			key={Math.random()}
+			key={el.id}
 			className='p-0 overflow-hidden transition-all ease-in-out duration-300  bg-white border shadow-sm group rounded-xl dark:bg-[#161616] hover:shadow-lg hover:border-primary'>
 			<div className='relative w-full overflow-hidden h-75'>
 				<Image

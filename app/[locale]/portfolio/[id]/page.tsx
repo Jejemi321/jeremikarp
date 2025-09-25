@@ -21,12 +21,12 @@ export default async function PortfolioItemPage({
 }) {
 	const { locale, id } = await params;
 
-	const item = PortfolioItems[Number(id) - 1];
+	const item = PortfolioItems.find(el => el.id === Number(id));
 
 	if (!item) notFound();
 
 	return (
-		<div className='px-20'>
+		<div className='px-2.5 sm:px-5 md:px-10 lg:px-15 xl:px-30 2xl:px-60 py-10'>
 			<Link href={`/${locale}/portfolio`}>
 				<i className='text-3xl fi fi-rr-arrow-small-left size-5'></i>
 			</Link>

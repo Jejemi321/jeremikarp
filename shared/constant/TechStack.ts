@@ -1,3 +1,4 @@
+//TODO: check info
 type KnowledgeLevel =
 	| "Beginner"
 	| "Intermediate"
@@ -17,7 +18,7 @@ type TechStackBase = {
 	description: string;
 	knowledge: KnowledgeLevel;
 	KnowledgeWidth: KnowledgeWidth;
-	type: "Framework" | "Language" | "Others";
+	type: "Framework" | "Language" | "Library" | "Tool" | "Others";
 	category: TechCategory;
 	docsUrl?: string;
 	since: Date; // year of first use
@@ -115,7 +116,7 @@ export const TechStackArray: TechStack[] = [
 	},
 	{
 		id: 7,
-		name: "Next.js",
+		name: "NextJs",
 		description:
 			"React framework for server-side rendering and fullstack apps.",
 		knowledge: "Intermediate",
@@ -184,7 +185,7 @@ export const TechStackArray: TechStack[] = [
 	},
 	{
 		id: 12,
-		name: "Node.js",
+		name: "NodeJs",
 		description: "JavaScript runtime for backend development.",
 		knowledge: "Intermediate",
 		KnowledgeWidth: "w-2/5",
@@ -197,7 +198,7 @@ export const TechStackArray: TechStack[] = [
 	},
 	{
 		id: 13,
-		name: "Express.js",
+		name: "ExpressJs",
 		description: "Web framework for Node.js to build APIs quickly.",
 		knowledge: "Intermediate",
 		KnowledgeWidth: "w-2/5",
@@ -300,6 +301,96 @@ export const TechStackArray: TechStack[] = [
 		darkIconImg: "/assets/icons/dark/prettier-dark.png",
 		docsUrl: "https://prettier.io/docs/en/",
 	},
+	{
+		id: 21,
+		name: "Swiper",
+		description:
+			"Modern mobile touch slider with hardware accelerated transitions.",
+		knowledge: "Intermediate",
+		KnowledgeWidth: "w-2/5",
+		type: "Library",
+		category: "Tools",
+		since: new Date(2023, 5, 1),
+		iconImg: "/assets/icons/light/swiper-light.png",
+		darkIconImg: "/assets/icons/dark/swiper-dark.png",
+		docsUrl: "https://swiperjs.com/react",
+	},
+	{
+		id: 22,
+		name: "React-Icons",
+		description: "Popular icon sets as React components.",
+		knowledge: "Intermediate",
+		KnowledgeWidth: "w-2/5",
+		type: "Library",
+		category: "Tools",
+		since: new Date(2022, 3, 1),
+		iconImg: "/assets/icons/light/react-light.png",
+		darkIconImg: "/assets/icons/dark/react-dark.png",
+		docsUrl: "https://react-icons.github.io/react-icons/",
+	},
+	{
+		id: 23,
+		name: "HamburgerReact",
+		description: "Animated hamburger menu icons for React.",
+		knowledge: "Intermediate",
+		KnowledgeWidth: "w-2/5",
+		type: "Library",
+		category: "Tools",
+		since: new Date(2023, 7, 1),
+		iconClass: "fi fi-rr-hamburger",
+		docsUrl: "https://hamburger-react.netlify.app/",
+	},
+	{
+		id: 24,
+		name: "Sonner",
+		description: "An opinionated toast component for React apps.",
+		knowledge: "Beginner",
+		KnowledgeWidth: "w-1/5",
+		type: "Library",
+		category: "Tools",
+		since: new Date(2024, 0, 1),
+		iconImg: "/assets/icons/light/react-light.png",
+		darkIconImg: "/assets/icons/dark/react-dark.png",
+		docsUrl: "https://sonner.emilkowal.ski/",
+	},
+	{
+		id: 25,
+		name: "EmailJS",
+		description:
+			"Send emails directly from client-side JavaScript without a backend.",
+		knowledge: "Beginner",
+		KnowledgeWidth: "w-1/5",
+		type: "Library",
+		category: "Tools",
+		since: new Date(2023, 9, 1),
+		iconImg: "/assets/icons/light/emailjs-light.png",
+		darkIconImg: "/assets/icons/dark/emailjs-dark.png",
+		docsUrl: "https://www.emailjs.com/docs/",
+	},
+	{
+		id: 26,
+		name: "i18n",
+		description: "Internationalization framework for React.",
+		knowledge: "Beginner",
+		KnowledgeWidth: "w-1/5",
+		type: "Library",
+		category: "Tools",
+		since: new Date(2023, 11, 1),
+		iconClass: "fi fi-rr-language-exchange",
+		docsUrl: "https://react.i18next.com/",
+	},
+	{
+		id: 27,
+		name: "Tailwind-Scrollbar",
+		description: "Tailwind CSS plugin to style scrollbars.",
+		knowledge: "Beginner",
+		KnowledgeWidth: "w-1/5",
+		type: "Library",
+		category: "Tools",
+		since: new Date(2024, 2, 1),
+		iconImg: "/assets/icons/light/TailwindCssLight.png",
+		darkIconImg: "/assets/icons/dark/TailwindCssDark.png",
+		docsUrl: "https://www.npmjs.com/package/tailwind-scrollbar",
+	},
 ];
-//TODO swiper/react-icons/hamburger-react/sooner/emailjs/i18n/tailwind scrollbar
 // Postman,Cypress,Jest,GraphQL

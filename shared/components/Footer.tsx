@@ -1,4 +1,4 @@
-//TODO Typy dla linków i social media
+//TODO responsive
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { socialMedia } from "../constant/const";

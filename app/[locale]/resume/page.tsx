@@ -1,3 +1,4 @@
+//TODO i18n
 "use client";
 import CertificationsResume from "@/shared/components/resume/CertificationsResume";
 import ContactInfoResume from "@/shared/components/resume/ContactInfoResume";

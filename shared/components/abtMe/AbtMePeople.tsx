@@ -1,11 +1,14 @@
 import { WorkPeopleArray } from "@/shared/constant/const";
 import SectionTitle from "../ui/SectionTitle";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 function AbtMePeople() {
+	const tSection = useTranslations("sectionTitle");
+
 	return (
 		<>
-			<SectionTitle>Co-Workers</SectionTitle>
+			<SectionTitle>{tSection("CoWorkers")}</SectionTitle>
 			<div className='flex justify-center'>
 				{WorkPeopleArray.map(el => (
 					<div

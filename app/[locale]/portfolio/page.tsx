@@ -1,4 +1,3 @@
-//TODO Transition colors pagination/ pagination when change sort by change page to 1
 "use client";
 import Pagination from "@/shared/components/Pagination";
 import PortfolioItem from "@/shared/components/PortfolioItem";
@@ -53,8 +52,8 @@ const Portfolio: NextPage = () => {
 		<div className='m-2.5'>
 			<PageTitle>{titleT("Portfolio")}</PageTitle>
 
-			<div className='flex items-center justify-between mb-4'>
-				<div className='flex items-center gap-1'>
+			<div className='flex items-center justify-end mb-4 sm:justify-between'>
+				<div className='items-center hidden gap-1 sm:flex'>
 					{PortfolioCategories.map(category => (
 						<div
 							key={category.id}
@@ -82,7 +81,7 @@ const Portfolio: NextPage = () => {
 			</div>
 			<div className='grid grid-cols-1 gap-4 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
 				{paginatedItems.map(el => (
-					<PortfolioItem key={Math.random()} el={el} />
+					<PortfolioItem key={el.id} el={el} />
 				))}
 			</div>
 			{totalPages > 1 && (

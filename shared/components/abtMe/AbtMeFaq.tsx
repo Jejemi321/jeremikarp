@@ -3,13 +3,14 @@ import { FaqArray } from "@/shared/constant/const";
 import SectionTitle from "../ui/SectionTitle";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 function AbtMeFaq() {
 	const [activeId, setActiveId] = useState<number | undefined>();
 	const toggleFaq = (id: number) => {
 		setActiveId(prev => (prev === id ? undefined : id));
 	};
-
+	const t = useTranslations("faq");
 	return (
 		<>
 			<SectionTitle>FAQ</SectionTitle>
@@ -17,10 +18,10 @@ function AbtMeFaq() {
 				{FaqArray.map(el => (
 					<div
 						key={el.id}
-						className='w-1/2 px-4 py-3 transition border rounded-lg shadow-sm bg-white/5 backdrop-blur-sm hover:cursor-pointer hover:bg-white/10'
+						className='px-4 py-3 transition border rounded-lg shadow-sm sm:w-3/4 xl:w-1/2 bg-white/5 backdrop-blur-sm hover:cursor-pointer hover:bg-white/10'
 						onClick={() => toggleFaq(el.id)}>
 						<div className='flex items-center justify-between'>
-							<p className='font-medium text-start'>{el.question}</p>
+							<p className='font-medium text-start'>{t(el.question)}</p>
 							<motion.div
 								animate={{ rotate: activeId === el.id ? 180 : 0 }}
 								transition={{ duration: 0.3 }}>
@@ -35,7 +36,7 @@ function AbtMeFaq() {
 									exit={{ opacity: 0, height: 0 }}
 									transition={{ duration: 0.3 }}
 									className='mt-2.5 text-start text-sm text-gray-300'>
-									{el.answer}
+									{t(el.answer)}
 								</motion.div>
 							)}
 						</AnimatePresence>

@@ -114,7 +114,7 @@ export const Hobby: HobbyType[] = [
 	},
 	{
 		id: 2,
-		name: "Filmowanie",
+		name: "Filming",
 		iconClass: "fi fi-rr-camera-movie",
 		years: new Date(2022, 0, 1),
 	},
@@ -289,34 +289,27 @@ type FaqType = {
 export const FaqArray: FaqType[] = [
 	{
 		id: 1,
-		question: "Jakie technologie najczęściej wykorzystujesz?",
-		answer:
-			"Najczęściej pracuję z React, Vite, Tailwind CSS i Supabase. Dzięki temu mogę budować szybkie i skalowalne aplikacje.",
+		question: "Question1",
+		answer: "Answer1",
 	},
-
 	{
 		id: 2,
-		question: "Ile czasu zajmuje realizacja projektu?",
-		answer:
-			"Proste strony mogą powstać w kilka dni, a bardziej złożone aplikacje w kilka tygodni — wszystko zależy od zakresu prac.",
+		question: "Question2",
+		answer: "Answer2",
 	},
 	{
 		id: 3,
-		question: "Jak wygląda proces współpracy?",
-		answer:
-			"Najpierw omawiam potrzeby, potem przygotowuję plan i projekt, następnie zajmuję się kodowaniem i wdrożeniem. Na końcu oferuję testy i wsparcie.",
+		question: "Question3",
+		answer: "Answer3",
 	},
-
 	{
 		id: 4,
-		question: "Czy zajmujesz się optymalizacją SEO i wydajności?",
-		answer:
-			"Tak, dbam o to, by strony były szybkie, dobrze oceniane w Lighthouse i przygotowane pod SEO.",
+		question: "Question4",
+		answer: "Answer4",
 	},
 	{
 		id: 5,
-		question: "Czy pomagasz w hostingu i wdrożeniu projektu?",
-		answer:
-			"Oczywiście — mogę doradzić przy wyborze hostingu, skonfigurować serwer i wdrożyć stronę na produkcję.",
+		question: "Question5",
+		answer: "Answer5",
 	},
 ];

@@ -24,6 +24,32 @@
 		"SeeMyWork": "See my work",
 		"ContactWithMe": "Let's Talk"
 	},
+	"sectionTitle": {
+		"HowIWork": "How I Work",
+		"BasicInfo": "Basic Info",
+		"MostImportantSkills": "Most Important Skills",
+		"Stats": "Stats",
+		"Projects": "Projects",
+		"CoWorkers": "Co-Workers",
+		"ContactInfo": "Contact Info"
+	},
+
+	"privatePolicy": {
+		"title": "Privacy Policy",
+		"text": "1. General Information\n\nThis policy applies to the website operating at: jeremikarp.com\nThe operator of the website and the administrator of personal data is: Jeremi Karp\nContact email: jeremikarp@gmail.com\nThe operator is the administrator of your personal data with respect to data voluntarily provided on the website.\nThe website uses personal data for the following purposes: handling inquiries via the contact form.\nThe website collects information about users and their behavior as follows: through voluntarily entered data in forms, which is stored in the operator’s systems, and through storing cookies on user devices.\n\n2. Selected Data Protection Methods\n\nLogin and data entry areas are protected by transmission layer security (SSL certificate). Thanks to this, personal data and login data entered on the site are encrypted on the user’s computer and can be read only on the target server.\nThe operator periodically changes administrative passwords.\nAn important part of data protection is the regular update of all software used by the operator to process personal data, in particular regular updates of programming components.\n\n3. Hosting\n\nThe website is hosted (technically maintained) on servers of another company.\nThe hosting company ensures technical reliability by keeping server logs. These logs may include: requested resources, request arrival time, response time, client station name, error information, referrer URL, browser information, IP address, diagnostics related to ordering services, and email handling.\n\n4. Your Rights and Additional Information\n\nThe administrator may transfer your personal data to other recipients if necessary to perform an agreement with you or fulfill legal obligations. This applies to such groups: authorized employees and collaborators, hosting provider, mailing and SMS providers, marketing partners, couriers, insurers, law firms, banks, payment operators, and public authorities.\nYour personal data is processed no longer than necessary. Marketing data will not be processed for more than 3 years.\nYou have the right to request: access to your data, rectification, deletion, restriction of processing, and data portability. You also have the right to object to processing for marketing purposes.\nYou can lodge a complaint with the President of the Personal Data Protection Office.\nProviding personal data is voluntary but necessary to use the website.\nPersonal data is not transferred outside the European Union.\n\n5. Information in Forms\n\nThe website collects information voluntarily provided by users, including personal data, if provided.\nThe website may store information about connection parameters (time, IP address).\nData provided in forms is processed for purposes resulting from the function of a specific form, e.g., service requests, business contact, service registration.\n\n6. Administrator Logs\n\nInformation about user behavior in the website may be logged. This data is used to administer the website.\n\n7. Important Marketing Techniques\n\nThe operator uses statistical traffic analysis via Google Analytics (Google Inc., USA). Data is anonymized and based on cookies. Users can edit their ad preferences at: https://www.google.com/ads/preferences/\n\n8. Cookies Information\n\nThe website uses cookies. Cookies are IT data stored on the user’s device, intended for use with the website. Cookies may be session or persistent.\nUsers may change cookie settings in their browser. Restrictions on cookies may affect some website functionalities.\nCookies may also be used by cooperating entities, in particular Google, Facebook, Twitter.\n\n9. Cookie Management\n\nUsers can change cookie settings at any time in their browser. Instructions are available in the documentation of individual browsers and mobile devices.."
+	},
+	"Hobby": {
+		"Movies": "Movies",
+		"Filming": "Filming",
+		"Cooking": "Cooking",
+		"Chess": "Chess",
+		"Music": "Music",
+		"Traveling": "Traveling",
+		"Drone": "Drone",
+		"Sailing": "Sailing",
+		"Coding": "Coding",
+		"Photography": "Photography"
+	},
 	"portfolio": {
 		"Title": "Portfolio",
 		"CategoryAll": "All",
@@ -39,16 +65,88 @@
 		"ViewDetails": "View Details"
 	},
 	"portfolioWeb": {},
-
+	"btns": {
+		"ShowMore": "Show more",
+		"Phone": "Phone"
+	},
+	"aboutMe": {
+		"desc": "Hi! My name is Jeremi, and I am passionate about new technologies and creating online projects. I enjoy developing my skills, taking on challenges, and learning new things. In my free time, I focus on photography, programming, and cooking, as well as pursuing various creative projects. I am a curious, open-minded person who is always ready to take action."
+	},
 	"portfolioProjects": {
 		"studio01Title": "studio01",
-		"studio01description": "lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"studio01description": "A photo shoot in a studio. Some of the photos were taken for Philocaly.",
 		"warsaw01Title": "warsaw01",
-		"warsaw01description": "lorem ipsum dolor sit amet, consectetur adipiscing elit",
+		"warsaw01description": "A photo shoot in Warsaw. Few people and some architecture.",
 		"jeremikarpTitle": "Jeremi Karp Portfolio",
-		"jeremikarpdescription": "lorem ipsum dolor sit amet, consectetur adipiscing elit"
+		"jeremikarpdescription": "My personal portfolio website, now in a new version with updated technology."
 	},
+	"steps": {
+		"ConsultationTitle": "Consultation",
+		"ConsultationDesc": "We get to know your needs and goals.",
+		"PlanningTitle": "Planning",
+		"PlanningDesc": "We create a project plan and site structure.",
+		"DesignTitle": "Design",
+		"DesignDesc": "Wireframes and UI/UX prototypes.",
+		"DevelopmentTitle": "Development",
+		"DevelopmentDesc": "Building the website and technology integrations.",
+		"TestingTitle": "Testing",
+		"TestingDesc": "Optimization, responsiveness, and fixes.",
+		"DeploymentTitle": "Deployment",
+		"DeploymentDesc": "Website launch and hosting configuration."
+	},
+	"levels": {
+		"Beginner": "Beginner",
+		"Intermediate": "Intermediate",
+		"Advanced": "Advanced",
+		"Expert": "Expert",
+		"Master": "Master"
+	},
+	"techDesc": {
+		"HTML": "Markup language for structuring web pages.",
+		"CSS": "Stylesheet language for designing web pages.",
+		"Sass": "CSS preprocessor for nested and maintainable styles.",
+		"JavaScript": "High-level programming language for web development.",
+		"TypeScript": "Superset of JavaScript adding static typing.",
+		"React": "Library for building user interfaces.",
+		"NextJs": "React framework for server-side rendering and fullstack apps.",
+		"Tailwind CSS": "Utility-first CSS framework for rapid UI development.",
+		"Framer Motion": "Animation library for React applications.",
+		"PHP": "Backend language used for web development and server-side logic.",
+		"SQL": "Structured Query Language for relational databases.",
+		"NodeJs": "JavaScript runtime for backend development.",
+		"ExpressJs": "Web framework for Node.js to build APIs quickly.",
+		"Supabase": "Open-source Firebase alternative with Postgres database.",
+		"Vercel": "Deployment and hosting platform for frontend apps.",
+		"Cloudflare": "CDN and security platform for web apps.",
+		"Git": "Distributed version control system.",
+		"GitHub": "Platform for hosting and collaborating on Git repositories.",
+		"ESLint": "Tool for identifying and reporting on code issues.",
+		"Prettier": "Code formatter for consistent code style."
+	},
+	"stats": {
+		"ProjectsDone": "Projects Done",
+		"HoursSpent": "Hours Spent",
+		"YearsExperience": "Years of Experience",
+		"CoursesCompleted": "Courses Completed",
+		"CoffeesDrank": "Coffees Drank",
+		"LearnedTech": "Learned Technology"
+	},
+	"faq": {
+		"Question1": "What technologies do you use most often?",
+		"Answer1": "I mostly work with React, Vite, Tailwind CSS, and Supabase. This allows me to build fast and scalable applications.",
 
+		"Question2": "How long does it take to complete a project?",
+		"Answer2": "Simple websites can be done in a few days, while more complex applications may take several weeks — it all depends on the scope.",
+
+		"Question3": "What does the collaboration process look like?",
+		"Answer3": "First, I discuss the requirements, then I prepare a plan and design, next I handle coding and deployment. Finally, I provide testing and support.",
+
+		"Question4": "Do you handle SEO and performance optimization?",
+		"Answer4": "Yes, I make sure that websites are fast, well-rated in Lighthouse, and optimized for SEO.",
+
+		"Question5": "Do you help with hosting and deployment?",
+		"Answer5": "Of course — I can advise on hosting options, configure the server, and deploy the website to production."
+	},
 	"contact": {
 		"CityCountry": "Łódź/Warsaw, Poland",
 		"WorkTime": "Mon - Fri, 10am - 8pm",

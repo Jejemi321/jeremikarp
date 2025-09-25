@@ -1,5 +1,3 @@
-//TODO change arrows for flaticon
-
 function Pagination({
 	totalPages,
 	currentPage,

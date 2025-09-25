@@ -1,3 +1,4 @@
+// TODO: add animation/fancy styles/responsive
 function PageTitle({
 	children,
 	home = false,
@@ -5,7 +6,6 @@ function PageTitle({
 	children: string;
 	home?: boolean;
 }) {
-	// TODO: add animation/fancy styles/responsive
 	return (
 		<h2
 			className={`mb-5 mt-2.5 ${

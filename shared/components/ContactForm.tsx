@@ -1,5 +1,5 @@
+//TODO: darkmode check
 "use client";
-
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -105,33 +105,33 @@ function ContactForm() {
 				{tForm("ContactForm")}
 			</h1>
 			<form className='p-2.5' onSubmit={handleSubmit}>
-				<div className='flex justify-between mt-5 gap-x-10'>
+				<div className='flex flex-col justify-between mt-5 sm:flex-row gap-x-10'>
 					<input
 						type='text'
-						className='w-1/2 pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:text-base text-foreground dark:text-dark-foreground'
+						className='pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 						placeholder={tForm("InputName")}
 						onChange={e => setForm({ ...Form, name: e.target.value })}
 						value={Form.name || ""}
 					/>
 					<input
 						type='text'
-						className='w-1/2 pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:text-base text-foreground dark:text-dark-foreground'
+						className='pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 						placeholder={tForm("InputCompany")}
 						onChange={e => setForm({ ...Form, company: e.target.value })}
 						value={Form.company || ""}
 					/>
 				</div>
-				<div className='flex justify-between mt-5 gap-x-10'>
+				<div className='flex flex-col justify-between mt-5 sm:flex-row gap-x-10'>
 					<input
 						type='text'
-						className='w-1/2 pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:text-base text-foreground dark:text-dark-foreground'
+						className='pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 						placeholder={tForm("InputNumber")}
 						onChange={e => setForm({ ...Form, number: e.target.value })}
 						value={Form.number || ""}
 					/>
 					<input
 						type='text'
-						className='w-1/2 pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:text-base text-foreground dark:text-dark-foreground'
+						className='pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 						placeholder={tForm("InputEmail")}
 						onChange={e => setForm({ ...Form, email: e.target.value })}
 						value={Form.email || ""}
@@ -144,7 +144,7 @@ function ContactForm() {
 						className='w-full h-32 pb-2 mb-5 text-sm tracking-wide border-b outline-none resize-none sm:text-base text-foreground dark:text-dark-foreground'
 						placeholder={tForm("InputMessages")}></textarea>
 				</div>
-				<div className='flex items-center justify-between mt-5'>
+				<div className='flex flex-col items-center justify-between mt-5 sm:flex-row'>
 					<label className='flex flex-col cursor-pointer'>
 						<div className='flex'>
 							<input
@@ -155,7 +155,7 @@ function ContactForm() {
 							/>
 							<p className='flex text-xs font-medium select-none gap-x-1 ms-2'>
 								{tForm("Accept")}
-								<Link href={"/PrivatePolicy"}>
+								<Link href={"/privatepolicy"}>
 									<span className='transition-opacity duration-300 ease-in-out hover:opacity-75'>
 										{tForm("PrivacyPolicy")}
 									</span>

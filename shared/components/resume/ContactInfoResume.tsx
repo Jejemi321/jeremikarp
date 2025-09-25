@@ -3,14 +3,16 @@ import { contactInfo, socialMedia } from "@/shared/constant/const";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionTitle from "../ui/SectionTitle";
+import { useTranslations } from "next-intl";
 
 function ContactInfoResume() {
 	const [Show, setShow] = useState<boolean>(false);
-
+	const tSection = useTranslations("sectionTitle");
+	const tBtn = useTranslations("btns");
 	return (
 		<>
 			<div className='flex justify-between'>
-				<SectionTitle>Contact Info</SectionTitle>
+				<SectionTitle>{tSection("ContactInfo")}</SectionTitle>
 				<p className='cursor-pointer' onClick={() => setShow(!Show)}>
 					{!Show ? "Show" : "Hide"}
 				</p>
@@ -25,7 +27,7 @@ function ContactInfoResume() {
 						<i className={`${el.iconClass} text-lg`}></i>
 						<AnimatePresence mode='wait'>
 							<motion.p
-								key={Show ? el.value : el.name}
+								key={el.name}
 								initial={{ opacity: 0, y: 5 }}
 								animate={{ opacity: 1, y: 0 }}
 								exit={{ opacity: 0, y: -5 }}

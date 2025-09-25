@@ -3,11 +3,16 @@ import { TechStackArray } from "@/shared/constant/TechStack";
 import SectionTitle from "../ui/SectionTitle";
 import TechIcon from "../TechIcon";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 function AbtMeSkills() {
+	const tLevels = useTranslations("levels");
+	const tDesc = useTranslations("techDesc");
+	const tSection = useTranslations("sectionTitle");
+
 	return (
 		<>
-			<SectionTitle>Most Important Skills</SectionTitle>
+			<SectionTitle>{tSection("MostImportantSkills")}</SectionTitle>
 			<div className='grid grid-cols-1 gap-4 mb-4 sm:grid-cols-2 lg:grid-cols-3'>
 				{TechStackArray.filter(a => a?.star).map((el, i) => (
 					<motion.div
@@ -20,10 +25,12 @@ function AbtMeSkills() {
                                    hover:shadow-md hover:scale-[1.02] transition-transform cursor-default'>
 						<div className='flex items-center justify-between mb-2'>
 							<TechIcon id={el.id} />
-							<span className='text-sm font-medium'>{el.knowledge}</span>
+							<span className='text-sm font-medium'>
+								{tLevels(el.knowledge)}
+							</span>
 						</div>
 						<p className='text-sm leading-snug text-gray-300'>
-							{el.description}
+							{tDesc(el.name)}
 						</p>
 					</motion.div>
 				))}

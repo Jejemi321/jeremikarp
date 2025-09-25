@@ -10,11 +10,11 @@ function EducationResume() {
 				<div>
 					<h2 className='mb-6 text-xl font-bold text-center'>Schools</h2>
 					<ul className='relative pr-6 space-y-6'>
-						{SchoolsArray.reverse().map((item, index) => (
+						{[...SchoolsArray].reverse().map((item, index) => (
 							<li key={index}>
 								<div className='p-4 transition shadow rounded-xl bg-white/5 hover:shadow-md'>
 									<p className='text-sm text-gray-500'>
-										{item.from} – {item.to}
+										{item.from} {"–"} {item.to}
 									</p>
 									<a
 										target='_blank'
