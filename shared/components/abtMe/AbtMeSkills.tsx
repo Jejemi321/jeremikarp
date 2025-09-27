@@ -30,7 +30,7 @@ function AbtMeSkills() {
 							</span>
 						</div>
 						<p className='text-sm leading-snug text-gray-300'>
-							{tDesc(el.name)}
+							{tDesc(el.id.toString())}
 						</p>
 					</motion.div>
 				))}

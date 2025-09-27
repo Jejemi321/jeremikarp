@@ -1,4 +1,3 @@
-// TODO: add animation/fancy styles/responsive
 function PageTitle({
 	children,
 	home = false,

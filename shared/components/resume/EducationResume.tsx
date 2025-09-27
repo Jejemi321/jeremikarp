@@ -1,15 +1,18 @@
-import { SchoolsArray, TrainingArray } from "@/shared/constant/const";
+import { SchoolsArray } from "@/shared/constant/const";
 import SectionTitle from "../ui/SectionTitle";
+import { useTranslations } from "next-intl";
 
 function EducationResume() {
+	const tSection = useTranslations("sectionTitle");
+	const tEducation = useTranslations("Education");
 	return (
 		<>
-			<SectionTitle>Education</SectionTitle>
+			<SectionTitle>{tSection("Education")}</SectionTitle>
 			<div className='flex justify-center'>
 				{/* Schools */}
 				<div>
 					<h2 className='mb-6 text-xl font-bold text-center'>Schools</h2>
-					<ul className='relative pr-6 space-y-6'>
+					<ul className='relative space-y-6 md:pr-6'>
 						{[...SchoolsArray].reverse().map((item, index) => (
 							<li key={index}>
 								<div className='p-4 transition shadow rounded-xl bg-white/5 hover:shadow-md'>
@@ -20,10 +23,10 @@ function EducationResume() {
 										target='_blank'
 										href={item.web}
 										className='text-lg font-semibold hover:opacity-75'>
-										{item.name}
+										{tEducation(item.id.toString())}
 									</a>
 									<p className='text-gray-700 dark:text-gray-300'>
-										{item.level}
+										{tEducation(item.level)}
 									</p>
 								</div>
 							</li>

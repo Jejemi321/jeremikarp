@@ -1,11 +1,14 @@
 import { Language } from "@/shared/constant/const";
 import Image from "next/image";
 import SectionTitle from "../ui/SectionTitle";
+import { useTranslations } from "next-intl";
 
 function LanguagesResume() {
+	const tSection = useTranslations("sectionTitle");
+	const tLanguage = useTranslations("Languages");
 	return (
 		<>
-			<SectionTitle>Languages</SectionTitle>
+			<SectionTitle>{tSection("Languages")}</SectionTitle>
 			<div className='grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2'>
 				{Language.map(el => (
 					<div
@@ -20,11 +23,13 @@ function LanguagesResume() {
 								src={`https://flagsapi.com/${el.short}/flat/64.png`}
 							/>
 
-							<p className='text-lg font-medium'>{el.name}</p>
+							<p className='text-lg font-medium'>{tLanguage(el.name)}</p>
 						</div>
 						<div className='flex gap-x-0.5'>
-							<p>Level:</p>
-							<p className=''>{el.level}</p>
+							<p>{tLanguage("Level")}:</p>
+							<p className=''>
+								{el.level == "Native" ? tLanguage(el.level) : el.level}
+							</p>
 						</div>
 					</div>
 				))}

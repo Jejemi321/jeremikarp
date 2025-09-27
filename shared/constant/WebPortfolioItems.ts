@@ -1,23 +1,31 @@
 import { PortfolioItem } from "./PortfolioItems";
-type statusType = "Archive" | "In Progress" | "Finish";
+type statusType = "Archive" | "InProgress" | "Finish";
 type roleType =
 	| "Frontend Developer"
 	| "FullStack Developer"
 	| "Backend Developer"
 	| "Designer";
+type duration =
+	| "Week"
+	| "2Weeks"
+	| "3Weeks"
+	| "Month"
+	| "2Months"
+	| "3Months"
+	| "6Months";
 export interface WebPortfolioItemType extends Omit<PortfolioItem, "id"> {
 	techStack?: number[];
 	imgArray?: string[];
 	starterDate?: string;
 	url?: string;
-	status?: statusType;
+	status: statusType;
 	role?: roleType;
 	performanceScore?: number;
 	accessibilityScore?: number;
 	bestPracticeScore?: number;
 	seoScore?: number;
 	teamSize?: number;
-	duration: string;
+	duration: duration;
 	supportedLanguages?: string[];
 	darkMode?: boolean;
 	client?: string;
@@ -38,10 +46,10 @@ const WebPortfolioItems: WebPortfolioItemType[] = [
 		status: "Finish",
 		client: "Jeremi Karp",
 		role: "FullStack Developer",
-		duration: "month",
+		duration: "Month",
 		darkMode: true,
 		supportedLanguages: ["EN", "PL"],
-		techStack: [1, 5, 7, 8, 9, 15, 18, 19, 20],
+		techStack: [1, 5, 7, 8, 9, 15, 18, 19, 20, 22, 23, 24, 25, 26, 27],
 		imgArray: [
 			"/assets/img/portfolio/blank.jpg",
 			"/assets/img/portfolio/blank.jpg",

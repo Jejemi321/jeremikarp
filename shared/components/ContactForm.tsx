@@ -1,4 +1,4 @@
-//TODO: darkmode check
+//TODO: send vercel
 "use client";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -13,14 +13,7 @@ interface FormInterface {
 	number: string;
 	message: string;
 }
-interface FormInterfaceError {
-	name: number;
-	email: number;
-	company: number;
-	number: number;
-	message: number;
-	agree: number;
-}
+
 type status = "idle" | "sending" | "sent" | "failed";
 function ContactForm() {
 	const [Form, setForm] = useState<FormInterface>({
@@ -30,14 +23,7 @@ function ContactForm() {
 		number: "",
 		message: "",
 	});
-	const [FormErrors, setFormError] = useState<FormInterfaceError>({
-		name: 0,
-		company: 0,
-		email: 0,
-		number: 0,
-		message: 0,
-		agree: 0,
-	});
+
 	const [status, setStatus] = useState<status>("idle"); //! idle, sending, sent, failed
 	const [agree, setagree] = useState<boolean>(false);
 
@@ -67,6 +53,7 @@ function ContactForm() {
 		const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
 		const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
 		const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+		console.log(serviceId, templateId, publicKey);
 		setStatus("sending");
 		const templatePrams = {
 			from_name: Form.name,

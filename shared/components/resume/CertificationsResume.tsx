@@ -2,13 +2,17 @@ import { TrainingArray } from "@/shared/constant/const";
 import SectionTitle from "../ui/SectionTitle";
 import TechIcon from "../TechIcon";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 function CertificationsResume() {
+	const tMonth = useTranslations("months");
+	const tSection = useTranslations("sectionTitle");
+	const tTrainings = useTranslations("Trainings");
 	return (
 		<section className='py-12'>
-			<SectionTitle>Kursy & Certyfikaty</SectionTitle>
+			<SectionTitle>{tSection("Trainings")}</SectionTitle>
 			<div className='grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 lg:grid-cols-3'>
-				{TrainingArray.map((el, i) => (
+				{[...TrainingArray].reverse().map((el, i) => (
 					<motion.a
 						key={el.id}
 						initial={{ opacity: 0, y: 20 }}
@@ -23,10 +27,10 @@ function CertificationsResume() {
 							) : (
 								<i className={`${el.iconClass} text-2xl`} />
 							)}
-							<p className='font-medium'>{el.name}</p>
+							<p className='font-medium'>{tTrainings(el.id.toString())}</p>
 						</div>
 						<div className='w-1/3 text-sm text-gray-300 text-end'>
-							{el.month}, {el.year}
+							{tMonth(el.month)}, {el.year}
 						</div>
 					</motion.a>
 				))}

@@ -1,3 +1,4 @@
+"use client";
 import { TrainingArray } from "@/shared/constant/const";
 import SectionTitle from "../ui/SectionTitle";
 import { PortfolioItems } from "@/shared/constant/PortfolioItems";

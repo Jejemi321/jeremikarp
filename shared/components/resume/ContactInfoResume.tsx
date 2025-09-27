@@ -8,7 +8,6 @@ import { useTranslations } from "next-intl";
 function ContactInfoResume() {
 	const [Show, setShow] = useState<boolean>(false);
 	const tSection = useTranslations("sectionTitle");
-	const tBtn = useTranslations("btns");
 	return (
 		<>
 			<div className='flex justify-between'>
@@ -17,7 +16,7 @@ function ContactInfoResume() {
 					{!Show ? "Show" : "Hide"}
 				</p>
 			</div>
-			<div className='grid grid-cols-3 gap-4'>
+			<div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3'>
 				{contactInfo.map(el => (
 					<a
 						key={el.id}
@@ -27,7 +26,7 @@ function ContactInfoResume() {
 						<i className={`${el.iconClass} text-lg`}></i>
 						<AnimatePresence mode='wait'>
 							<motion.p
-								key={el.name}
+								key={Show ? el.value : el.name}
 								initial={{ opacity: 0, y: 5 }}
 								animate={{ opacity: 1, y: 0 }}
 								exit={{ opacity: 0, y: -5 }}
@@ -52,7 +51,7 @@ function ContactInfoResume() {
 								animate={{ opacity: 1, y: 0 }}
 								exit={{ opacity: 0, y: -5 }}
 								transition={{ duration: 0.25 }}>
-								{Show ? el.link : el.name}
+								{Show ? el.link.replace(/^https?:\/\/www./, "") : el.name}
 							</motion.p>
 						</AnimatePresence>
 					</a>

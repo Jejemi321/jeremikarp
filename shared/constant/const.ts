@@ -192,6 +192,7 @@ export const TrainingArray: Training[] = [
 		publisher: "Competence Development Center of Łódź Voivodeship",
 		month: "May",
 		year: "2023",
+		iconClass: "fi fi-rr-square-code",
 	},
 	{
 		id: 3,
@@ -199,6 +200,7 @@ export const TrainingArray: Training[] = [
 		publisher: "Civil Aviation Authority (Poland)",
 		month: "November",
 		year: "2023",
+		iconClass: "fi fi-rr-drone",
 	},
 	{
 		id: 4,
@@ -206,6 +208,7 @@ export const TrainingArray: Training[] = [
 		publisher: "EFFECT",
 		month: "January",
 		year: "2024",
+		iconClass: "fi fi-rr-book-alt",
 	},
 	{
 		id: 5,
@@ -213,6 +216,7 @@ export const TrainingArray: Training[] = [
 		publisher: "Mayor of Łódź",
 		month: "May",
 		year: "2024",
+		iconClass: "fi fi-rr-car-side",
 	},
 	{
 		id: 6,
@@ -220,6 +224,7 @@ export const TrainingArray: Training[] = [
 		publisher: "OKE in Warsaw",
 		month: "May",
 		year: "2025",
+		iconClass: "fi fi-rr-test",
 	},
 ];
 type Schools = {
@@ -234,7 +239,7 @@ export const SchoolsArray: Schools[] = [
 	{
 		id: 1,
 		name: "Primary School No. 71",
-		level: "Primary Education",
+		level: "PrimaryEducation",
 		from: "2013",
 		to: "2017",
 		web: "https://sp71.lodz.pl/",
@@ -242,7 +247,7 @@ export const SchoolsArray: Schools[] = [
 	{
 		id: 2,
 		name: "Catholic School Complex named after John Paul II",
-		level: "Primary Education",
+		level: "PrimaryEducation",
 		from: "2017",
 		to: "2021",
 		web: "https://katolik.edu.pl/",
@@ -250,7 +255,7 @@ export const SchoolsArray: Schools[] = [
 	{
 		id: 3,
 		name: "Benedict Schools in Sulejówek – Homeschooling (Primary & High School)",
-		level: "Secondary Education",
+		level: "SecondaryEducation",
 		from: "2021",
 		to: "2025",
 		web: "https://szkolybenedykta.pl/",

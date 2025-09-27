@@ -1,6 +1,7 @@
 {
 	"cSpell.words": [
 		"adipiscing",
+		"anonimizowane",
 		"backendowy",
 		"backendu",
 		"cupiditate",
@@ -12,6 +13,7 @@
 		"flaticon",
 		"frontendowych",
 		"hostowania",
+		"hostowany",
 		"jeremikarp",
 		"jeremikarpdescription",
 		"NSTS",
@@ -26,9 +28,13 @@
 		"Stylesheet",
 		"uicons",
 		"uruchomieniowe",
+		"vercel",
 		"Vero",
 		"Voivodeship",
 		"voluptatem",
 		"Wireframes"
-	]
+	],
+	"css.lint.unknownAtRules": "ignore",
+	"scss.lint.unknownAtRules": "ignore",
+	"less.lint.unknownAtRules": "ignore"
 }

@@ -1,4 +1,4 @@
-// TODO: animations/404page/optymalizacja
+// TODO: animations/vercel send error
 import AbtMeHowIWork from "@/shared/components/abtMe/AbtMeHowIWork";
 import ContactInfo from "@/shared/components/ContactInfo";
 import HomeHeader from "@/shared/components/HomeHeader";

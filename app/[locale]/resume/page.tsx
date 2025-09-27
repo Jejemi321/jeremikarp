@@ -1,4 +1,3 @@
-//TODO i18n
 "use client";
 import CertificationsResume from "@/shared/components/resume/CertificationsResume";
 import ContactInfoResume from "@/shared/components/resume/ContactInfoResume";
@@ -14,7 +13,7 @@ import BasicInfo from "@/shared/components/BasicInfo";
 function Resume() {
 	const tNav = useTranslations("nav");
 	return (
-		<div className='mx-50'>
+		<div className='mx-2.5 sm:mx-5 md:mx-10 lg:mx-15 xl:mx-30 2xl:mx-60'>
 			<PageTitle>{tNav("Resume")}</PageTitle>
 			<BasicInfo />
 			<ContactInfoResume />

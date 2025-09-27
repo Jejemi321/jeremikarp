@@ -26,7 +26,7 @@ export default async function PortfolioItemPage({
 	if (!item) notFound();
 
 	return (
-		<div className='px-2.5 sm:px-5 md:px-10 lg:px-15 xl:px-30 2xl:px-60 py-10'>
+		<div className='px-2 sm:px-2.5 md:px-5 lg:px-10 xl:px-15 2xl:px-30 py-10'>
 			<Link href={`/${locale}/portfolio`}>
 				<i className='text-3xl fi fi-rr-arrow-small-left size-5'></i>
 			</Link>

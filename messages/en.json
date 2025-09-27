@@ -31,9 +31,50 @@
 		"Stats": "Stats",
 		"Projects": "Projects",
 		"CoWorkers": "Co-Workers",
-		"ContactInfo": "Contact Info"
+		"ContactInfo": "Contact Info",
+		"TechSkills": "Tech Skills",
+		"Languages": "Languages",
+		"Education": "Education",
+		"Trainings": "Trainings"
+	},
+	"Trainings": {
+		"1": "Yacht Helmsman",
+		"2": "INF-03 Course",
+		"3": "NSTS - 06(Drone Licence)",
+		"4": "EFFECT - Speed Reading and Effective Learning Course",
+		"5": "Driving License Category B",
+		"6": "High School Final Exams (Matura)"
+	},
+	"months": {
+		"January": "January",
+		"February": "February",
+		"March": "March",
+		"April": "April",
+		"May": "May",
+		"June": "June",
+		"July": "July",
+		"August": "August",
+		"September": "September",
+		"October": "October",
+		"November": "November",
+		"December": "December"
+	},
+	"Education": {
+		"PrimaryEducation": "Primary Education",
+		"SecondaryEducation": "Secondary Education",
+		"University": "University",
+		"1": "Primary School No. 71",
+		"2": "Catholic School Complex named after John Paul II",
+		"3": "Benedict Schools in Sulejówek – Homeschooling (Primary & High School)",
+		"4": "Higher School of Vocational Education"
 	},
 
+	"Languages": {
+		"Polish": "Polish",
+		"English": "English",
+		"Native": "Native",
+		"Level": "Level"
+	},
 	"privatePolicy": {
 		"title": "Privacy Policy",
 		"text": "1. General Information\n\nThis policy applies to the website operating at: jeremikarp.com\nThe operator of the website and the administrator of personal data is: Jeremi Karp\nContact email: jeremikarp@gmail.com\nThe operator is the administrator of your personal data with respect to data voluntarily provided on the website.\nThe website uses personal data for the following purposes: handling inquiries via the contact form.\nThe website collects information about users and their behavior as follows: through voluntarily entered data in forms, which is stored in the operator’s systems, and through storing cookies on user devices.\n\n2. Selected Data Protection Methods\n\nLogin and data entry areas are protected by transmission layer security (SSL certificate). Thanks to this, personal data and login data entered on the site are encrypted on the user’s computer and can be read only on the target server.\nThe operator periodically changes administrative passwords.\nAn important part of data protection is the regular update of all software used by the operator to process personal data, in particular regular updates of programming components.\n\n3. Hosting\n\nThe website is hosted (technically maintained) on servers of another company.\nThe hosting company ensures technical reliability by keeping server logs. These logs may include: requested resources, request arrival time, response time, client station name, error information, referrer URL, browser information, IP address, diagnostics related to ordering services, and email handling.\n\n4. Your Rights and Additional Information\n\nThe administrator may transfer your personal data to other recipients if necessary to perform an agreement with you or fulfill legal obligations. This applies to such groups: authorized employees and collaborators, hosting provider, mailing and SMS providers, marketing partners, couriers, insurers, law firms, banks, payment operators, and public authorities.\nYour personal data is processed no longer than necessary. Marketing data will not be processed for more than 3 years.\nYou have the right to request: access to your data, rectification, deletion, restriction of processing, and data portability. You also have the right to object to processing for marketing purposes.\nYou can lodge a complaint with the President of the Personal Data Protection Office.\nProviding personal data is voluntary but necessary to use the website.\nPersonal data is not transferred outside the European Union.\n\n5. Information in Forms\n\nThe website collects information voluntarily provided by users, including personal data, if provided.\nThe website may store information about connection parameters (time, IP address).\nData provided in forms is processed for purposes resulting from the function of a specific form, e.g., service requests, business contact, service registration.\n\n6. Administrator Logs\n\nInformation about user behavior in the website may be logged. This data is used to administer the website.\n\n7. Important Marketing Techniques\n\nThe operator uses statistical traffic analysis via Google Analytics (Google Inc., USA). Data is anonymized and based on cookies. Users can edit their ad preferences at: https://www.google.com/ads/preferences/\n\n8. Cookies Information\n\nThe website uses cookies. Cookies are IT data stored on the user’s device, intended for use with the website. Cookies may be session or persistent.\nUsers may change cookie settings in their browser. Restrictions on cookies may affect some website functionalities.\nCookies may also be used by cooperating entities, in particular Google, Facebook, Twitter.\n\n9. Cookie Management\n\nUsers can change cookie settings at any time in their browser. Instructions are available in the documentation of individual browsers and mobile devices.."
@@ -64,7 +105,41 @@
 		"Favorites": "Favorites",
 		"ViewDetails": "View Details"
 	},
-	"portfolioWeb": {},
+	"time": {
+		"since": "since",
+		"Week": "Week",
+		"2Weeks": "2 Weeks",
+		"3Weeks": "3 Weeks",
+		"Month": "Month",
+		"2Months": "2 Months",
+		"3Months": "3 Months",
+		"6Months": "6 Months"
+	},
+	"NotFound": {
+		"404Portfolio": "Oops! We couldn't find a project with the given ID. Check out other projects in the portfolio.",
+		"RedirectingPortfolio": "Redirecting to portfolio in",
+		"GoNow": "Go Now",
+		"404Home": "Oops! Something went wrong please wait we redirect you to main page",
+		"RedirectingHome": "Redirecting to Home in"
+	},
+	"portfolioWeb": {
+		"LivePreviewWarning": "Preview may differ from the site.",
+		"LivePreviewBtnWarning": "Open in new tab.",
+		"BasicInfo": "Basic Info",
+		"Title": "Title",
+		"Finish": "Finish",
+		"InProgress": "In Progress",
+		"Archive": "Archive",
+		"Role": "Role",
+		"Client": "Client",
+		"Duration": "Duration",
+		"From": "From",
+		"To": "To",
+		"Features": "Features",
+		"Languages": "Languages",
+		"Yes": "Yes",
+		"No": "No"
+	},
 	"btns": {
 		"ShowMore": "Show more",
 		"Phone": "Phone"
@@ -101,27 +176,44 @@
 		"Expert": "Expert",
 		"Master": "Master"
 	},
+	"categoriesTech": {
+		"All": "All",
+		"Frontend": "Frontend",
+		"Backend": "Backend",
+		"Database": "Database",
+		"Deployment": "Deployment",
+		"Tools": "Tools"
+	},
 	"techDesc": {
-		"HTML": "Markup language for structuring web pages.",
-		"CSS": "Stylesheet language for designing web pages.",
-		"Sass": "CSS preprocessor for nested and maintainable styles.",
-		"JavaScript": "High-level programming language for web development.",
-		"TypeScript": "Superset of JavaScript adding static typing.",
-		"React": "Library for building user interfaces.",
-		"NextJs": "React framework for server-side rendering and fullstack apps.",
-		"Tailwind CSS": "Utility-first CSS framework for rapid UI development.",
-		"Framer Motion": "Animation library for React applications.",
-		"PHP": "Backend language used for web development and server-side logic.",
-		"SQL": "Structured Query Language for relational databases.",
-		"NodeJs": "JavaScript runtime for backend development.",
-		"ExpressJs": "Web framework for Node.js to build APIs quickly.",
-		"Supabase": "Open-source Firebase alternative with Postgres database.",
-		"Vercel": "Deployment and hosting platform for frontend apps.",
-		"Cloudflare": "CDN and security platform for web apps.",
-		"Git": "Distributed version control system.",
-		"GitHub": "Platform for hosting and collaborating on Git repositories.",
-		"ESLint": "Tool for identifying and reporting on code issues.",
-		"Prettier": "Code formatter for consistent code style."
+		"Documentation": "Documentation",
+
+		"1": "Markup language for structuring web pages.",
+		"2": "Stylesheet language for designing web pages.",
+		"3": "CSS preprocessor for nested and maintainable styles.",
+		"4": "High-level programming language for web development.",
+		"5": "Superset of JavaScript adding static typing.",
+		"6": "Library for building user interfaces.",
+		"7": "React framework for server-side rendering and fullstack apps.",
+		"8": "Utility-first CSS framework for rapid UI development.",
+		"9": "Animation library for React applications.",
+		"10": "Backend language used for web development and server-side logic.",
+		"11": "Structured Query Language for relational databases.",
+		"12": "JavaScript runtime for backend development.",
+		"13": "Web framework for Node.js to build APIs quickly.",
+		"14": "Open-source Firebase alternative with Postgres database.",
+		"15": "Deployment and hosting platform for frontend apps.",
+		"16": "CDN and security platform for web apps.",
+		"17": "Distributed version control system.",
+		"18": "Platform for hosting and collaborating on Git repositories.",
+		"19": "Tool for identifying and reporting on code issues.",
+		"20": "Code formatter for consistent code style.",
+		"21": "Modern mobile touch slider with hardware accelerated transitions.",
+		"22": "Popular icon sets as React components.",
+		"23": "Animated hamburger menu icons for React.",
+		"24": "An opinionated toast component for React apps.",
+		"25": "Send emails directly from client-side JavaScript without a backend.",
+		"26": "Internationalization framework for React.",
+		"27": "Tailwind CSS plugin to style scrollbars."
 	},
 	"stats": {
 		"ProjectsDone": "Projects Done",

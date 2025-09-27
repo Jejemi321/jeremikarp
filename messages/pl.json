@@ -22,6 +22,17 @@
 		"title": "Polityka Prywatności",
 		"text": "1. Informacje ogólne\n\nNiniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem url: jeremikarp.com\nOperatorem serwisu oraz Administratorem danych osobowych jest: Jeremi Karp\nAdres kontaktowy poczty elektronicznej operatora: jeremikarp@gmail.com\nOperator jest Administratorem Twoich danych osobowych w odniesieniu do danych podanych dobrowolnie w Serwisie.\nSerwis wykorzystuje dane osobowe w następujących celach: Obsługa zapytań przez formularz.\nSerwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu w następujący sposób: poprzez dobrowolnie wprowadzone w formularzach dane, które zostają wprowadzone do systemów Operatora oraz poprzez zapisywanie w urządzeniach końcowych plików cookie (tzw. „ciasteczka”).\n\n2. Wybrane metody ochrony danych stosowane przez Operatora\n\nMiejsca logowania i wprowadzania danych osobowych są chronione w warstwie transmisji (certyfikat SSL). Dzięki temu dane osobowe i dane logowania, wprowadzone na stronie, zostają zaszyfrowane w komputerze użytkownika i mogą być odczytane jedynie na docelowym serwerze.\nOperator okresowo zmienia swoje hasła administracyjne.\nIstotnym elementem ochrony danych jest regularna aktualizacja wszelkiego oprogramowania, wykorzystywanego przez Operatora do przetwarzania danych osobowych, co w szczególności oznacza regularne aktualizacje komponentów programistycznych.\n\n3. Hosting\n\nSerwis jest hostowany (technicznie utrzymywany) na serwerach operatora: inna firma.\nFirma hostingowa w celu zapewnienia niezawodności technicznej prowadzi logi na poziomie serwera. Zapisowi mogą podlegać: zasoby określone identyfikatorem URL, czas nadejścia zapytania, czas wysłania odpowiedzi, nazwa stacji klienta, informacje o błędach jakie nastąpiły przy realizacji transakcji HTTP, adres URL strony poprzednio odwiedzanej przez użytkownika (referer link), informacje o przeglądarce użytkownika, informacje o adresie IP, informacje diagnostyczne związane z procesem samodzielnego zamawiania usług, informacje związane z obsługą poczty elektronicznej kierowanej do Operatora.\n\n4. Twoje prawa i dodatkowe informacje o sposobie wykorzystania danych\n\nAdministrator może przekazywać Twoje dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. Dotyczy to takich grup odbiorców: osoby upoważnione przez nas, firma hostingowa, firmy obsługujące mailingi i SMS, partnerzy marketingowi, kurierzy, ubezpieczyciele, kancelarie prawne, banki, operatorzy płatności, organy publiczne.\nTwoje dane osobowe przetwarzane są nie dłużej niż jest to konieczne do wykonania związanych z nimi czynności. Dane marketingowe nie będą przetwarzane dłużej niż 3 lata.\nPrzysługuje Ci prawo żądania od Administratora dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania oraz przenoszenia danych. Masz prawo sprzeciwu wobec przetwarzania danych osobowych w celu marketingowym.\nNa działania Administratora przysługuje skarga do Prezesa Urzędu Ochrony Danych Osobowych.\nPodanie danych osobowych jest dobrowolne, lecz niezbędne do obsługi Serwisu.\nDane osobowe nie są przekazywane poza teren Unii Europejskiej.\n\n5. Informacje w formularzach\n\nSerwis zbiera informacje podane dobrowolnie przez użytkownika, w tym dane osobowe, o ile zostaną one podane.\nSerwis może zapisać informacje o parametrach połączenia (czas, adres IP).\nDane podane w formularzu są przetwarzane w celu wynikającym z funkcji formularza, np. obsługi zgłoszenia serwisowego, kontaktu handlowego, rejestracji usług.\n\n6. Logi Administratora\n\nInformacje o zachowaniu użytkowników w serwisie mogą podlegać logowaniu. Dane te są wykorzystywane w celu administrowania serwisem.\n\n7. Istotne techniki marketingowe\n\nOperator stosuje analizę statystyczną ruchu na stronie poprzez Google Analytics (Google Inc., USA). Dane są anonimizowane i bazują na plikach cookies. Użytkownik może edytować swoje preferencje reklamowe pod adresem: https://www.google.com/ads/preferences/\n\n8. Informacja o plikach cookies\n\nSerwis korzysta z plików cookies. Cookies to dane informatyczne, przechowywane w urządzeniu końcowym użytkownika, przeznaczone do korzystania ze stron internetowych. Cookies mogą być sesyjne lub stałe.\nUżytkownicy mogą zmieniać ustawienia dotyczące cookies w swojej przeglądarce. Ograniczenia stosowania cookies mogą wpłynąć na niektóre funkcjonalności serwisu.\nCookies mogą być również wykorzystywane przez współpracujące podmioty, w szczególności Google, Facebook, Twitter.\n\n9. Zarządzanie plikami cookies\n\nUżytkownik może w każdej chwili zmienić ustawienia dotyczące cookies w swojej przeglądarce. Instrukcje dostępne są w dokumentacji poszczególnych przeglądarek i urządzeń mobilnych."
 	},
+	"time": {
+		"since": "od",
+		"Week": "Tydzień",
+		"2Weeks": "2 Tygodnie",
+		"3Weeks": "3 Tygodnie",
+		"Month": "Miesiąc",
+		"2Months": "2 Miesiące",
+		"3Months": "3 Miesiące",
+		"6Months": "6 Miesięcy"
+	},
+
 	"sectionTitle": {
 		"HowIWork": "Jak pracuję",
 		"BasicInfo": "Podstawowe informacje",
@@ -29,7 +40,55 @@
 		"Stats": "Statystyki",
 		"Projects": "Projekty",
 		"CoWorkers": "Współpracownicy",
-		"ContactInfo": "Informacje kontaktowe"
+		"ContactInfo": "Informacje kontaktowe",
+		"TechSkills": "Umiejętności techniczne",
+		"Languages": "Język",
+		"Education": "Edukacja",
+		"Trainings": "Kursy"
+	},
+	"Education": {
+		"PrimaryEducation": "Szkoła Podstawowa",
+		"SecondaryEducation": "Liceum",
+		"University": "Studia",
+		"1": "Szkoła podstawowa nr. 71",
+		"2": "Zespół Szkół Katolickich im. Jana Pawła II",
+		"3": "Szkoły Benedykta w Sulejówku – Nauczanie domowe",
+		"4": "Wyższa Szkoła Kształcenia Zawodowego"
+	},
+	"NotFound": {
+		"404Portfolio": "Ups! Nie znaleźliśmy projektu o podanym ID. Sprawdź inne projekty w portfolio.",
+		"RedirectingPortfolio": "Przekierowanie do portfolio za",
+		"GoNow": "Idź teraz",
+		"404Home": "Ups! Coś poszło nie tak, poczekaj chwilę, przenosimy Cię na stronę główną",
+		"RedirectingHome": "Przekierowanie na stronę główną za"
+	},
+	"Trainings": {
+		"1": "Sternik jachtowy",
+		"2": "Kurs INF-03",
+		"3": "NSTS - 06 (Licencja drona)",
+		"4": "EFFECT - Kurs szybkiego czytania i skutecznej nauki",
+		"5": "Prawo jazdy kategorii B",
+		"6": "Egzaminy końcowe w liceum (Matura)"
+	},
+	"months": {
+		"January": "Styczeń",
+		"February": "Luty",
+		"March": "Marzec",
+		"April": "Kwiecień",
+		"May": "Maj",
+		"June": "Czerwiec",
+		"July": "Lipiec",
+		"August": "Sierpień",
+		"September": "Wrzesień",
+		"October": "Październik",
+		"November": "Listopad",
+		"December": "Grudzień"
+	},
+	"Languages": {
+		"Polish": "Polski",
+		"English": "Angielski",
+		"Native": "Ojczysty",
+		"Level": "Poziom"
 	},
 	"Hobby": {
 		"Movies": "Filmy",
@@ -75,27 +134,43 @@
 		"CoffeesDrank": "Ilość kaw wypitych",
 		"LearnedTech": "Poznane technologie"
 	},
+	"categoriesTech": {
+		"All": "Wszystkie",
+		"Frontend": "Frontend",
+		"Backend": "Backend",
+		"Database": "Bazy danych",
+		"Deployment": "Wdrażanie",
+		"Tools": "Narzędzia"
+	},
 	"techDesc": {
-		"HTML": "Język znaczników do strukturyzowania stron internetowych.",
-		"CSS": "Język stylów do projektowania stron internetowych.",
-		"Sass": "Preprocessor CSS dla zagnieżdżonych i łatwych w utrzymaniu stylów.",
-		"JavaScript": "Język programowania wysokiego poziomu do tworzenia aplikacji webowych.",
-		"TypeScript": "Nadzbiór JavaScript z typowaniem statycznym.",
-		"React": "Biblioteka do budowy interfejsów użytkownika.",
-		"NextJs": "Framework React do SSR i aplikacji fullstack.",
-		"Tailwind CSS": "Framework CSS oparty na klasach użytkowych do szybkiego tworzenia UI.",
-		"Framer Motion": "Biblioteka animacji dla aplikacji React.",
-		"PHP": "Język backendowy do tworzenia stron i logiki serwerowej.",
-		"SQL": "Język zapytań do relacyjnych baz danych.",
-		"NodeJs": "Środowisko uruchomieniowe JavaScript dla backendu.",
-		"ExpressJs": "Framework dla Node.js do szybkiego budowania API.",
-		"Supabase": "Otwarta alternatywa dla Firebase z bazą Postgres.",
-		"Vercel": "Platforma do hostingu i wdrażania aplikacji frontendowych.",
-		"Cloudflare": "CDN i platforma bezpieczeństwa dla aplikacji webowych.",
-		"Git": "Rozproszony system kontroli wersji.",
-		"GitHub": "Platforma do hostowania i współpracy nad repozytoriami Git.",
-		"ESLint": "Narzędzie do wykrywania i raportowania problemów w kodzie.",
-		"Prettier": "Formatowanie kodu dla spójnego stylu."
+		"Documentation": "Dokumentacja",
+		"1": "Język znaczników do strukturyzowania stron internetowych.",
+		"2": "Język arkuszy stylów do projektowania stron internetowych.",
+		"3": "Preprocesor CSS umożliwiający zagnieżdżanie i łatwe utrzymanie stylów.",
+		"4": "Wysokopoziomowy język programowania do tworzenia stron internetowych.",
+		"5": "Nadzbiór JavaScript dodający statyczne typowanie.",
+		"6": "Biblioteka do tworzenia interfejsów użytkownika.",
+		"7": "Framework React do renderowania po stronie serwera i aplikacji fullstack.",
+		"8": "Framework CSS oparty na utility-first do szybkiego tworzenia UI.",
+		"9": "Biblioteka do animacji w aplikacjach React.",
+		"10": "Język backendowy używany do tworzenia stron i logiki po stronie serwera.",
+		"11": "Język zapytań strukturalnych dla relacyjnych baz danych.",
+		"12": "Środowisko uruchomieniowe JavaScript dla backendu.",
+		"13": "Framework webowy dla Node.js do szybkiego tworzenia API.",
+		"14": "Open-source alternatywa dla Firebase z bazą danych Postgres.",
+		"15": "Platforma do wdrażania i hostingu aplikacji frontendowych.",
+		"16": "Platforma CDN i zabezpieczeń dla aplikacji webowych.",
+		"17": "Rozproszony system kontroli wersji.",
+		"18": "Platforma do hostowania i współpracy nad repozytoriami Git.",
+		"19": "Narzędzie do identyfikowania i raportowania problemów w kodzie.",
+		"20": "Formatowanie kodu dla spójnego stylu programowania.",
+		"21": "Nowoczesny slider dotykowy dla urządzeń mobilnych z akcelerowanymi animacjami.",
+		"22": "Popularne zestawy ikon jako komponenty React.",
+		"23": "Animowane ikony hamburger menu dla React.",
+		"24": "Komponent toast z opiniami dla aplikacji React.",
+		"25": "Wysyłanie e-maili bezpośrednio z JavaScript po stronie klienta, bez backendu.",
+		"26": "Framework do internacjonalizacji w React.",
+		"27": "Plugin Tailwind CSS do stylowania pasków przewijania."
 	},
 	"levels": {
 		"Beginner": "Początkujący",
@@ -120,7 +195,24 @@
 		"Question5": "Czy pomagasz w hostingu i wdrożeniu projektu?",
 		"Answer5": "Oczywiście — mogę doradzić przy wyborze hostingu, skonfigurować serwer i wdrożyć stronę na produkcję."
 	},
-	"portfolioWeb": {},
+	"portfolioWeb": {
+		"LivePreviewWarning": "Podgląd może różnić się od strony.",
+		"LivePreviewBtnWarning": "Otwórz link",
+		"BasicInfo": "Podstawowe informacje",
+		"Title": "Tytuł",
+		"Finish": "Zakończony",
+		"InProgress": "W trakcie",
+		"Archive": "Zarchiwizowany",
+		"Role": "Rola",
+		"Client": "Klient",
+		"Duration": "Czas trwania",
+		"From": "Od",
+		"To": "Do",
+		"Features": "Funkcje",
+		"Languages": "Języki",
+		"Yes": "Tak",
+		"No": "Nie"
+	},
 	"btns": {
 		"ShowMore": "Pokaż więcej",
 		"Phone": "Numer"

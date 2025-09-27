@@ -18,7 +18,7 @@ function AbtMeFaq() {
 				{FaqArray.map(el => (
 					<div
 						key={el.id}
-						className='px-4 py-3 transition border rounded-lg shadow-sm sm:w-3/4 xl:w-1/2 bg-white/5 backdrop-blur-sm hover:cursor-pointer hover:bg-white/10'
+						className='w-full px-4 py-3 transition border rounded-lg shadow-sm sm:w-3/4 xl:w-1/2 bg-white/5 backdrop-blur-sm hover:cursor-pointer hover:bg-white/10'
 						onClick={() => toggleFaq(el.id)}>
 						<div className='flex items-center justify-between'>
 							<p className='font-medium text-start'>{t(el.question)}</p>
