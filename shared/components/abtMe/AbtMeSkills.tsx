@@ -29,7 +29,7 @@ function AbtMeSkills() {
 								{tLevels(el.knowledge)}
 							</span>
 						</div>
-						<p className='text-sm leading-snug text-gray-300'>
+						<p className='text-sm leading-snug text-gray-600 dark:text-gray-300'>
 							{tDesc(el.id.toString())}
 						</p>
 					</motion.div>

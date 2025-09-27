@@ -11,15 +11,16 @@ import {
 import { PortfolioItems } from "@/shared/constant/PortfolioItems";
 import { NextPage } from "next";
 import { useTranslations } from "next-intl";
-
 import { useState } from "react";
+import { motion } from "framer-motion";
+
 const Portfolio: NextPage = () => {
 	const [Category, setCategory] = useState<CategoryType>(
 		PortfolioCategories[0].name
-	); //value All, Website, Photography
+	);
 	const [SortBy, setSortBy] = useState<PortfolioSortType>(
 		PortfolioSortItems[0].name
-	); //value AtoZ, ZtoA, Newest, Oldest, Favorites
+	);
 	const t = useTranslations("portfolio");
 	const ITEMS_PER_PAGE = 8;
 	const [currentPage, setCurrentPage] = useState(1);
@@ -44,9 +45,19 @@ const Portfolio: NextPage = () => {
 		currentPage * ITEMS_PER_PAGE
 	);
 
-	// Pagination buttons
-
 	const titleT = useTranslations("title");
+
+	const containerVariants = {
+		hidden: {},
+		show: {
+			transition: { staggerChildren: 0.15 },
+		},
+	};
+
+	const itemVariants = {
+		hidden: { opacity: 0, y: 20 },
+		show: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+	};
 
 	return (
 		<div className='m-2.5'>
@@ -67,8 +78,6 @@ const Portfolio: NextPage = () => {
 					))}
 				</div>
 				<select
-					name=''
-					id=''
 					value={SortBy}
 					onChange={e => setSortBy(e.target.value)}
 					className='border rounded-md px-2.5 py-0.5 cursor-pointer'>
@@ -79,11 +88,19 @@ const Portfolio: NextPage = () => {
 					))}
 				</select>
 			</div>
-			<div className='grid grid-cols-1 gap-4 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
+
+			<motion.div
+				className='grid grid-cols-1 gap-4 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'
+				variants={containerVariants}
+				initial='hidden'
+				animate='show'>
 				{paginatedItems.map(el => (
-					<PortfolioItem key={el.id} el={el} />
+					<motion.div key={el.id} variants={itemVariants}>
+						<PortfolioItem el={el} />
+					</motion.div>
 				))}
-			</div>
+			</motion.div>
+
 			{totalPages > 1 && (
 				<Pagination
 					currentPage={currentPage}

@@ -29,7 +29,7 @@ function CertificationsResume() {
 							)}
 							<p className='font-medium'>{tTrainings(el.id.toString())}</p>
 						</div>
-						<div className='w-1/3 text-sm text-gray-300 text-end'>
+						<div className='w-1/3 text-sm text-gray-600 dark:text-gray-300 text-end'>
 							{tMonth(el.month)}, {el.year}
 						</div>
 					</motion.a>

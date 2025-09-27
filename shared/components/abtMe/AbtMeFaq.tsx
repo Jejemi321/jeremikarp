@@ -35,7 +35,7 @@ function AbtMeFaq() {
 									animate={{ opacity: 1, height: "auto" }}
 									exit={{ opacity: 0, height: 0 }}
 									transition={{ duration: 0.3 }}
-									className='mt-2.5 text-start text-sm text-gray-300'>
+									className='mt-2.5 text-start text-sm text-gray-600 dark:text-gray-300'>
 									{t(el.answer)}
 								</motion.div>
 							)}

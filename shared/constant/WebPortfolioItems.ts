@@ -15,7 +15,6 @@ type duration =
 	| "6Months";
 export interface WebPortfolioItemType extends Omit<PortfolioItem, "id"> {
 	techStack?: number[];
-	imgArray?: string[];
 	starterDate?: string;
 	url?: string;
 	status: statusType;
@@ -37,7 +36,7 @@ const WebPortfolioItems: WebPortfolioItemType[] = [
 	{
 		title: "jeremikarpTitle",
 		description: "jeremikarpdescription",
-		imageCover: "/assets/img/portfolio/blank.jpg",
+		imageCover: "/assets/img/portfolio/web/jeremikarpLogo.webp",
 		date: "2025-10-01",
 		starterDate: "2025-09-01",
 		url: "https://jeremikarp.com",
@@ -50,13 +49,6 @@ const WebPortfolioItems: WebPortfolioItemType[] = [
 		darkMode: true,
 		supportedLanguages: ["EN", "PL"],
 		techStack: [1, 5, 7, 8, 9, 15, 18, 19, 20, 22, 23, 24, 25, 26, 27],
-		imgArray: [
-			"/assets/img/portfolio/blank.jpg",
-			"/assets/img/portfolio/blank.jpg",
-			"/assets/img/portfolio/blank.jpg",
-			"/assets/img/portfolio/blank.jpg",
-			"/assets/img/portfolio/blank.jpg",
-		],
 	},
 ];
 export default WebPortfolioItems;

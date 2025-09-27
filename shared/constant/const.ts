@@ -43,6 +43,7 @@ export const socialMedia: socialMedia[] = [
 	},
 ];
 export const blankJpg: string = "/assets/img/portfolio/blank.jpg";
+export const main: string = "/assets/img/portfolio/main.webp";
 export interface PortfolioCategory {
 	id: number;
 	name: string;

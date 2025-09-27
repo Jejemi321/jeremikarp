@@ -20,7 +20,44 @@
 
 	"privatePolicy": {
 		"title": "Polityka Prywatności",
-		"text": "1. Informacje ogólne\n\nNiniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem url: jeremikarp.com\nOperatorem serwisu oraz Administratorem danych osobowych jest: Jeremi Karp\nAdres kontaktowy poczty elektronicznej operatora: jeremikarp@gmail.com\nOperator jest Administratorem Twoich danych osobowych w odniesieniu do danych podanych dobrowolnie w Serwisie.\nSerwis wykorzystuje dane osobowe w następujących celach: Obsługa zapytań przez formularz.\nSerwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu w następujący sposób: poprzez dobrowolnie wprowadzone w formularzach dane, które zostają wprowadzone do systemów Operatora oraz poprzez zapisywanie w urządzeniach końcowych plików cookie (tzw. „ciasteczka”).\n\n2. Wybrane metody ochrony danych stosowane przez Operatora\n\nMiejsca logowania i wprowadzania danych osobowych są chronione w warstwie transmisji (certyfikat SSL). Dzięki temu dane osobowe i dane logowania, wprowadzone na stronie, zostają zaszyfrowane w komputerze użytkownika i mogą być odczytane jedynie na docelowym serwerze.\nOperator okresowo zmienia swoje hasła administracyjne.\nIstotnym elementem ochrony danych jest regularna aktualizacja wszelkiego oprogramowania, wykorzystywanego przez Operatora do przetwarzania danych osobowych, co w szczególności oznacza regularne aktualizacje komponentów programistycznych.\n\n3. Hosting\n\nSerwis jest hostowany (technicznie utrzymywany) na serwerach operatora: inna firma.\nFirma hostingowa w celu zapewnienia niezawodności technicznej prowadzi logi na poziomie serwera. Zapisowi mogą podlegać: zasoby określone identyfikatorem URL, czas nadejścia zapytania, czas wysłania odpowiedzi, nazwa stacji klienta, informacje o błędach jakie nastąpiły przy realizacji transakcji HTTP, adres URL strony poprzednio odwiedzanej przez użytkownika (referer link), informacje o przeglądarce użytkownika, informacje o adresie IP, informacje diagnostyczne związane z procesem samodzielnego zamawiania usług, informacje związane z obsługą poczty elektronicznej kierowanej do Operatora.\n\n4. Twoje prawa i dodatkowe informacje o sposobie wykorzystania danych\n\nAdministrator może przekazywać Twoje dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. Dotyczy to takich grup odbiorców: osoby upoważnione przez nas, firma hostingowa, firmy obsługujące mailingi i SMS, partnerzy marketingowi, kurierzy, ubezpieczyciele, kancelarie prawne, banki, operatorzy płatności, organy publiczne.\nTwoje dane osobowe przetwarzane są nie dłużej niż jest to konieczne do wykonania związanych z nimi czynności. Dane marketingowe nie będą przetwarzane dłużej niż 3 lata.\nPrzysługuje Ci prawo żądania od Administratora dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania oraz przenoszenia danych. Masz prawo sprzeciwu wobec przetwarzania danych osobowych w celu marketingowym.\nNa działania Administratora przysługuje skarga do Prezesa Urzędu Ochrony Danych Osobowych.\nPodanie danych osobowych jest dobrowolne, lecz niezbędne do obsługi Serwisu.\nDane osobowe nie są przekazywane poza teren Unii Europejskiej.\n\n5. Informacje w formularzach\n\nSerwis zbiera informacje podane dobrowolnie przez użytkownika, w tym dane osobowe, o ile zostaną one podane.\nSerwis może zapisać informacje o parametrach połączenia (czas, adres IP).\nDane podane w formularzu są przetwarzane w celu wynikającym z funkcji formularza, np. obsługi zgłoszenia serwisowego, kontaktu handlowego, rejestracji usług.\n\n6. Logi Administratora\n\nInformacje o zachowaniu użytkowników w serwisie mogą podlegać logowaniu. Dane te są wykorzystywane w celu administrowania serwisem.\n\n7. Istotne techniki marketingowe\n\nOperator stosuje analizę statystyczną ruchu na stronie poprzez Google Analytics (Google Inc., USA). Dane są anonimizowane i bazują na plikach cookies. Użytkownik może edytować swoje preferencje reklamowe pod adresem: https://www.google.com/ads/preferences/\n\n8. Informacja o plikach cookies\n\nSerwis korzysta z plików cookies. Cookies to dane informatyczne, przechowywane w urządzeniu końcowym użytkownika, przeznaczone do korzystania ze stron internetowych. Cookies mogą być sesyjne lub stałe.\nUżytkownicy mogą zmieniać ustawienia dotyczące cookies w swojej przeglądarce. Ograniczenia stosowania cookies mogą wpłynąć na niektóre funkcjonalności serwisu.\nCookies mogą być również wykorzystywane przez współpracujące podmioty, w szczególności Google, Facebook, Twitter.\n\n9. Zarządzanie plikami cookies\n\nUżytkownik może w każdej chwili zmienić ustawienia dotyczące cookies w swojej przeglądarce. Instrukcje dostępne są w dokumentacji poszczególnych przeglądarek i urządzeń mobilnych."
+		"sections": {
+			"section1": {
+				"heading": "Informacje ogólne",
+				"content": "Niniejsza polityka dotyczy Serwisu www, funkcjonującego pod adresem url: jeremikarp.com. Operatorem serwisu oraz Administratorem danych osobowych jest: Jeremi Karp. Adres kontaktowy poczty elektronicznej operatora: jeremikarp@gmail.com. Operator jest Administratorem Twoich danych osobowych w odniesieniu do danych podanych dobrowolnie w Serwisie. Serwis wykorzystuje dane osobowe w następujących celach: obsługa zapytań przez formularz. Serwis realizuje funkcje pozyskiwania informacji o użytkownikach i ich zachowaniu w następujący sposób: poprzez dobrowolnie wprowadzone w formularzach dane, które zostają wprowadzone do systemów Operatora oraz poprzez zapisywanie w urządzeniach końcowych plików cookie."
+			},
+			"section2": {
+				"heading": "Wybrane metody ochrony danych",
+				"content": "Miejsca logowania i wprowadzania danych osobowych są chronione w warstwie transmisji (certyfikat SSL). Dzięki temu dane osobowe i dane logowania, wprowadzone na stronie, zostają zaszyfrowane w komputerze użytkownika i mogą być odczytane jedynie na docelowym serwerze. Operator okresowo zmienia swoje hasła administracyjne. Istotnym elementem ochrony danych jest regularna aktualizacja wszelkiego oprogramowania wykorzystywanego przez Operatora do przetwarzania danych osobowych, w szczególności regularne aktualizacje komponentów programistycznych."
+			},
+			"section3": {
+				"heading": "Hosting",
+				"content": "Serwis jest hostowany (technicznie utrzymywany) na serwerach operatora: inna firma. Firma hostingowa w celu zapewnienia niezawodności technicznej prowadzi logi na poziomie serwera. Zapisowi mogą podlegać: zasoby określone identyfikatorem URL, czas nadejścia zapytania, czas wysłania odpowiedzi, nazwa stacji klienta, informacje o błędach jakie nastąpiły przy realizacji transakcji HTTP, adres URL strony poprzednio odwiedzanej przez użytkownika (referer link), informacje o przeglądarce użytkownika, informacje o adresie IP, informacje diagnostyczne związane z procesem samodzielnego zamawiania usług, informacje związane z obsługą poczty elektronicznej kierowanej do Operatora."
+			},
+			"section4": {
+				"heading": "Twoje prawa i dodatkowe informacje",
+				"content": "Administrator może przekazywać Twoje dane osobowe innym odbiorcom, jeśli będzie to niezbędne do wykonania zawartej z Tobą umowy lub do zrealizowania obowiązków ciążących na Administratorze. Dotyczy to takich grup odbiorców: osoby upoważnione przez nas, firma hostingowa, firmy obsługujące mailingi i SMS, partnerzy marketingowi, kurierzy, ubezpieczyciele, kancelarie prawne, banki, operatorzy płatności, organy publiczne. Twoje dane osobowe przetwarzane są nie dłużej niż jest to konieczne do wykonania związanych z nimi czynności. Dane marketingowe nie będą przetwarzane dłużej niż 3 lata. Przysługuje Ci prawo żądania od Administratora dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania oraz przenoszenia danych. Masz prawo sprzeciwu wobec przetwarzania danych osobowych w celu marketingowym. Na działania Administratora przysługuje skarga do Prezesa Urzędu Ochrony Danych Osobowych. Podanie danych osobowych jest dobrowolne, lecz niezbędne do obsługi Serwisu. Dane osobowe nie są przekazywane poza teren Unii Europejskiej."
+			},
+			"section5": {
+				"heading": "Informacje w formularzach",
+				"content": "Serwis zbiera informacje podane dobrowolnie przez użytkownika, w tym dane osobowe, o ile zostaną one podane. Serwis może zapisać informacje o parametrach połączenia (czas, adres IP). Dane podane w formularzu są przetwarzane w celu wynikającym z funkcji formularza, np. obsługi zgłoszenia serwisowego, kontaktu handlowego, rejestracji usług."
+			},
+			"section6": {
+				"heading": "Logi Administratora",
+				"content": "Informacje o zachowaniu użytkowników w serwisie mogą podlegać logowaniu. Dane te są wykorzystywane w celu administrowania serwisem."
+			},
+			"section7": {
+				"heading": "Istotne techniki marketingowe",
+				"content": "Operator stosuje analizę statystyczną ruchu na stronie poprzez Google Analytics (Google Inc., USA). Dane są anonimizowane i bazują na plikach cookies. Użytkownik może edytować swoje preferencje reklamowe pod adresem: https://www.google.com/ads/preferences/"
+			},
+			"section8": {
+				"heading": "Informacja o plikach cookies",
+				"content": "Serwis korzysta z plików cookies. Cookies to dane informatyczne, przechowywane w urządzeniu końcowym użytkownika, przeznaczone do korzystania ze stron internetowych. Cookies mogą być sesyjne lub stałe. Użytkownicy mogą zmieniać ustawienia dotyczące cookies w swojej przeglądarce. Ograniczenia stosowania cookies mogą wpłynąć na niektóre funkcjonalności serwisu. Cookies mogą być również wykorzystywane przez współpracujące podmioty, w szczególności Google, Facebook, Twitter."
+			},
+			"section9": {
+				"heading": "Zarządzanie plikami cookies",
+				"content": "Użytkownik może w każdej chwili zmienić ustawienia dotyczące cookies w swojej przeglądarce. Instrukcje dostępne są w dokumentacji poszczególnych przeglądarek i urządzeń mobilnych."
+			}
+		}
 	},
 	"time": {
 		"since": "od",
@@ -237,7 +274,9 @@
 		"warsaw01Title": "warszawa01",
 		"warsaw01description": "Sesja fotograficzna w Warszawie. Troche ludzi, troche architektury.",
 		"jeremikarpTitle": "Jeremi Karp Portfolio",
-		"jeremikarpdescription": "Moja osobista strona portfolio w nowej wersji z nowymi technologiami."
+		"jeremikarpdescription": "Moja osobista strona portfolio w nowej wersji z nowymi technologiami.",
+		"adiszTitle": "Koncert Young Adisz",
+		"adiszDescription": "Koncert wykonawcy Young Adisz w Łodzi. Zdjęcia powstały dzięki współpracy z ernieNights"
 	},
 	"contact": {
 		"CityCountry": "Łódź/Warszawa, Polska",

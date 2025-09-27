@@ -90,5 +90,26 @@ const PhotoPortfolioItems: PhotoPortfolioItemsType[] = [
 			"/assets/img/portfolio/photo/warsaw01/17.webp",
 		],
 	},
+	{
+		title: "adiszTitle",
+		description: "adiszDescription",
+		imageCover: "/assets/img/portfolio/photo/adisz/05.webp",
+		date: "2023-10-07",
+		favorite: false,
+		category: "CategoryPhotography",
+		imgArray: [
+			"/assets/img/portfolio/photo/adisz/01.webp",
+			"/assets/img/portfolio/photo/adisz/02.webp",
+			"/assets/img/portfolio/photo/adisz/03.webp",
+			"/assets/img/portfolio/photo/adisz/04.webp",
+			"/assets/img/portfolio/photo/adisz/05.webp",
+			"/assets/img/portfolio/photo/adisz/06.webp",
+			"/assets/img/portfolio/photo/adisz/07.webp",
+			"/assets/img/portfolio/photo/adisz/08.webp",
+			"/assets/img/portfolio/photo/adisz/09.webp",
+			"/assets/img/portfolio/photo/adisz/10.webp",
+			"/assets/img/portfolio/photo/adisz/11.webp",
+		],
+	},
 ];
 export default PhotoPortfolioItems;

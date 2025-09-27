@@ -8,6 +8,7 @@ import {
 	type TechStackBase,
 } from "@/shared/constant/TechStack";
 import { useTranslations } from "next-intl";
+
 const categories = [
 	"All",
 	"Frontend",
@@ -16,12 +17,15 @@ const categories = [
 	"Deployment",
 	"Tools",
 ] as const;
+
 export default function TechStackPage() {
 	const [filter, setFilter] = useState<(typeof categories)[number]>("All");
 	const [selectedTech, setSelectedTech] = useState<TechStackBase | null>(null);
+
 	const filteredTechs = TechStackArray.filter(
 		el => filter === "All" || el.category === filter
 	);
+
 	const tSince = useTranslations("time");
 	const tDesc = useTranslations("techDesc");
 	const tLevels = useTranslations("levels");
@@ -31,21 +35,25 @@ export default function TechStackPage() {
 	return (
 		<div className='p-4'>
 			<PageTitle>Tech Stack</PageTitle>
+
 			{/* Filtry kategorii */}
 			<div className='flex flex-wrap gap-2 mb-6'>
 				{categories.map(cat => (
-					<button
+					<motion.button
 						key={cat}
 						onClick={() => setFilter(cat)}
-						className={`px-3 py-1 rounded-full transitionAll hover:opacity-75 cursor-pointer ${
+						whileTap={{ scale: 0.9 }}
+						whileHover={{ scale: 1.05 }}
+						className={`px-3 py-1 rounded-full transitionAll cursor-pointer ${
 							filter === cat
 								? "bg-blue-500 text-white"
 								: "bg-gray-200 text-gray-700"
 						}`}>
 						{tCategories(cat)}
-					</button>
+					</motion.button>
 				))}
 			</div>
+
 			{/* Lista technologii */}
 			<motion.div
 				className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'
@@ -55,28 +63,37 @@ export default function TechStackPage() {
 					hidden: {},
 					visible: { transition: { staggerChildren: 0.1 } },
 				}}>
-				{filteredTechs.map(el => (
-					<motion.div
-						key={el.id}
-						onClick={() => setSelectedTech(el)}
-						className='relative p-4 bg-white border rounded-lg shadow-sm cursor-pointer transitionAll hover:scale-105 dark:bg-gray-800'
-						variants={{
-							hidden: { opacity: 0, y: 20 },
-							visible: { opacity: 1, y: 0 },
-						}}>
-						<div className='flex items-center justify-between space-y-2'>
-							<TechIcon id={el.id} />
-							<p className=''>
-								{tSince("since")} {el.since.getFullYear()}
-							</p>
-						</div>
-						{/* Pasek wiedzy */}
-						<div className='w-full h-2 mt-2 overflow-hidden bg-gray-200 rounded'>
-							<div className={`h-full bg-blue-500 ${el.KnowledgeWidth}`}></div>
-						</div>
-					</motion.div>
-				))}
+				<AnimatePresence mode='popLayout'>
+					{filteredTechs.map(el => (
+						<motion.div
+							key={el.id}
+							onClick={() => setSelectedTech(el)}
+							layout
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							exit={{ opacity: 0, y: -20 }}
+							transition={{ duration: 0.3, ease: "easeOut" }}
+							className='relative p-4 bg-white border rounded-lg shadow-sm cursor-pointer transitionAll hover:scale-105 dark:bg-gray-800'>
+							<div className='flex items-center justify-between'>
+								<TechIcon id={el.id} />
+								<p>
+									{tSince("since")} {el.since.getFullYear()}
+								</p>
+							</div>
+							{/* Pasek wiedzy */}
+							<div className='w-full h-2 mt-2 overflow-hidden bg-gray-200 rounded'>
+								<motion.div
+									initial={{ width: 0 }}
+									animate={{ width: el.KnowledgeWidth }}
+									transition={{ duration: 0.8, ease: "easeOut" }}
+									className='h-full bg-blue-500'
+								/>
+							</div>
+						</motion.div>
+					))}
+				</AnimatePresence>
 			</motion.div>
+
 			{/* Modal */}
 			<AnimatePresence>
 				{selectedTech && (
@@ -92,8 +109,8 @@ export default function TechStackPage() {
 							initial={{ scale: 0.8, opacity: 0 }}
 							animate={{ scale: 1, opacity: 1 }}
 							exit={{ scale: 0.8, opacity: 0 }}
-							onClick={e => e.stopPropagation()} // zapobiega zamknięciu przy kliknięciu w modal
-						>
+							transition={{ duration: 0.3, ease: "easeOut" }}
+							onClick={e => e.stopPropagation()}>
 							<button
 								onClick={() => setSelectedTech(null)}
 								className='absolute text-gray-500 top-2 right-2 hover:text-gray-700 dark:hover:text-white'>
@@ -116,8 +133,12 @@ export default function TechStackPage() {
 									</a>
 								)}
 								<div className='w-full h-2 mt-2 overflow-hidden bg-gray-200 rounded'>
-									<div
-										className={`h-full bg-blue-500 ${selectedTech.KnowledgeWidth}`}></div>
+									<motion.div
+										initial={{ width: 0 }}
+										animate={{ width: selectedTech.KnowledgeWidth }}
+										transition={{ duration: 0.8, ease: "easeOut" }}
+										className='h-full bg-blue-500'
+									/>
 								</div>
 							</div>
 						</motion.div>

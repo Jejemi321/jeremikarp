@@ -77,7 +77,44 @@
 	},
 	"privatePolicy": {
 		"title": "Privacy Policy",
-		"text": "1. General Information\n\nThis policy applies to the website operating at: jeremikarp.com\nThe operator of the website and the administrator of personal data is: Jeremi Karp\nContact email: jeremikarp@gmail.com\nThe operator is the administrator of your personal data with respect to data voluntarily provided on the website.\nThe website uses personal data for the following purposes: handling inquiries via the contact form.\nThe website collects information about users and their behavior as follows: through voluntarily entered data in forms, which is stored in the operator’s systems, and through storing cookies on user devices.\n\n2. Selected Data Protection Methods\n\nLogin and data entry areas are protected by transmission layer security (SSL certificate). Thanks to this, personal data and login data entered on the site are encrypted on the user’s computer and can be read only on the target server.\nThe operator periodically changes administrative passwords.\nAn important part of data protection is the regular update of all software used by the operator to process personal data, in particular regular updates of programming components.\n\n3. Hosting\n\nThe website is hosted (technically maintained) on servers of another company.\nThe hosting company ensures technical reliability by keeping server logs. These logs may include: requested resources, request arrival time, response time, client station name, error information, referrer URL, browser information, IP address, diagnostics related to ordering services, and email handling.\n\n4. Your Rights and Additional Information\n\nThe administrator may transfer your personal data to other recipients if necessary to perform an agreement with you or fulfill legal obligations. This applies to such groups: authorized employees and collaborators, hosting provider, mailing and SMS providers, marketing partners, couriers, insurers, law firms, banks, payment operators, and public authorities.\nYour personal data is processed no longer than necessary. Marketing data will not be processed for more than 3 years.\nYou have the right to request: access to your data, rectification, deletion, restriction of processing, and data portability. You also have the right to object to processing for marketing purposes.\nYou can lodge a complaint with the President of the Personal Data Protection Office.\nProviding personal data is voluntary but necessary to use the website.\nPersonal data is not transferred outside the European Union.\n\n5. Information in Forms\n\nThe website collects information voluntarily provided by users, including personal data, if provided.\nThe website may store information about connection parameters (time, IP address).\nData provided in forms is processed for purposes resulting from the function of a specific form, e.g., service requests, business contact, service registration.\n\n6. Administrator Logs\n\nInformation about user behavior in the website may be logged. This data is used to administer the website.\n\n7. Important Marketing Techniques\n\nThe operator uses statistical traffic analysis via Google Analytics (Google Inc., USA). Data is anonymized and based on cookies. Users can edit their ad preferences at: https://www.google.com/ads/preferences/\n\n8. Cookies Information\n\nThe website uses cookies. Cookies are IT data stored on the user’s device, intended for use with the website. Cookies may be session or persistent.\nUsers may change cookie settings in their browser. Restrictions on cookies may affect some website functionalities.\nCookies may also be used by cooperating entities, in particular Google, Facebook, Twitter.\n\n9. Cookie Management\n\nUsers can change cookie settings at any time in their browser. Instructions are available in the documentation of individual browsers and mobile devices.."
+		"sections": {
+			"section1": {
+				"heading": "General Information",
+				"content": "This policy applies to the website operating at: jeremikarp.com. The operator of the website and the administrator of personal data is: Jeremi Karp. Contact email: jeremikarp@gmail.com. The operator is the administrator of your personal data with respect to data voluntarily provided on the website. The website uses personal data for the following purposes: handling inquiries via the contact form. The website collects information about users and their behavior as follows: through voluntarily entered data in forms, which is stored in the operator’s systems, and through storing cookies on user devices."
+			},
+			"section2": {
+				"heading": "Selected Data Protection Methods",
+				"content": "Login and data entry areas are protected by transmission layer security (SSL certificate). Thanks to this, personal data and login data entered on the site are encrypted on the user’s computer and can be read only on the target server. The operator periodically changes administrative passwords. An important part of data protection is the regular update of all software used by the operator to process personal data, in particular regular updates of programming components."
+			},
+			"section3": {
+				"heading": "Hosting",
+				"content": "The website is hosted (technically maintained) on servers of another company. The hosting company ensures technical reliability by keeping server logs. These logs may include: requested resources, request arrival time, response time, client station name, error information, referrer URL, browser information, IP address, diagnostics related to ordering services, and email handling."
+			},
+			"section4": {
+				"heading": "Your Rights and Additional Information",
+				"content": "The administrator may transfer your personal data to other recipients if necessary to perform an agreement with you or fulfill legal obligations. This applies to such groups: authorized employees and collaborators, hosting provider, mailing and SMS providers, marketing partners, couriers, insurers, law firms, banks, payment operators, and public authorities. Your personal data is processed no longer than necessary. Marketing data will not be processed for more than 3 years. You have the right to request: access to your data, rectification, deletion, restriction of processing, and data portability. You also have the right to object to processing for marketing purposes. You can lodge a complaint with the President of the Personal Data Protection Office. Providing personal data is voluntary but necessary to use the website. Personal data is not transferred outside the European Union."
+			},
+			"section5": {
+				"heading": "Information in Forms",
+				"content": "The website collects information voluntarily provided by users, including personal data, if provided. The website may store information about connection parameters (time, IP address). Data provided in forms is processed for purposes resulting from the function of a specific form, e.g., service requests, business contact, service registration."
+			},
+			"section6": {
+				"heading": "Administrator Logs",
+				"content": "Information about user behavior in the website may be logged. This data is used to administer the website."
+			},
+			"section7": {
+				"heading": "Important Marketing Techniques",
+				"content": "The operator uses statistical traffic analysis via Google Analytics (Google Inc., USA). Data is anonymized and based on cookies. Users can edit their ad preferences at: https://www.google.com/ads/preferences/"
+			},
+			"section8": {
+				"heading": "Cookies Information",
+				"content": "The website uses cookies. Cookies are IT data stored on the user’s device, intended for use with the website. Cookies may be session or persistent. Users may change cookie settings in their browser. Restrictions on cookies may affect some website functionalities. Cookies may also be used by cooperating entities, in particular Google, Facebook, Twitter."
+			},
+			"section9": {
+				"heading": "Cookie Management",
+				"content": "Users can change cookie settings at any time in their browser. Instructions are available in the documentation of individual browsers and mobile devices."
+			}
+		}
 	},
 	"Hobby": {
 		"Movies": "Movies",
@@ -153,7 +190,9 @@
 		"warsaw01Title": "warsaw01",
 		"warsaw01description": "A photo shoot in Warsaw. Few people and some architecture.",
 		"jeremikarpTitle": "Jeremi Karp Portfolio",
-		"jeremikarpdescription": "My personal portfolio website, now in a new version with updated technology."
+		"jeremikarpdescription": "My personal portfolio website, now in a new version with updated technology.",
+		"adiszTitle": "Young Adisz Concert",
+		"adiszDescription": "Concert by the artist Young Adisz in Łódź. Photos were made possible thanks to collaboration with ernieNights."
 	},
 	"steps": {
 		"ConsultationTitle": "Consultation",
