@@ -40,7 +40,7 @@
 	"Trainings": {
 		"1": "Yacht Helmsman",
 		"2": "INF-03 Course",
-		"3": "NSTS - 06(Drone Licence)",
+		"3": "NSTS - 06(Drone License)",
 		"4": "EFFECT - Speed Reading and Effective Learning Course",
 		"5": "Driving License Category B",
 		"6": "High School Final Exams (Matura)"
@@ -60,15 +60,14 @@
 		"December": "December"
 	},
 	"Education": {
-		"PrimaryEducation": "Primary Education",
-		"SecondaryEducation": "Secondary Education",
-		"University": "University",
 		"1": "Primary School No. 71",
 		"2": "Catholic School Complex named after John Paul II",
 		"3": "Benedict Schools in Sulejówek – Homeschooling (Primary & High School)",
-		"4": "Higher School of Vocational Education"
+		"4": "Higher School of Vocational Education",
+		"PrimaryEducation": "Primary Education",
+		"SecondaryEducation": "Secondary Education",
+		"University": "University"
 	},
-
 	"Languages": {
 		"Polish": "Polish",
 		"English": "English",
@@ -144,6 +143,7 @@
 	},
 	"time": {
 		"since": "since",
+		"Day": "Day",
 		"Week": "Week",
 		"2Weeks": "2 Weeks",
 		"3Weeks": "3 Weeks",
@@ -165,6 +165,7 @@
 		"BasicInfo": "Basic Info",
 		"Title": "Title",
 		"Finish": "Finish",
+		"Description": "Description",
 		"InProgress": "In Progress",
 		"Archive": "Archive",
 		"Role": "Role",
@@ -192,7 +193,9 @@
 		"jeremikarpTitle": "Jeremi Karp Portfolio",
 		"jeremikarpdescription": "My personal portfolio website, now in a new version with updated technology.",
 		"adiszTitle": "Young Adisz Concert",
-		"adiszDescription": "Concert by the artist Young Adisz in Łódź. Photos were made possible thanks to collaboration with ernieNights."
+		"adiszDescription": "Concert by the artist Young Adisz in Łódź. Photos were made possible thanks to collaboration with ernieNights.",
+		"currencyTitle": "Exchange Currency",
+		"currencyDescription": "I’m creating a currency exchange app for practice. I get the current exchange rates from the Frankfurter API."
 	},
 	"steps": {
 		"ConsultationTitle": "Consultation",
@@ -224,8 +227,6 @@
 		"Tools": "Tools"
 	},
 	"techDesc": {
-		"Documentation": "Documentation",
-
 		"1": "Markup language for structuring web pages.",
 		"2": "Stylesheet language for designing web pages.",
 		"3": "CSS preprocessor for nested and maintainable styles.",
@@ -252,7 +253,8 @@
 		"24": "An opinionated toast component for React apps.",
 		"25": "Send emails directly from client-side JavaScript without a backend.",
 		"26": "Internationalization framework for React.",
-		"27": "Tailwind CSS plugin to style scrollbars."
+		"27": "Tailwind CSS plugin to style scrollbar.",
+		"Documentation": "Documentation"
 	},
 	"stats": {
 		"ProjectsDone": "Projects Done",
@@ -265,16 +267,12 @@
 	"faq": {
 		"Question1": "What technologies do you use most often?",
 		"Answer1": "I mostly work with React, Vite, Tailwind CSS, and Supabase. This allows me to build fast and scalable applications.",
-
 		"Question2": "How long does it take to complete a project?",
 		"Answer2": "Simple websites can be done in a few days, while more complex applications may take several weeks — it all depends on the scope.",
-
 		"Question3": "What does the collaboration process look like?",
 		"Answer3": "First, I discuss the requirements, then I prepare a plan and design, next I handle coding and deployment. Finally, I provide testing and support.",
-
 		"Question4": "Do you handle SEO and performance optimization?",
 		"Answer4": "Yes, I make sure that websites are fast, well-rated in Lighthouse, and optimized for SEO.",
-
 		"Question5": "Do you help with hosting and deployment?",
 		"Answer5": "Of course — I can advise on hosting options, configure the server, and deploy the website to production."
 	},

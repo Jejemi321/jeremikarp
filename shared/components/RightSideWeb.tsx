@@ -11,6 +11,8 @@ function ProjectInfoPanel({ el }: { el: WebPortfolioItemType }) {
 	};
 	const t = useTranslations("portfolioWeb");
 	const tTime = useTranslations("time");
+	const tInfo = useTranslations("portfolioProjects");
+
 	return (
 		<div className='flex-shrink-0 w-full p-4 space-y-4 overflow-y-auto rounded-lg shadow-lg lg:w-1/4 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700'>
 			{/* Basic Info */}
@@ -20,7 +22,11 @@ function ProjectInfoPanel({ el }: { el: WebPortfolioItemType }) {
 				</h4>
 				<div className='space-y-1 text-sm lg:text-base'>
 					<p>
-						<span className='font-medium'>{t("Title")}:</span> {el.title}
+						<span className='font-medium'>{t("Title")}:</span> {tInfo(el.title)}
+					</p>
+					<p className=''>
+						<span className='font-medium'>{t("Description")}:</span>{" "}
+						{tInfo(el.description)}
 					</p>
 					<p className='flex items-center gap-2'>
 						Status:

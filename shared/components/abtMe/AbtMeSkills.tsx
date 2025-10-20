@@ -4,6 +4,7 @@ import SectionTitle from "../ui/SectionTitle";
 import TechIcon from "../TechIcon";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 function AbtMeSkills() {
 	const tLevels = useTranslations("levels");
@@ -12,7 +13,12 @@ function AbtMeSkills() {
 
 	return (
 		<>
-			<SectionTitle>{tSection("MostImportantSkills")}</SectionTitle>
+			<div className='flex items-center justify-between'>
+				<SectionTitle>{tSection("MostImportantSkills")}</SectionTitle>
+				<Link href={"/techStack"} className='hover:opacity-75 transitionAll'>
+					Tech Stack
+				</Link>
+			</div>
 			<div className='grid grid-cols-1 gap-4 mb-4 sm:grid-cols-2 lg:grid-cols-3'>
 				{TechStackArray.filter(a => a?.star).map((el, i) => (
 					<motion.div

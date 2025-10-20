@@ -1,3 +1,4 @@
+//TODO Note app/ ToDo/ currency/ roulette/ voting
 import { PortfolioItem } from "./PortfolioItems";
 type statusType = "Archive" | "InProgress" | "Finish";
 type roleType =
@@ -6,6 +7,7 @@ type roleType =
 	| "Backend Developer"
 	| "Designer";
 type duration =
+	| "Day"
 	| "Week"
 	| "2Weeks"
 	| "3Weeks"
@@ -40,7 +42,7 @@ const WebPortfolioItems: WebPortfolioItemType[] = [
 		date: "2025-10-01",
 		starterDate: "2025-09-01",
 		url: "https://jeremikarp.com",
-		favorite: false,
+		favorite: true,
 		category: "CategoryWebsite",
 		status: "Finish",
 		client: "Jeremi Karp",
@@ -49,6 +51,23 @@ const WebPortfolioItems: WebPortfolioItemType[] = [
 		darkMode: true,
 		supportedLanguages: ["EN", "PL"],
 		techStack: [1, 5, 7, 8, 9, 15, 18, 19, 20, 22, 23, 24, 25, 26, 27],
+	},
+	{
+		title: "currencyTitle",
+		description: "currencyDescription",
+		imageCover: "/assets/img/portfolio/web/currency.webp",
+		date: "2025-09-29",
+		starterDate: "2025-09-28",
+		url: "https://currency-zeta-ashy.vercel.app",
+		favorite: false,
+		category: "CategoryWebsite",
+		status: "Finish",
+		client: "Jeremi Karp",
+		role: "FullStack Developer",
+		duration: "Day",
+		darkMode: false,
+		supportedLanguages: ["EN"],
+		techStack: [5, 6, 7, 8, 9, 19, 22],
 	},
 ];
 export default WebPortfolioItems;

@@ -68,7 +68,7 @@ const PhotoPortfolioItems: PhotoPortfolioItemsType[] = [
 		description: "warsaw01description",
 		imageCover: "/assets/img/portfolio/photo/warsaw01/13.webp",
 		date: "2025-05-28",
-		favorite: false,
+		favorite: true,
 		category: "CategoryPhotography",
 		imgArray: [
 			"/assets/img/portfolio/photo/warsaw01/01.webp",

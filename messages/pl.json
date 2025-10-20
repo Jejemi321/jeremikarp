@@ -17,7 +17,6 @@
 	"aboutMe": {
 		"desc": "Cześć! Nazywam się Jeremi i pasjonuję się nowymi technologiami oraz tworzeniem projektów internetowych. Chętnie rozwijam swoje umiejętności, podejmuję wyzwania i uczę się nowych rzeczy. W wolnym czasie zajmuję się fotografią, programowaniem oraz gotowaniem, a także realizuję różnorodne projekty kreatywne. Jestem osobą ciekawą świata, otwartą na ludzi i zawsze gotową do działania."
 	},
-
 	"privatePolicy": {
 		"title": "Polityka Prywatności",
 		"sections": {
@@ -61,6 +60,7 @@
 	},
 	"time": {
 		"since": "od",
+		"Day": "Dzień",
 		"Week": "Tydzień",
 		"2Weeks": "2 Tygodnie",
 		"3Weeks": "3 Tygodnie",
@@ -69,7 +69,6 @@
 		"3Months": "3 Miesiące",
 		"6Months": "6 Miesięcy"
 	},
-
 	"sectionTitle": {
 		"HowIWork": "Jak pracuję",
 		"BasicInfo": "Podstawowe informacje",
@@ -84,13 +83,13 @@
 		"Trainings": "Kursy"
 	},
 	"Education": {
-		"PrimaryEducation": "Szkoła Podstawowa",
-		"SecondaryEducation": "Liceum",
-		"University": "Studia",
 		"1": "Szkoła podstawowa nr. 71",
 		"2": "Zespół Szkół Katolickich im. Jana Pawła II",
 		"3": "Szkoły Benedykta w Sulejówku – Nauczanie domowe",
-		"4": "Wyższa Szkoła Kształcenia Zawodowego"
+		"4": "Wyższa Szkoła Kształcenia Zawodowego",
+		"PrimaryEducation": "Szkoła Podstawowa",
+		"SecondaryEducation": "Liceum",
+		"University": "Studia"
 	},
 	"NotFound": {
 		"404Portfolio": "Ups! Nie znaleźliśmy projektu o podanym ID. Sprawdź inne projekty w portfolio.",
@@ -180,7 +179,6 @@
 		"Tools": "Narzędzia"
 	},
 	"techDesc": {
-		"Documentation": "Dokumentacja",
 		"1": "Język znaczników do strukturyzowania stron internetowych.",
 		"2": "Język arkuszy stylów do projektowania stron internetowych.",
 		"3": "Preprocesor CSS umożliwiający zagnieżdżanie i łatwe utrzymanie stylów.",
@@ -207,7 +205,8 @@
 		"24": "Komponent toast z opiniami dla aplikacji React.",
 		"25": "Wysyłanie e-maili bezpośrednio z JavaScript po stronie klienta, bez backendu.",
 		"26": "Framework do internacjonalizacji w React.",
-		"27": "Plugin Tailwind CSS do stylowania pasków przewijania."
+		"27": "Plugin Tailwind CSS do stylowania pasków przewijania.",
+		"Documentation": "Dokumentacja"
 	},
 	"levels": {
 		"Beginner": "Początkujący",
@@ -219,16 +218,12 @@
 	"faq": {
 		"Question1": "Jakie technologie najczęściej wykorzystujesz?",
 		"Answer1": "Najczęściej pracuję z React, Vite, Tailwind CSS i Supabase. Dzięki temu mogę budować szybkie i skalowalne aplikacje.",
-
 		"Question2": "Ile czasu zajmuje realizacja projektu?",
 		"Answer2": "Proste strony mogą powstać w kilka dni, a bardziej złożone aplikacje w kilka tygodni — wszystko zależy od zakresu prac.",
-
 		"Question3": "Jak wygląda proces współpracy?",
 		"Answer3": "Najpierw omawiam potrzeby, potem przygotowuję plan i projekt, następnie zajmuję się kodowaniem i wdrożeniem. Na końcu oferuję testy i wsparcie.",
-
 		"Question4": "Czy zajmujesz się optymalizacją SEO i wydajności?",
 		"Answer4": "Tak, dbam o to, by strony były szybkie, dobrze oceniane w Lighthouse i przygotowane pod SEO.",
-
 		"Question5": "Czy pomagasz w hostingu i wdrożeniu projektu?",
 		"Answer5": "Oczywiście — mogę doradzić przy wyborze hostingu, skonfigurować serwer i wdrożyć stronę na produkcję."
 	},
@@ -248,7 +243,8 @@
 		"Features": "Funkcje",
 		"Languages": "Języki",
 		"Yes": "Tak",
-		"No": "Nie"
+		"No": "Nie",
+		"Description": "Opis"
 	},
 	"btns": {
 		"ShowMore": "Pokaż więcej",
@@ -276,13 +272,14 @@
 		"jeremikarpTitle": "Jeremi Karp Portfolio",
 		"jeremikarpdescription": "Moja osobista strona portfolio w nowej wersji z nowymi technologiami.",
 		"adiszTitle": "Koncert Young Adisz",
-		"adiszDescription": "Koncert wykonawcy Young Adisz w Łodzi. Zdjęcia powstały dzięki współpracy z ernieNights"
+		"adiszDescription": "Koncert wykonawcy Young Adisz w Łodzi. Zdjęcia powstały dzięki współpracy z ernieNights",
+		"currencyTitle": "Wymiana Walut",
+		"currencyDescription": "Stworzyłem aplikację do wymiany walut w celach treningowych. Aktualne kursy walut pobieram z API Frankfurter."
 	},
 	"contact": {
 		"CityCountry": "Łódź/Warszawa, Polska",
 		"ContactInfo": "Informacje kontaktowe",
 		"WorkTime": "Pon - Pt, 10:00 - 20:00",
-
 		"ContactForm": "Formularz kontaktowy",
 		"InputName": "Moje imię to",
 		"InputEmail": "Mój email to",

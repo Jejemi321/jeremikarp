@@ -70,8 +70,8 @@ function BasicInfo() {
 								href={el.link}
 								target='_blank'
 								whileHover={{ scale: 1.1 }}
-								className='transitionAll hover:opacity-75'>
-								<i className={`${el.icon} size-5 text-xl`} />
+								className=' hover:opacity-75'>
+								<i className={`${el.icon} transitionAll size-5 text-xl`} />
 							</motion.a>
 						))}
 					</motion.div>

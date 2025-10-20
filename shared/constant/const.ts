@@ -278,6 +278,7 @@ type peopleWork = {
 	img: string;
 	web: string;
 };
+//TODO: img norbert
 export const WorkPeopleArray: peopleWork[] = [
 	{
 		id: 1,

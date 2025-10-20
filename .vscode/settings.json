@@ -21,6 +21,7 @@
 		"Philocaly",
 		"placeat",
 		"privatepolicy",
+		"responsywne",
 		"setagree",
 		"similique",
 		"Sociale",
@@ -37,5 +38,9 @@
 	],
 	"css.lint.unknownAtRules": "ignore",
 	"scss.lint.unknownAtRules": "ignore",
-	"less.lint.unknownAtRules": "ignore"
+	"less.lint.unknownAtRules": "ignore",
+	"i18n-ally.localesPaths": ["i18n", "messages"],
+	"i18next.i18nPaths": "/Users/user/Desktop/Web/jeremikarp/i18n,/Users/user/Desktop/Web/jeremikarp/messages",
+	"i18n-ally.keystyle": "nested",
+	"i18n-ally.sourceLanguage": "en"
 }

@@ -94,14 +94,14 @@ function ContactForm() {
 				<div className='flex flex-col justify-between mt-5 sm:flex-row gap-x-10'>
 					<input
 						type='text'
-						className='pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
+						className='pb-2 mb-5 tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 						placeholder={tForm("InputName")}
 						onChange={e => setForm({ ...Form, name: e.target.value })}
 						value={Form.name || ""}
 					/>
 					<input
 						type='text'
-						className='pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
+						className='pb-2 mb-5 tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 						placeholder={tForm("InputCompany")}
 						onChange={e => setForm({ ...Form, company: e.target.value })}
 						value={Form.company || ""}
@@ -109,15 +109,15 @@ function ContactForm() {
 				</div>
 				<div className='flex flex-col justify-between mt-5 sm:flex-row gap-x-10'>
 					<input
-						type='text'
-						className='pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
+						type='tel'
+						className='pb-2 mb-5 tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 						placeholder={tForm("InputNumber")}
 						onChange={e => setForm({ ...Form, number: e.target.value })}
 						value={Form.number || ""}
 					/>
 					<input
 						type='text'
-						className='pb-2 mb-5 text-sm tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
+						className='pb-2 mb-5 tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 						placeholder={tForm("InputEmail")}
 						onChange={e => setForm({ ...Form, email: e.target.value })}
 						value={Form.email || ""}
@@ -127,7 +127,7 @@ function ContactForm() {
 					<textarea
 						onChange={e => setForm({ ...Form, message: e.target.value })}
 						value={Form.message || ""}
-						className='w-full h-32 pb-2 mb-5 text-sm tracking-wide border-b outline-none resize-none sm:text-base text-foreground dark:text-dark-foreground'
+						className='w-full h-32 pb-2 mb-5 tracking-wide border-b outline-none resize-none sm:text-base text-foreground dark:text-dark-foreground'
 						placeholder={tForm("InputMessages")}></textarea>
 				</div>
 				<div className='flex flex-col items-center justify-between mt-5 sm:flex-row'>
@@ -159,7 +159,7 @@ function ContactForm() {
 						type='submit'
 						className={`${
 							status != "sending" ? "" : "cursor-not-allowed opacity-50"
-						} inline-block mt-2 sm:mt-0 px-6 py-3 text-sm font-medium uppercase transition border rounded outline-none cursor-pointer hover:text-background dark:hover:text-dark-background hover:bg-foreground dark:hover:bg-dark-foreground disabled:opacity-50 disabled:cursor-not-allowed transitionAll`}
+						} inline-block mt-2 sm:mt-0 px-6 py-3  font-medium uppercase transition border rounded outline-none cursor-pointer hover:text-background dark:hover:text-dark-background hover:bg-foreground dark:hover:bg-dark-foreground disabled:opacity-50 disabled:cursor-not-allowed transitionAll`}
 					/>
 				</div>
 			</form>

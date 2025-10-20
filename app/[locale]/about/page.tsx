@@ -8,7 +8,7 @@ import BasicInfo from "@/shared/components/BasicInfo";
 import ThreeProjects from "@/shared/components/ThreeProjects";
 import PageTitle from "@/shared/components/ui/PageTitle";
 import { useTranslations } from "next-intl";
-//? core events i mean ocean philipines
+//? core events i mean ocean philippines
 function About() {
 	const titleT = useTranslations("title");
 
