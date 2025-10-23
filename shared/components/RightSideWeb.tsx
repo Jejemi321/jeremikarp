@@ -24,10 +24,6 @@ function ProjectInfoPanel({ el }: { el: WebPortfolioItemType }) {
 					<p>
 						<span className='font-medium'>{t("Title")}:</span> {tInfo(el.title)}
 					</p>
-					<p className=''>
-						<span className='font-medium'>{t("Description")}:</span>{" "}
-						{tInfo(el.description)}
-					</p>
 					<p className='flex items-center gap-2'>
 						Status:
 						<span

@@ -274,7 +274,9 @@
 		"adiszTitle": "Koncert Young Adisz",
 		"adiszDescription": "Koncert wykonawcy Young Adisz w Łodzi. Zdjęcia powstały dzięki współpracy z ernieNights",
 		"currencyTitle": "Wymiana Walut",
-		"currencyDescription": "Stworzyłem aplikację do wymiany walut w celach treningowych. Aktualne kursy walut pobieram z API Frankfurter."
+		"currencyDescription": "Stworzyłem aplikację do wymiany walut w celach treningowych. Aktualne kursy walut pobieram z API Frankfurter.",
+		"toDoAppDescription": "Aplikacja Menedżer zadań – narzędzie do zarządzania projektami zbudowane przy użyciu Next.js, TypeScript i localStorage. Użytkownicy mogą tworzyć projekty, dodawać/edytować/usuwać zadania, zarządzać priorytetami i oznaczać zadania jako ukończone. Funkcje obejmują moduły, zmianę nazwy projektu i trwałość stanu dzięki przejrzystemu i dostępnemu interfejsowi użytkownika.",
+		"toDoAppTitle": "Do Zrobienia"
 	},
 	"contact": {
 		"CityCountry": "Łódź/Warszawa, Polska",

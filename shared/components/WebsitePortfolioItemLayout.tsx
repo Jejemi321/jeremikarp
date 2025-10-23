@@ -8,9 +8,15 @@ function WebsitePortfolioItemLayout({ el }: { el: WebPortfolioItemType }) {
 	return (
 		<section className=''>
 			{/* Tytuł projektu */}
-			<h2 className='text-4xl font-bold text-center uppercase lg:text-6xl lg:text-left'>
-				{tpP(el.title)}
-			</h2>
+			<div className='space-y-3'>
+				<h2 className='text-4xl font-bold text-center uppercase lg:text-6xl lg:text-left'>
+					{tpP(el.title)}
+				</h2>
+				<p className='text-base leading-relaxed text-center text-muted-foreground lg:text-left'>
+					{tpP(el.description)}
+				</p>
+			</div>
+
 			{/* Kontener główny */}
 			<div className='flex flex-col lg:flex-row gap-6 min-h-[60vh] lg:h-[80vh] mt-2.5'>
 				{/* Lewa sekcja */}

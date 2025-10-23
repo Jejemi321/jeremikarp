@@ -1,4 +1,4 @@
-//TODO Note app/ ToDo/ currency/ roulette/ voting
+//TODO Note app/ ToDo/ currency/ roulette/ voting/ciekawostka
 import { PortfolioItem } from "./PortfolioItems";
 type statusType = "Archive" | "InProgress" | "Finish";
 type roleType =
@@ -68,6 +68,23 @@ const WebPortfolioItems: WebPortfolioItemType[] = [
 		darkMode: false,
 		supportedLanguages: ["EN"],
 		techStack: [5, 6, 7, 8, 9, 19, 22],
+	},
+	{
+		title: "toDoAppTitle",
+		description: "toDoAppDescription",
+		imageCover: "/assets/img/portfolio/web/toDoApp.webp",
+		date: "2025-09-23",
+		starterDate: "2025-10-24",
+		url: "https://to-do-app-next-js-two.vercel.app",
+		favorite: false,
+		category: "CategoryWebsite",
+		status: "Finish",
+		client: "Jeremi Karp",
+		role: "FullStack Developer",
+		duration: "Day",
+		darkMode: true,
+		supportedLanguages: ["EN", "PL"],
+		techStack: [1, 5, 7, 8, 12, 19, 20, 26],
 	},
 ];
 export default WebPortfolioItems;

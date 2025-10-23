@@ -1,3 +1,4 @@
+//TODO portrety seria zdjęć/
 import { PortfolioItem } from "./PortfolioItems";
 export interface PhotoPortfolioItemsType extends Omit<PortfolioItem, "id"> {
 	imgArray: string[];

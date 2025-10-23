@@ -195,7 +195,9 @@
 		"adiszTitle": "Young Adisz Concert",
 		"adiszDescription": "Concert by the artist Young Adisz in Łódź. Photos were made possible thanks to collaboration with ernieNights.",
 		"currencyTitle": "Exchange Currency",
-		"currencyDescription": "I’m creating a currency exchange app for practice. I get the current exchange rates from the Frankfurter API."
+		"currencyDescription": "I’m creating a currency exchange app for practice. I get the current exchange rates from the Frankfurter API.",
+		"toDoAppTitle": "ToDoApp",
+		"toDoAppDescription": "Task Manager App – A project management tool built with Next.js, TypeScript, and localStorage. Users can create projects, add/edit/delete tasks, manage priorities, and mark tasks as completed. Features include modals, project renaming, and state persistence with a clean and accessible UI."
 	},
 	"steps": {
 		"ConsultationTitle": "Consultation",
