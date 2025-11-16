@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Kode_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/next";
+import { ThemeProvider } from "@/shared/context/ThemeContext";
 
 const geistMono = Kode_Mono({
 	variable: "--font-geist-mono",
@@ -78,7 +79,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body
 				className={`${geistMono.className} antialiased text-foreground bg-background dark:bg-dark-background dark:text-dark-foreground transition-colors duration-300`}>
-				{children}
+				<ThemeProvider>{children}</ThemeProvider>
 				<Analytics />
 			</body>
 		</html>

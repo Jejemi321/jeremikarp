@@ -1,5 +1,5 @@
 "use client";
-import { contactInfo, socialMedia } from "@/shared/constant/const";
+import { ContactInfo, SocialMedia } from "@/shared/constant/const";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionTitle from "../ui/SectionTitle";
@@ -17,7 +17,7 @@ function ContactInfoResume() {
 				</p>
 			</div>
 			<div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3'>
-				{contactInfo.map(el => (
+				{ContactInfo.map(el => (
 					<a
 						key={el.id}
 						href={`${el.typeHref}${el.value}`}
@@ -37,7 +37,7 @@ function ContactInfoResume() {
 					</a>
 				))}
 
-				{socialMedia.map(el => (
+				{SocialMedia.map(el => (
 					<a
 						key={el.id}
 						href={el.link}

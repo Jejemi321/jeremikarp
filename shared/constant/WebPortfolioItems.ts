@@ -1,4 +1,4 @@
-//TODO Note app/ ToDo/ currency/ roulette/ voting/ciekawostka
+//TODO Note app || ToDo 2.0 || currency || roulette || voting || ciekawostka
 import { PortfolioItem } from "./PortfolioItems";
 type statusType = "Archive" | "InProgress" | "Finish";
 type roleType =

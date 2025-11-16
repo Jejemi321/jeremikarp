@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { PhotoPortfolioItemsType } from "../constant/PhotoPortfolioItems";
 import { motion } from "framer-motion";
@@ -19,8 +20,13 @@ function PhotographyPortfolioItemLayout({
 }: {
 	el: PhotoPortfolioItemsType;
 }) {
-	const shuffledImages = shuffleArray(el.imgArray ?? []);
-	const t = useTranslations("portfolioProjects");
+	const t = useTranslations("photoPortfolioProjects");
+
+	const [shuffledImages, setShuffledImages] = useState(el.imgArray ?? []);
+
+	useEffect(() => {
+		setShuffledImages(shuffleArray(el.imgArray ?? []));
+	}, [el.imgArray]);
 
 	const textVariants = {
 		hidden: { opacity: 0, y: 20 },
@@ -39,7 +45,6 @@ function PhotographyPortfolioItemLayout({
 			initial='hidden'
 			whileInView='show'
 			viewport={{ once: true, amount: 0.2 }}>
-			{/* Nagłówek i opis */}
 			<motion.div variants={textVariants} className='mb-2.5'>
 				<h2 className='text-5xl font-bold uppercase sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl'>
 					{t(el.title)}
@@ -47,10 +52,9 @@ function PhotographyPortfolioItemLayout({
 				<p className='text-sm sm:text-base'>{t(el.description)}</p>
 			</motion.div>
 
-			{/* Siatka zdjęć */}
 			<div className='grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 grid-flow-dense'>
 				{shuffledImages.map((img, i) => (
-					<ImageWithRatio key={i} src={img} />
+					<ImageWithRatio key={i} img={img} />
 				))}
 			</div>
 		</motion.div>

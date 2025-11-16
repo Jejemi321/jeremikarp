@@ -1,5 +1,5 @@
 "use client";
-import { main, socialMedia } from "@/shared/constant/const";
+import { main, SocialMedia } from "@/shared/constant/const";
 import Image from "next/image";
 import SectionTitle from "./ui/SectionTitle";
 import { useTranslations } from "next-intl";
@@ -64,7 +64,7 @@ function BasicInfo() {
 					<motion.div
 						className='flex justify-center gap-5 lg:justify-start'
 						variants={textVariants}>
-						{socialMedia.map(el => (
+						{SocialMedia.map(el => (
 							<motion.a
 								key={el.id}
 								href={el.link}

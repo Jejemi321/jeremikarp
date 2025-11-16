@@ -1,22 +1,27 @@
-export interface navItems {
-	id: string | number;
-	href: string;
-	label: string;
-}
-export const navItems: navItems[] = [
+import {
+	contactInfo,
+	FaqType,
+	hobbyType,
+	languageType,
+	modelType,
+	navItems,
+	peopleWork,
+	portfolioCategory,
+	portfolioSortItems,
+	schools,
+	socialMedia,
+	training,
+} from "../types";
+
+export const NavItems: navItems[] = [
 	{ id: 1, href: "/", label: "Home" },
 	{ id: 2, href: "/about", label: "About" },
 	{ id: 3, href: "/portfolio", label: "Portfolio" },
 	{ id: 4, href: "/resume", label: "Resume" },
 	{ id: 5, href: "/contact", label: "Contact" },
 ];
-export interface socialMedia {
-	id: number;
-	name: string;
-	link: string;
-	icon: string;
-}
-export const socialMedia: socialMedia[] = [
+
+export const SocialMedia: socialMedia[] = [
 	{
 		id: 1,
 		name: "GitHub",
@@ -44,21 +49,15 @@ export const socialMedia: socialMedia[] = [
 ];
 export const blankJpg: string = "/assets/img/portfolio/blank.jpg";
 export const main: string = "/assets/img/portfolio/main.webp";
-export interface PortfolioCategory {
-	id: number;
-	name: string;
-}
-export const PortfolioCategories: PortfolioCategory[] = [
+
+export const PortfolioCategories: portfolioCategory[] = [
 	{ id: 1, name: "CategoryAll" },
 	{ id: 2, name: "CategoryWebsite" },
 	{ id: 3, name: "CategoryPhotography" },
 ];
 export type CategoryType = (typeof PortfolioCategories)[number]["name"];
-export interface PortfolioSortItems {
-	id: number;
-	name: string;
-}
-export const PortfolioSortItems: PortfolioSortItems[] = [
+
+export const PortfolioSortItems: portfolioSortItems[] = [
 	{ id: 1, name: "Newest" },
 	{ id: 2, name: "Oldest" },
 	{ id: 3, name: "Favorites" },
@@ -66,14 +65,8 @@ export const PortfolioSortItems: PortfolioSortItems[] = [
 	{ id: 5, name: "AtoZ" },
 ];
 export type PortfolioSortType = (typeof PortfolioSortItems)[number]["name"];
-export interface contactInfo {
-	id: number;
-	iconClass: string;
-	name: string;
-	value: string;
-	typeHref: string;
-}
-export const contactInfo: contactInfo[] = [
+
+export const ContactInfo: contactInfo[] = [
 	{
 		id: 1,
 		iconClass: "fi fi-rr-envelope",
@@ -89,24 +82,13 @@ export const contactInfo: contactInfo[] = [
 		typeHref: "tel:",
 	},
 ];
-type LanguageLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2" | "Native";
-type LanguageType = {
-	id: number;
-	name: string;
-	short: string;
-	level: LanguageLevel;
-};
-export const Language: LanguageType[] = [
+
+export const Language: languageType[] = [
 	{ id: 1, name: "Polish", short: "PL", level: "Native" },
 	{ id: 2, name: "English", short: "GB", level: "B2" },
 ];
-type HobbyType = {
-	id: number;
-	name: string;
-	iconClass: string;
-	years: Date;
-};
-export const Hobby: HobbyType[] = [
+
+export const Hobby: hobbyType[] = [
 	{
 		id: 1,
 		name: "Movies",
@@ -168,17 +150,8 @@ export const Hobby: HobbyType[] = [
 		years: new Date(2022, 0, 1),
 	},
 ];
-type Training = {
-	id: number;
-	name: string;
-	publisher: string;
-	month: string;
-	year: string;
-	iconClass?: string;
-	iconId?: number;
-	link?: string;
-};
-export const TrainingArray: Training[] = [
+
+export const TrainingArray: training[] = [
 	{
 		id: 1,
 		name: "Yacht Helmsman",
@@ -228,15 +201,8 @@ export const TrainingArray: Training[] = [
 		iconClass: "fi fi-rr-test",
 	},
 ];
-type Schools = {
-	id: number;
-	name: string;
-	level: string;
-	from: string;
-	to: string;
-	web: string;
-};
-export const SchoolsArray: Schools[] = [
+
+export const SchoolsArray: schools[] = [
 	{
 		id: 1,
 		name: "Primary School No. 71",
@@ -270,14 +236,7 @@ export const SchoolsArray: Schools[] = [
 		web: "https://studia-online.pl/",
 	},
 ];
-type roleInWork = "Ui/Ux Designer" | "Developer";
-type peopleWork = {
-	id: number;
-	name: string;
-	role: roleInWork;
-	img: string;
-	web: string;
-};
+
 //TODO: img norbert
 export const WorkPeopleArray: peopleWork[] = [
 	{
@@ -288,11 +247,7 @@ export const WorkPeopleArray: peopleWork[] = [
 		web: "https://norbertkalifornia.pl/",
 	},
 ];
-type FaqType = {
-	id: number;
-	question: string;
-	answer: string;
-};
+
 export const FaqArray: FaqType[] = [
 	{
 		id: 1,
@@ -319,4 +274,9 @@ export const FaqArray: FaqType[] = [
 		question: "Question5",
 		answer: "Answer5",
 	},
+];
+
+export const model: modelType[] = [
+	{ id: 1, name: "Staszek Marcinkiewicz", ig: "" },
+	{ id: 2, name: "Norbert Stańczyk", ig: "" },
 ];

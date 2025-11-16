@@ -1,3 +1,4 @@
+//TODO  favicon || better code splitting || advice from Borys || better loading management || more animations || SEO optimization || optimize images || more translations
 import AbtMeHowIWork from "@/shared/components/abtMe/AbtMeHowIWork";
 import ContactInfo from "@/shared/components/ContactInfo";
 import HomeHeader from "@/shared/components/HomeHeader";

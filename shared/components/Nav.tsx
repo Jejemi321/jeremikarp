@@ -4,10 +4,10 @@ import Link from "next/link";
 import { Sling as Hamburger } from "hamburger-react";
 import { useState, useEffect } from "react";
 import ChangeLanguage from "./ChangeLanguage";
-import ChangeColorMode from "./ChangeColorMode";
 import { useTranslations } from "next-intl";
-import { navItems } from "../constant/const";
+import { NavItems } from "../constant/const";
 import { motion, AnimatePresence, Variants, easeInOut } from "framer-motion";
+import ChangeColorMode from "./ChangeColorMode";
 
 // Navbar fade-in
 const navVariants: Variants = {
@@ -61,7 +61,7 @@ const Nav: React.FC = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [mounted, setMounted] = useState(false);
 	const isMobile = useIsMobile();
-	const t = useTranslations("nav");
+	const tNavItems = useTranslations("nav");
 
 	useEffect(() => {
 		setMounted(true);
@@ -74,7 +74,7 @@ const Nav: React.FC = () => {
 			variants={navVariants}
 			initial='initial'
 			animate='animate'
-			className='sticky top-0 z-50 flex items-center justify-between transitionAll backgroundDefault max-md:flex-col max-md:items-start'>
+			className='sticky top-0 z-50 flex items-center justify-between transitionAll backgroundDefault max-md:flex-col max-md:items-start BG'>
 			{/* Logo */}
 			<Link href='/' className='m-4 text-3xl font-bold'>
 				Jeremi Karp
@@ -94,10 +94,10 @@ const Nav: React.FC = () => {
 						initial='hidden'
 						animate='show'
 						exit='exit'
-						className={`flex items-center ${
+						className={`flex items-center BG ${
 							isMobile ? "flex-col" : ""
 						} max-md:w-full max-md:mb-1`}>
-						{navItems.map(item => (
+						{NavItems.map(item => (
 							<motion.li
 								key={item.href}
 								variants={itemVariants}
@@ -107,7 +107,7 @@ const Nav: React.FC = () => {
 								<Link
 									href={item.href}
 									className='p-2 mx-1 my-2 rounded-lg opacity-100 hover:opacity-75'>
-									{t(item.label)}
+									{tNavItems(item.label)}
 								</Link>
 							</motion.li>
 						))}

@@ -11,6 +11,7 @@ export interface PortfolioItem {
 	date: string;
 	favorite: boolean;
 	category: CategoryType;
+	fromDate?: string;
 }
 // Assign IDs automatically
 const webWithIds = WebPortfolioItems.map((item, idx) => ({

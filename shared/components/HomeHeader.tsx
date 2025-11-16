@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { socialMedia } from "../constant/const";
+import { SocialMedia } from "../constant/const";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
@@ -18,7 +18,7 @@ function HomeHeader() {
 							initial={{ opacity: 0.1 }}
 							animate={{ opacity: 1 }}
 							transition={{
-								duration: 0.5,
+								duration: 0.3,
 								delay: index * 0.2,
 							}}>
 							{letter}
@@ -33,7 +33,7 @@ function HomeHeader() {
 							initial={{ opacity: 0.1 }}
 							animate={{ opacity: 1 }}
 							transition={{
-								duration: 0.5,
+								duration: 0.3,
 								delay: t("headerTop").length * 0.2 + index * 0.2,
 							}}>
 							{letter}
@@ -44,7 +44,7 @@ function HomeHeader() {
 				initial={{ opacity: 0.1 }}
 				animate={{ opacity: 1 }}
 				transition={{
-					duration: 0.5,
+					duration: 0.3,
 					delay: (t("headerTop").length + t("headerDown").length) * 0.2 + 0.2,
 				}}
 				className='text-xs leading-5 3xl:text-2xl 2xs:text-lg 3xs:text-base 4xl:text-5xl md:text-lg md:leading-none xl:text-xl text-end'>
@@ -80,17 +80,17 @@ function HomeHeader() {
 					<motion.p
 						initial={{ opacity: 0.1 }}
 						animate={{ opacity: 1 }}
-						transition={{ duration: 0.5, delay: delayP + 1.5 }}
+						transition={{ duration: 0.3, delay: delayP + 1.5 }}
 						className='text-lg font-medium uppercase xs:text-xl md:text-lg xl:text-xl 2xl:text-2xl 4xl:text-4xl'>
 						{t("SocialMedia")}
 					</motion.p>
 					<div className='grid grid-cols-2 text-sm 4xl:text-2xl xs:text-base md:text-sm xl:text-base 2xl:text-lg md:grid-cols-1'>
-						{socialMedia.map((el, index) => (
+						{SocialMedia.map((el, index) => (
 							<motion.p
 								initial={{ opacity: 0.1 }}
 								animate={{ opacity: 1 }}
 								transition={{
-									duration: 0.5,
+									duration: 0.3,
 									delay: (delayP + 1.5) * 1.05 + index * 0.2,
 								}}
 								key={el.name}>

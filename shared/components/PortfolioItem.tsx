@@ -7,7 +7,14 @@ import { motion } from "framer-motion";
 
 function PortfolioItem({ el }: { el: PortfolioItemType }) {
 	const t = useTranslations("portfolio");
-	const tP = useTranslations("portfolioProjects");
+	const tPPP = useTranslations("photoPortfolioProjects");
+	const tWPP = useTranslations("webPortfolioProjects");
+
+	// wybierz odpowiedni translator na podstawie kategorii
+	const tCategory = el.category === "CategoryPhotography" ? tPPP : tWPP;
+
+	// przetłumaczony opis
+	const translatedDescription = tCategory(el.description);
 
 	return (
 		<Link href={`portfolio/${el.id}`} key={el.id} passHref>
@@ -35,7 +42,9 @@ function PortfolioItem({ el }: { el: PortfolioItemType }) {
 				<div className='p-4'>
 					<div className='flex items-center mb-1'>
 						<h3 className='mr-2 text-lg font-bold uppercase text-primary-dark dark:text-primary'>
-							{tP(el.title)}
+							{el.category === "CategoryPhotography"
+								? tPPP(el.title)
+								: tWPP(el.title)}
 						</h3>
 						<span title='Starred' className='text-sm text-yellow-400'>
 							{el.favorite ? (
@@ -46,18 +55,19 @@ function PortfolioItem({ el }: { el: PortfolioItemType }) {
 						</span>
 					</div>
 					<p className='mb-2 text-sm tracking-tight text-gray-500 dark:text-gray-400'>
-						{tP(el.description).length > 45
-							? tP(el.description).slice(
+						{translatedDescription.length > 40
+							? translatedDescription.slice(
 									0,
-									tP(el.description).slice(0, 45).lastIndexOf(" ")
+									translatedDescription.slice(0, 40).lastIndexOf(" ")
 							  ) + "..."
-							: tP(el.description)}
+							: translatedDescription}
 					</p>
 					<div className='flex items-center justify-between gap-2 mt-2'>
 						<span className='px-2 py-0.5 text-xs font-semibold text-primary bg-primary/10 rounded'>
 							{t(el.category)}
 						</span>
 						<span className='px-2 py-0.5 text-xs text-gray-400 dark:text-gray-500'>
+							{el.fromDate ? el.fromDate.trim().split("-")[0] + " - " : ""}
 							{el.date.trim().split("-")[0]}
 						</span>
 					</div>

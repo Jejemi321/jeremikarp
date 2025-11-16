@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import ProjectInfoPanel from "./RightSideWeb";
 import LivePreview from "./LivePreview";
 function WebsitePortfolioItemLayout({ el }: { el: WebPortfolioItemType }) {
-	const tpP = useTranslations("portfolioProjects");
+	const tpP = useTranslations("webPortfolioProjects");
 	return (
 		<section className=''>
 			{/* Tytuł projektu */}

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { socialMedia } from "../constant/const";
+import { SocialMedia } from "../constant/const";
 
 export default function Footer() {
 	const t = useTranslations("nav");
@@ -11,7 +11,7 @@ export default function Footer() {
 				{/* Social media */}
 				<div className='flex justify-center w-full md:w-1/3'>
 					<div className='flex md:w-1/3 justify-evenly'>
-						{socialMedia.map(el => (
+						{SocialMedia.map(el => (
 							<Link
 								target='_blank'
 								href={el.link}
