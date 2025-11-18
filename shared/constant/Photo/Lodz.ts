@@ -8,7 +8,7 @@ export const Lodz: PhotoPortfolioItemsType = {
 	fromDate: "2020-03-21",
 	favorite: true,
 	category: "CategoryPhotography",
-	imgArray: Array.from({ length: 56 }, (_, i) => ({
+	imgArray: Array.from({ length: 55 }, (_, i) => ({
 		id: i + 1,
 		title: `Łódź - ${String(i + 1).padStart(2, "0")}`,
 		src: `/assets/img/portfolio/photo/Łódź/${String(i + 1).padStart(

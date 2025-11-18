@@ -7,7 +7,7 @@ export const Cygary: PhotoPortfolioItemsType = {
 	date: "2023-09-19",
 	favorite: false,
 	category: "CategoryPhotography",
-	imgArray: Array.from({ length: 90 }, (_, i) => ({
+	imgArray: Array.from({ length: 89 }, (_, i) => ({
 		id: i + 1,
 		title: `Cygary - ${String(i + 1).padStart(2, "0")}`,
 		src: `/assets/img/portfolio/photo/Cygary/${String(i + 1).padStart(
