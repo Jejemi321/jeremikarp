@@ -4,7 +4,6 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbopack",
-		"prebuild": "npm run gen::photo-exports",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
