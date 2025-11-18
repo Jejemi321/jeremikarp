@@ -7,7 +7,6 @@ export const Kolczyki: VideoPortfolioItemsType = {
 	date: "2023-12-29",
 	favorite: false,
 	category: "CategoryVideo",
-	videoSrc: "/assets/img/portfolio/Video/Kolczyki.webM",
 	dop: "Jeremi Karp",
 	directedBy: "Mateusz Mierzejewski",
 	editBy: "Daniel Dutkiewicz",
@@ -19,4 +18,5 @@ export const Kolczyki: VideoPortfolioItemsType = {
 	videoCategory: "MusicVideo",
 	lensesUsed: ["24-70mm/2.8f", "17-35mm/2.8f"],
 	cameraUsed: ["Nikon d800", "Nikon d750"],
+	vimeoId: "1122643593",
 };

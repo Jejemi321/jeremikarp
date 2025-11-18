@@ -7,7 +7,6 @@ export const MłodyVamp: VideoPortfolioItemsType = {
 	date: "2023-11-30",
 	favorite: false,
 	category: "CategoryVideo",
-	videoSrc: "/assets/img/portfolio/Video/MłodyVamp.webM",
 	dop: "Jeremi Karp",
 	directedBy: "Mateusz Mierzejewski",
 	editBy: "Daniel Dutkiewicz",
@@ -19,4 +18,5 @@ export const MłodyVamp: VideoPortfolioItemsType = {
 	videoCategory: "MusicVideo",
 	lensesUsed: ["24-70mm/2.8f", "17-35mm/2.8f", "8mm/3.5f"],
 	cameraUsed: ["Nikon d800", "Nikon d750"],
+	vimeoId: "1137503484",
 };

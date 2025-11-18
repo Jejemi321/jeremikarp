@@ -1,6 +1,7 @@
 "use client";
 import { VideoPortfolioItemsType } from "@/shared/constant/VideoPortfolioItems";
 import { useTranslations } from "next-intl";
+import VimeoPlayer from "../VimeoPlayer";
 
 function VideoPortfolioItemLayout({ el }: { el: VideoPortfolioItemsType }) {
 	const tvP = useTranslations("videoPortfolio");
@@ -33,15 +34,7 @@ function VideoPortfolioItemLayout({ el }: { el: VideoPortfolioItemsType }) {
 				</p>
 			</header>
 			{/* --- VIDEO --- */}
-			<div className='relative w-full overflow-hidden shadow-lg aspect-video rounded-xl'>
-				<video
-					src={el.videoSrc}
-					controls
-					controlsList='nodownload noplaybackrate'
-					onContextMenu={e => e.preventDefault()}
-					className='object-cover w-full h-full'
-				/>
-			</div>
+			<VimeoPlayer videoId={el.vimeoId} title={el.title} />
 			<div className='grid items-start text-sm text-center lg:text-start sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-6'>
 				{credits.map(
 					item =>

@@ -7,7 +7,6 @@ export const OneOz: VideoPortfolioItemsType = {
 	date: "2023-10-20",
 	favorite: false,
 	category: "CategoryVideo",
-	videoSrc: "/assets/img/portfolio/Video/1oz.webM",
 	dop: "Jeremi Karp",
 	directedBy: "Jeremi Karp",
 	editBy: "Daniel Dutkiewicz",
@@ -19,4 +18,5 @@ export const OneOz: VideoPortfolioItemsType = {
 	videoCategory: "MusicVideo",
 	lensesUsed: ["24-70mm / 2.8f"],
 	cameraUsed: ["Nikon d800", "Panasonic NV-GS140"],
+	vimeoId: "1122642716",
 };

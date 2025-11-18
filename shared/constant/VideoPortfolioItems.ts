@@ -2,7 +2,6 @@ import { PortfolioItem } from "./PortfolioItems";
 import { OneOz, MłodyVamp, DajMiCzas, Kolczyki } from "./Video/";
 
 export interface VideoPortfolioItemsType extends Omit<PortfolioItem, "id"> {
-	videoSrc: string;
 	directedBy: string;
 	dop: string;
 	editBy: string;
@@ -15,6 +14,8 @@ export interface VideoPortfolioItemsType extends Omit<PortfolioItem, "id"> {
 	lensesUsed: string[];
 	videoCategory: "MusicVideo";
 	ageWarning?: boolean;
+	vimeoId: string;
+	autoplay?: boolean;
 }
 const VideoPortfolioItems: VideoPortfolioItemsType[] = [
 	MłodyVamp,
