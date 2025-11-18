@@ -47,7 +47,7 @@ import {
 	NikMakino,
 	Iga,
 	GermanyVienna,
-} from "./PhotoA";
+} from "./Photo";
 import { PortfolioItem } from "./PortfolioItems";
 export interface PhotoPortfolioItemsType extends Omit<PortfolioItem, "id"> {
 	imgArray: imgArrayPhoto[];
