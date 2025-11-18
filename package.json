@@ -7,8 +7,9 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"gen::types": "node shared/scripts/generate-type-exports.mjs",
-		"gen::photo-exports": "node shared/scripts/generate-exports-photo-portfolio.mjs"
+		"gen": "run-s gen-photo gen-type",
+		"gen-photo": "node shared/scripts/generate-exports-photo-portfolio.mjs",
+		"gen-type": "node shared/scripts/generate-type-exports.mjs"
 	},
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
@@ -41,6 +42,7 @@
 		"@types/react-dom": "^19",
 		"eslint": "^9",
 		"eslint-config-next": "15.4.6",
+		"npm-run-all": "^4.1.5",
 		"tailwindcss": "^4",
 		"typescript": "^5"
 	}

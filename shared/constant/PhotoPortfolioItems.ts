@@ -1,7 +1,7 @@
 //TODO portrety seria zdjęć || photo from old laptop
 import { imgArrayPhoto } from "../types";
 import {
-	ModelsFromŁódź,
+	ModelsFromLodz,
 	Cracow,
 	Warsaw01,
 	Winter,
@@ -21,9 +21,9 @@ import {
 	Solitude,
 	Fade,
 	Skyscraper,
-	Łódź,
-	Łódź01,
-	Łódź02,
+	Lodz,
+	Lodz01,
+	Lodz02,
 	Stanley,
 	Mateusz,
 	Studio,
@@ -47,7 +47,7 @@ import {
 	NikMakino,
 	Iga,
 	GermanyVienna,
-} from "./Photo";
+} from "./PhotoA";
 import { PortfolioItem } from "./PortfolioItems";
 export interface PhotoPortfolioItemsType extends Omit<PortfolioItem, "id"> {
 	imgArray: imgArrayPhoto[];
@@ -66,12 +66,12 @@ const PhotoPortfolioItems: PhotoPortfolioItemsType[] = [
 	Fade,
 	GermanyVienna,
 	Hotel,
-	Łódź,
-	Łódź01,
-	Łódź02,
+	Lodz,
+	Lodz01,
+	Lodz02,
 	Masuria,
 	Mateusz,
-	ModelsFromŁódź,
+	ModelsFromLodz,
 	NightDemon,
 	NikMakino,
 	Nikola,
