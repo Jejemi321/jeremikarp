@@ -30,7 +30,7 @@ export * from "./PhilippineModels02";
 export * from "./Philippines";
 export * from "./Philocaly";
 export * from "./Rooftop";
-export * from "./Shop&Concrete";
+export * from "./ShopAndConcrete";
 export * from "./Skate";
 export * from "./Skyscraper";
 export * from "./Solitude";

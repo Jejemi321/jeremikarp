@@ -3,7 +3,7 @@ import { imgArrayPhoto } from "../types";
 import {
 	ModelsFromŁódź,
 	Cracow,
-	warsaw01,
+	Warsaw01,
 	Winter,
 	Masuria,
 	Staircase,
@@ -95,7 +95,7 @@ const PhotoPortfolioItems: PhotoPortfolioItemsType[] = [
 	Studio01,
 	Studio02,
 	StudioPhilippines,
-	warsaw01,
+	Warsaw01,
 	Warsaw02,
 	Winter,
 	Zakopane,
