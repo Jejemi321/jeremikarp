@@ -42,5 +42,5 @@ export * from "./Winter";
 export * from "./Zakopane";
 export * from "./warsaw01";
 export * from "./Łódź";
-export * from "./Łódź01";
 export * from "./Łódź02";
+export * from "./Łódź01";

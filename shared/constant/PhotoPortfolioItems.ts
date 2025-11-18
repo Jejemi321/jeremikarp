@@ -4,7 +4,6 @@ import {
 	ModelsFromŁódź,
 	Cracow,
 	warsaw01,
-	Germany,
 	Winter,
 	Masuria,
 	Staircase,
@@ -47,6 +46,7 @@ import {
 	Bagio,
 	NikMakino,
 	Iga,
+	GermanyVienna,
 } from "./Photo";
 import { PortfolioItem } from "./PortfolioItems";
 export interface PhotoPortfolioItemsType extends Omit<PortfolioItem, "id"> {
@@ -64,7 +64,7 @@ const PhotoPortfolioItems: PhotoPortfolioItemsType[] = [
 	EgzodiaBlurry,
 	Elevator,
 	Fade,
-	Germany,
+	GermanyVienna,
 	Hotel,
 	Łódź,
 	Łódź01,

@@ -1,6 +1,6 @@
 import { PhotoPortfolioItemsType } from "../PhotoPortfolioItems";
 
-export const Germany: PhotoPortfolioItemsType = {
+export const GermanyVienna: PhotoPortfolioItemsType = {
 	title: "GermanyViennaTitle",
 	description: "GermanyViennaDescription",
 	imageCover: "/assets/img/portfolio/photo/GermanyVienna/10.webp",
