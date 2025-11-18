@@ -1,9 +1,12 @@
-import PhotographyPortfolioItemLayout from "@/shared/components/PhotographyPortfolioItemLayout";
-import WebsitePortfolioItemLayout from "@/shared/components/WebsitePortfolioItemLayout";
+import PhotographyPortfolioItemLayout from "@/shared/components/Layouts/PhotographyPortfolioItemLayout";
+import VideoPortfolioItemLayout from "@/shared/components/Layouts/VideoPortfolioItemLayout";
+import WebsitePortfolioItemLayout from "@/shared/components/Layouts/WebsitePortfolioItemLayout";
+import { PhotoPortfolioItemsType } from "@/shared/constant/PhotoPortfolioItems";
 import {
 	PortfolioItems,
 	PortfolioItemType,
 } from "@/shared/constant/PortfolioItems";
+import { VideoPortfolioItemsType } from "@/shared/constant/VideoPortfolioItems";
 import { WebPortfolioItemType } from "@/shared/constant/WebPortfolioItems";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -12,6 +15,18 @@ function isWebPortfolioItem(
 	item: PortfolioItemType
 ): item is WebPortfolioItemType & { id: number } {
 	return item.category === "CategoryWebsite";
+}
+
+function isPhotoPortfolioItem(
+	item: PortfolioItemType
+): item is PhotoPortfolioItemsType & { id: number } {
+	return item.category === "CategoryPhotography";
+}
+
+function isVideoPortfolioItem(
+	item: PortfolioItemType
+): item is VideoPortfolioItemsType & { id: number } {
+	return item.category === "CategoryVideo";
 }
 
 export default async function PortfolioItemPage({
@@ -33,9 +48,11 @@ export default async function PortfolioItemPage({
 
 			{isWebPortfolioItem(item) ? (
 				<WebsitePortfolioItemLayout el={item} />
-			) : (
+			) : isPhotoPortfolioItem(item) ? (
 				<PhotographyPortfolioItemLayout el={item} />
-			)}
+			) : isVideoPortfolioItem(item) ? (
+				<VideoPortfolioItemLayout el={item} />
+			) : null}
 		</div>
 	);
 }

@@ -54,6 +54,7 @@ export const PortfolioCategories: portfolioCategory[] = [
 	{ id: 1, name: "CategoryAll" },
 	{ id: 2, name: "CategoryWebsite" },
 	{ id: 3, name: "CategoryPhotography" },
+	{ id: 4, name: "CategoryVideo" },
 ];
 export type CategoryType = (typeof PortfolioCategories)[number]["name"];
 
@@ -237,13 +238,12 @@ export const SchoolsArray: schools[] = [
 	},
 ];
 
-//TODO: img norbert
 export const WorkPeopleArray: peopleWork[] = [
 	{
 		id: 1,
 		name: "Norbert Stańczyk",
 		role: "Ui/Ux Designer",
-		img: blankJpg,
+		img: "/assets/img/norbi.webp",
 		web: "https://norbertkalifornia.pl/",
 	},
 ];

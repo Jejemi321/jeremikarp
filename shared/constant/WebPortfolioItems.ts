@@ -1,5 +1,6 @@
 //TODO Note app || ToDo 2.0 || currency || roulette || voting || ciekawostka
 import { PortfolioItem } from "./PortfolioItems";
+import { currency, jeremikarp, toDoApp } from "./Web/";
 type statusType = "Archive" | "InProgress" | "Finish";
 type roleType =
 	| "Frontend Developer"
@@ -35,56 +36,8 @@ export interface WebPortfolioItemType extends Omit<PortfolioItem, "id"> {
 	apiUsed?: string[];
 }
 const WebPortfolioItems: WebPortfolioItemType[] = [
-	{
-		title: "jeremikarpTitle",
-		description: "jeremikarpdescription",
-		imageCover: "/assets/img/portfolio/web/jeremikarpLogo.webp",
-		date: "2025-10-01",
-		starterDate: "2025-09-01",
-		url: "https://jeremikarp.com",
-		favorite: true,
-		category: "CategoryWebsite",
-		status: "Finish",
-		client: "Jeremi Karp",
-		role: "FullStack Developer",
-		duration: "Month",
-		darkMode: true,
-		supportedLanguages: ["EN", "PL"],
-		techStack: [1, 5, 7, 8, 9, 15, 18, 19, 20, 22, 23, 24, 25, 26, 27],
-	},
-	{
-		title: "currencyTitle",
-		description: "currencyDescription",
-		imageCover: "/assets/img/portfolio/web/currency.webp",
-		date: "2025-09-29",
-		starterDate: "2025-09-28",
-		url: "https://currency-zeta-ashy.vercel.app",
-		favorite: false,
-		category: "CategoryWebsite",
-		status: "Finish",
-		client: "Jeremi Karp",
-		role: "FullStack Developer",
-		duration: "Day",
-		darkMode: false,
-		supportedLanguages: ["EN"],
-		techStack: [5, 6, 7, 8, 9, 19, 22],
-	},
-	{
-		title: "toDoAppTitle",
-		description: "toDoAppDescription",
-		imageCover: "/assets/img/portfolio/web/toDoApp.webp",
-		date: "2025-09-23",
-		starterDate: "2025-10-24",
-		url: "https://to-do-app-next-js-two.vercel.app",
-		favorite: false,
-		category: "CategoryWebsite",
-		status: "Finish",
-		client: "Jeremi Karp",
-		role: "FullStack Developer",
-		duration: "Day",
-		darkMode: true,
-		supportedLanguages: ["EN", "PL"],
-		techStack: [1, 5, 7, 8, 12, 19, 20, 26],
-	},
+	jeremikarp,
+	currency,
+	toDoApp,
 ];
 export default WebPortfolioItems;

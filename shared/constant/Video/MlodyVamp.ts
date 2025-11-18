@@ -1,0 +1,22 @@
+import { VideoPortfolioItemsType } from "../VideoPortfolioItems";
+
+export const MłodyVamp: VideoPortfolioItemsType = {
+	title: "MłodyVampTitle",
+	description: "MłodyVampDescription",
+	imageCover: "/assets/img/portfolio/Video/Covers/mlodywamp.webp",
+	date: "2023-11-30",
+	favorite: false,
+	category: "CategoryVideo",
+	videoSrc: "/assets/img/portfolio/Video/MłodyVamp.webM",
+	dop: "Jeremi Karp",
+	directedBy: "Mateusz Mierzejewski",
+	editBy: "Daniel Dutkiewicz",
+	coverBy: "Norbert Stańczyk",
+	artist: "Qwerstin",
+	status: "archived",
+	duration: "0.55",
+	location: ["Łódź"],
+	videoCategory: "MusicVideo",
+	lensesUsed: ["24-70mm/2.8f", "17-35mm/2.8f", "8mm/3.5f"],
+	cameraUsed: ["Nikon d800", "Nikon d750"],
+};

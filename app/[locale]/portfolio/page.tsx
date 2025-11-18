@@ -22,21 +22,32 @@ const Portfolio: NextPage = () => {
 		PortfolioSortItems[0].name
 	);
 	const t = useTranslations("portfolio");
-	const ITEMS_PER_PAGE = 8;
+	const ITEMS_PER_PAGE = 20;
 	const [currentPage, setCurrentPage] = useState(1);
 
 	const filteredItems = PortfolioItems.filter(
 		item => item.category === Category || Category === "CategoryAll"
 	).sort((a, b) => {
-		if (SortBy === "AtoZ") return a.title.localeCompare(b.title);
-		if (SortBy === "ZtoA") return b.title.localeCompare(a.title);
-		if (SortBy === "Newest")
+		let result = 0;
+
+		if (SortBy === "AtoZ") {
+			result = a.title.localeCompare(b.title);
+		} else if (SortBy === "ZtoA") {
+			result = b.title.localeCompare(a.title);
+		} else if (SortBy === "Newest") {
+			result = new Date(b.date).getTime() - new Date(a.date).getTime();
+		} else if (SortBy === "Oldest") {
+			result = new Date(a.date).getTime() - new Date(b.date).getTime();
+		} else if (SortBy === "Favorites") {
+			result = (b.favorite ? 1 : 0) - (a.favorite ? 1 : 0);
+		}
+
+		// jeśli wynik jest 0, dodatkowo sortujemy po najnowszej dacie
+		if (result === 0) {
 			return new Date(b.date).getTime() - new Date(a.date).getTime();
-		if (SortBy === "Oldest")
-			return new Date(a.date).getTime() - new Date(b.date).getTime();
-		if (SortBy === "Favorites")
-			return (b.favorite ? 1 : 0) - (a.favorite ? 1 : 0);
-		return 0;
+		}
+
+		return result;
 	});
 
 	const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE);
@@ -72,14 +83,22 @@ const Portfolio: NextPage = () => {
 								Category === category.name &&
 								"dark:bg-background dark:text-foreground bg-dark-background text-dark-foreground hover:opacity-100"
 							}`}
-							onClick={() => setCategory(category.name)}>
+							onClick={() => {
+								setCategory(category.name);
+								setCurrentPage(1); // wracamy na pierwszą stronę
+								window.scrollTo({ top: 0, behavior: "smooth" }); // opcjonalnie przewijamy do góry
+							}}>
 							{t(category.name)}
 						</div>
 					))}
 				</div>
 				<select
 					value={SortBy}
-					onChange={e => setSortBy(e.target.value)}
+					onChange={e => {
+						setSortBy(e.target.value);
+						setCurrentPage(1); // wracamy na pierwszą stronę
+						window.scrollTo({ top: 0, behavior: "smooth" }); // opcjonalnie przewijamy do góry
+					}}
 					className='border rounded-md px-2.5 py-0.5 cursor-pointer'>
 					{PortfolioSortItems.map(el => (
 						<option key={el.id} value={el.name}>
@@ -105,7 +124,10 @@ const Portfolio: NextPage = () => {
 				<Pagination
 					currentPage={currentPage}
 					totalPages={totalPages}
-					setCurrentPage={setCurrentPage}
+					setCurrentPage={page => {
+						setCurrentPage(page);
+						window.scrollTo({ top: 0, behavior: "smooth" }); // przewija do góry
+					}}
 				/>
 			)}
 		</div>

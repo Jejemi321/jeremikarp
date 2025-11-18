@@ -6,6 +6,7 @@ export const Masuria: PhotoPortfolioItemsType = {
 	imageCover: "/assets/img/portfolio/photo/Masuria/05.webp",
 	date: "2021-06-24",
 	favorite: false,
+	class: "sm:grid-cols-2 md:grid-cols-4",
 	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 6 }, (_, i) => ({
 		id: i + 1,

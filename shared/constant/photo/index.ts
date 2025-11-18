@@ -10,6 +10,7 @@ export * from "./Elevator";
 export * from "./Fade";
 export * from "./GermanyVienna";
 export * from "./Hotel";
+export * from "./Iga";
 export * from "./Masuria";
 export * from "./Mateusz";
 export * from "./ModelsFromŁódź";

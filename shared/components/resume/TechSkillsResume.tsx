@@ -56,13 +56,13 @@ function TechSkillsResume() {
 						{/* Nagłówek */}
 						<div className='flex items-center justify-between'>
 							<TechIcon id={el.id} />
-							<p className='text-sm'>
+							<p className='text-sm capitalize'>
 								{tTime("since")} {el.since.getFullYear()}
 							</p>
 						</div>
 
 						{/* Pasek wiedzy */}
-						<div className='border rounded-2xl h-2.5 mt-2.5 mb-1 overflow-hidden'>
+						{/* <div className='border rounded-2xl h-2.5 mt-2.5 mb-1 overflow-hidden'>
 							<motion.div
 								className='h-full bg-foreground dark:bg-dark-foreground rounded-2xl'
 								initial={{ width: "0%" }}
@@ -70,7 +70,7 @@ function TechSkillsResume() {
 								transition={{ duration: 0.8, ease: "easeOut" }}
 								viewport={{ once: true }}
 							/>
-						</div>
+						</div> */}
 					</motion.div>
 				))}
 			</motion.div>

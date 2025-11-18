@@ -1,0 +1,22 @@
+import { VideoPortfolioItemsType } from "../VideoPortfolioItems";
+
+export const Kolczyki: VideoPortfolioItemsType = {
+	title: "KolczykiTitle",
+	description: "KolczykiDescription",
+	imageCover: "/assets/img/portfolio/Video/Covers/kolczyki.webp",
+	date: "2023-12-29",
+	favorite: false,
+	category: "CategoryVideo",
+	videoSrc: "/assets/img/portfolio/Video/Kolczyki.webM",
+	dop: "Jeremi Karp",
+	directedBy: "Mateusz Mierzejewski",
+	editBy: "Daniel Dutkiewicz",
+	coverBy: "Norbert Stańczyk",
+	artist: "Pelcu",
+	status: "archived",
+	duration: "2.22",
+	location: ["Łódź"],
+	videoCategory: "MusicVideo",
+	lensesUsed: ["24-70mm/2.8f", "17-35mm/2.8f"],
+	cameraUsed: ["Nikon d800", "Nikon d750"],
+};

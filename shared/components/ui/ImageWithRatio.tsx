@@ -17,7 +17,7 @@ function ImageWithRatio({ img }: { img: imgArrayPhoto }) {
 	return (
 		<motion.div
 			className={`relative overflow-hidden rounded-lg ${
-				isLandscape ? "col-span-2" : "col-span-1"
+				isLandscape ? "sm:col-span-2" : "sm:col-span-1"
 			}`}
 			initial={{ opacity: 0, y: 20 }}
 			whileInView={{ opacity: 1, y: 0 }}

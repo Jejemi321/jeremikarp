@@ -132,6 +132,7 @@
 		"CategoryAll": "All",
 		"CategoryWebsite": "Website",
 		"CategoryPhotography": "Photography",
+		"CategoryVideo": "Video",
 		"LoadMoreBtn": "Load more",
 		"NoItemsFound": "No items found",
 		"AtoZ": "A to Z",
@@ -283,7 +284,37 @@
 		"NikMakinoTitle": "Nik Makino - Concert",
 		"NikMakinoDescription": "Photos taken at Nik Makino concert.",
 		"BagioTitle": "Bagio",
-		"BagioDescription": "Photos taken in city Bagio."
+		"BagioDescription": "Photos taken in city Bagio.",
+		"IgaTitle": "Iga",
+		"IgaDescription": "Photoshot of Iga Kosakowska in Warsaw."
+	},
+	"videoPortfolio": {
+		"Dop": "Director of Photography",
+		"CoverBy": "Cover",
+		"DirectedBy": "Directed",
+		"EditedBy": "Edited",
+		"Artist": "Artist",
+		"Status": "Status",
+		"Date": "Date",
+		"Duration": "Duration",
+		"Location": "Location",
+		"cameraUsed": "Camera Used",
+		"lensesUsed": "Lenses Used",
+		"videoCategory": "Category",
+		"published": "Published",
+		"archived": "Archived",
+		"completed": "Completed",
+		"MusicVideo": "Music Video"
+	},
+	"videoPortfolioProjects": {
+		"MłodyVampTitle": "Young Vamp",
+		"MłodyVampDescription": "Music video for artist Qwerstin for song Young Vamp(Młody Vamp).",
+		"KolczykiTitle": "Earrings",
+		"KolczykiDescription": "Music video for artist Pelcu for song Earrings(Kolczyki).",
+		"1ozTitle": "1 oz",
+		"1ozDescription": "Music video for artist Pelcu for song 1oz.",
+		"DajMiCzasTitle": "Give Me Time",
+		"DajMiCzasDescription": "Music video for artist R.V.G. for song GiveMeTime(Daj mi czas)."
 	},
 	"steps": {
 		"ConsultationTitle": "Consultation",

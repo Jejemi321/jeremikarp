@@ -46,10 +46,12 @@ import {
 	PhilippineModels02,
 	Bagio,
 	NikMakino,
-} from "./photo/";
+	Iga,
+} from "./Photo";
 import { PortfolioItem } from "./PortfolioItems";
 export interface PhotoPortfolioItemsType extends Omit<PortfolioItem, "id"> {
 	imgArray: imgArrayPhoto[];
+	class?: string;
 }
 const PhotoPortfolioItems: PhotoPortfolioItemsType[] = [
 	Adisz,
@@ -97,5 +99,6 @@ const PhotoPortfolioItems: PhotoPortfolioItemsType[] = [
 	Warsaw02,
 	Winter,
 	Zakopane,
+	Iga,
 ];
 export default PhotoPortfolioItems;

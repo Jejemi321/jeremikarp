@@ -5,6 +5,7 @@ export const PhilippineModels01: PhotoPortfolioItemsType = {
 	description: "PhilippineModels01Description",
 	imageCover: "/assets/img/portfolio/photo/PhilippineModels01/11.webp",
 	date: "2022-10-02",
+
 	favorite: false,
 	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 50 }, (_, i) => ({

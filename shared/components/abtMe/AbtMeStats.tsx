@@ -12,7 +12,7 @@ type stats = {
 	value: number;
 	delay: number;
 };
-const startDate = new Date(2022, 0, 1); // January 1, 2022
+const startDate = new Date(2022, 6, 1); // 2022-07-01
 const now = new Date();
 const days = Math.floor(
 	(now.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)

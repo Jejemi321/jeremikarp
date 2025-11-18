@@ -9,9 +9,17 @@ function PortfolioItem({ el }: { el: PortfolioItemType }) {
 	const t = useTranslations("portfolio");
 	const tPPP = useTranslations("photoPortfolioProjects");
 	const tWPP = useTranslations("webPortfolioProjects");
+	const tVPP = useTranslations("videoPortfolioProjects"); // nowy translator
 
 	// wybierz odpowiedni translator na podstawie kategorii
-	const tCategory = el.category === "CategoryPhotography" ? tPPP : tWPP;
+	const tCategory =
+		el.category === "CategoryPhotography"
+			? tPPP
+			: el.category === "CategoryWebsite"
+			? tWPP
+			: el.category === "CategoryVideo"
+			? tVPP
+			: t; // domyślny tłumacz
 
 	// przetłumaczony opis
 	const translatedDescription = tCategory(el.description);
@@ -42,9 +50,7 @@ function PortfolioItem({ el }: { el: PortfolioItemType }) {
 				<div className='p-4'>
 					<div className='flex items-center mb-1'>
 						<h3 className='mr-2 text-lg font-bold uppercase text-primary-dark dark:text-primary'>
-							{el.category === "CategoryPhotography"
-								? tPPP(el.title)
-								: tWPP(el.title)}
+							{tCategory(el.title)}
 						</h3>
 						<span title='Starred' className='text-sm text-yellow-400'>
 							{el.favorite ? (

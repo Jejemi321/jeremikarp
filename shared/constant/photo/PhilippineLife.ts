@@ -9,9 +9,9 @@ export const PhilippineLife: PhotoPortfolioItemsType = {
 	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 79 }, (_, i) => ({
 		id: i + 1,
-		title: `Philippine Life - ${String(i + 1).padStart(2, "0")}`,
+		title: `Philippine Life - ${String(i + 1).padStart(3, "0")}`,
 		src: `/assets/img/portfolio/photo/PhilippineLife/${String(i + 1).padStart(
-			2,
+			3,
 			"0"
 		)}.webp`,
 	})),
