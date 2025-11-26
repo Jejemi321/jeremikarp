@@ -18,7 +18,9 @@ const InputField: React.FC<InputFieldProps> = ({
 			type={type}
 			placeholder={placeholder}
 			value={value}
-			onChange={e => onChange(e.target.value)}
+			onChange={e => {
+				onChange(e.target.value);
+			}}
 			className={`pb-2 mb-5 tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground ${className}`}
 		/>
 	);

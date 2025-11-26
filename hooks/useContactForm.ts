@@ -19,8 +19,12 @@ export const useContactForm = (t: any) => {
 
 	useEffect(() => {
 		if (status === "sent") {
-			const timer = setTimeout(() => setStatus("idle"), 3000);
-			return () => clearTimeout(timer);
+			const timer = setTimeout(() => {
+				setStatus("idle");
+			}, 3000);
+			return () => {
+				clearTimeout(timer);
+			};
 		}
 	}, [status]);
 

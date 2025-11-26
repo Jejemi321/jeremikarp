@@ -19,7 +19,9 @@ export default function FormRow({ fields, form, handleChange }: FormRowProps) {
 					type={field.type}
 					placeholder={field.placeholder}
 					value={form[field.name]}
-					onChange={value => handleChange(field.name, value)}
+					onChange={value => {
+						handleChange(field.name, value);
+					}}
 				/>
 			))}
 		</div>

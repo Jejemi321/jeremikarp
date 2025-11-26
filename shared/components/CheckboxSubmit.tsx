@@ -21,7 +21,9 @@ export default function CheckboxSubmit({
 				<input
 					type='checkbox'
 					checked={agree}
-					onChange={() => setAgree(!agree)}
+					onChange={() => {
+						setAgree(!agree);
+					}}
 					className='w-4 h-4 transition duration-500 border-2 rounded-md appearance-none cursor-pointer border-foreground dark:border-dark-foreground checked:bg-foreground dark:checked:bg-dark-foreground hover:opacity-80'
 				/>
 				<span className='text-xs font-medium select-none'>
