@@ -6,7 +6,6 @@ export const PhilippineAnimals: PhotoPortfolioItemsType = {
 	imageCover: "/assets/img/portfolio/photo/PhilippineAnimals/09.webp",
 	date: "2022-12-03",
 	favorite: false,
-	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 19 }, (_, i) => ({
 		id: i + 1,
 		title: `Philippine Animals - ${String(i + 1).padStart(2, "0")}`,

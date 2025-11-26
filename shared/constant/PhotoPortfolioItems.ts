@@ -1,5 +1,5 @@
-//TODO portrety seria zdjęć || photo from old laptop
-import { imgArrayPhoto } from "../types";
+//TODO portrety seria zdjęć
+import { imgArrayPhoto, PortfolioItem } from "../types";
 import {
 	ModelsFromLodz,
 	Cracow,
@@ -48,8 +48,8 @@ import {
 	Iga,
 	GermanyVienna,
 } from "./Photo";
-import { PortfolioItem } from "./PortfolioItems";
-export interface PhotoPortfolioItemsType extends Omit<PortfolioItem, "id"> {
+export interface PhotoPortfolioItemsType
+	extends Omit<PortfolioItem, "id" | "category"> {
 	imgArray: imgArrayPhoto[];
 	class?: string;
 }

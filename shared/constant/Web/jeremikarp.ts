@@ -8,7 +8,6 @@ export const jeremikarp: WebPortfolioItemType = {
 	starterDate: "2025-09-01",
 	url: "https://jeremikarp.com",
 	favorite: true,
-	category: "CategoryWebsite",
 	status: "Finish",
 	client: "Jeremi Karp",
 	role: "FullStack Developer",

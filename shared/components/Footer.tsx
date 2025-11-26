@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { SocialMedia } from "../constant/const";
+import { SocialMedia } from "../constant/data";
 
 export default function Footer() {
 	const t = useTranslations("nav");
@@ -16,6 +16,7 @@ export default function Footer() {
 								target='_blank'
 								href={el.link}
 								key={el.name}
+								aria-label={el.name}
 								className='transition-opacity duration-75 cursor-pointer hover:opacity-60'>
 								<i className={`w-4 h-4 ${el.icon} mx-1`} />
 							</Link>

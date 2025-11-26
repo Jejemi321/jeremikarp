@@ -5,9 +5,9 @@ import { Sling as Hamburger } from "hamburger-react";
 import { useState, useEffect } from "react";
 import ChangeLanguage from "./ChangeLanguage";
 import { useTranslations } from "next-intl";
-import { NavItems } from "../constant/const";
 import { motion, AnimatePresence, Variants, easeInOut } from "framer-motion";
 import ChangeColorMode from "./ChangeColorMode";
+import { NavItems } from "../constant/data";
 
 // Navbar fade-in
 const navVariants: Variants = {
@@ -48,10 +48,14 @@ function useIsMobile() {
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
-		const check = () => setIsMobile(window.innerWidth < 768);
+		const check = () => {
+			setIsMobile(window.innerWidth < 768);
+		};
 		check();
 		window.addEventListener("resize", check);
-		return () => window.removeEventListener("resize", check);
+		return () => {
+			window.removeEventListener("resize", check);
+		};
 	}, []);
 
 	return isMobile;
@@ -103,7 +107,11 @@ const Nav: React.FC = () => {
 								variants={itemVariants}
 								className='text-sm md:text-lg lg:text-xl max-md:w-full max-md:text-center max-md:text-xl'
 								{...(isMobile &&
-									isOpen && { onClick: () => setIsOpen(false) })}>
+									isOpen && {
+										onClick: () => {
+											setIsOpen(false);
+										},
+									})}>
 								<Link
 									href={item.href}
 									className='p-2 mx-1 my-2 rounded-lg opacity-100 hover:opacity-75'>

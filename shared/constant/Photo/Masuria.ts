@@ -7,7 +7,6 @@ export const Masuria: PhotoPortfolioItemsType = {
 	date: "2021-06-24",
 	favorite: false,
 	class: "sm:grid-cols-2 md:grid-cols-4",
-	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 6 }, (_, i) => ({
 		id: i + 1,
 		title: `Masuria - ${String(i + 1).padStart(2, "0")}`,

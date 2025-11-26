@@ -1,10 +1,10 @@
 "use client";
 
-import { Language } from "@/shared/constant/const";
 import Image from "next/image";
 import SectionTitle from "../ui/SectionTitle";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { Language } from "@/shared/constant/data";
 
 function LanguagesResume() {
 	const tSection = useTranslations("sectionTitle");

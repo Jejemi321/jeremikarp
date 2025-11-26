@@ -1,7 +1,8 @@
-import { PortfolioItem } from "./PortfolioItems";
+import { PortfolioItem } from "../types";
 import { OneOz, MłodyVamp, DajMiCzas, Kolczyki } from "./Video/";
 
-export interface VideoPortfolioItemsType extends Omit<PortfolioItem, "id"> {
+export interface VideoPortfolioItemsType
+	extends Omit<PortfolioItem, "id" | "category"> {
 	directedBy: string;
 	dop: string;
 	editBy: string;

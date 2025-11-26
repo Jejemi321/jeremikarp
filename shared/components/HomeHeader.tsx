@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
-import { SocialMedia } from "../constant/const";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { SocialMedia } from "../constant/data";
 
 function HomeHeader() {
 	const t = useTranslations("home");

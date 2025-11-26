@@ -1,3 +1,4 @@
+//TODO education delete
 "use client";
 import CertificationsResume from "@/shared/components/resume/CertificationsResume";
 import ContactInfoResume from "@/shared/components/resume/ContactInfoResume";

@@ -1,9 +1,10 @@
 "use client";
-import { main, SocialMedia } from "@/shared/constant/const";
+import { main } from "@/shared/constant/const";
 import Image from "next/image";
 import SectionTitle from "./ui/SectionTitle";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { SocialMedia } from "../constant/data";
 
 function BasicInfo() {
 	const tAboutMe = useTranslations("aboutMe");

@@ -7,7 +7,6 @@ export const PhilippineModels01: PhotoPortfolioItemsType = {
 	date: "2022-10-02",
 
 	favorite: false,
-	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 50 }, (_, i) => ({
 		id: i + 1,
 		title: `Philippine Models 01 - ${String(i + 1).padStart(2, "0")}`,

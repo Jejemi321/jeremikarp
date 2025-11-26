@@ -6,7 +6,6 @@ export const Nikola: PhotoPortfolioItemsType = {
 	imageCover: "/assets/img/portfolio/photo/Nikola/07.webp",
 	date: "2022-10-19",
 	favorite: false,
-	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 10 }, (_, i) => ({
 		id: i + 1,
 		title: `Nikola - ${String(i + 1).padStart(2, "0")}`,

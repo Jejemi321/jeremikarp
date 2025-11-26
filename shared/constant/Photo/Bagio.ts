@@ -7,7 +7,6 @@ export const Bagio: PhotoPortfolioItemsType = {
 	date: "2022-06-12",
 	class: "sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5",
 	favorite: false,
-	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 65 }, (_, i) => ({
 		id: i + 1,
 		title: `Bagio - ${String(i + 1).padStart(2, "0")}`,

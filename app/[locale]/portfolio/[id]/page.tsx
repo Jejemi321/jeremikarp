@@ -13,19 +13,22 @@ import { notFound } from "next/navigation";
 
 function isWebPortfolioItem(
 	item: PortfolioItemType
-): item is WebPortfolioItemType & { id: number } {
+): item is WebPortfolioItemType & { id: number; category: "CategoryWebsite" } {
 	return item.category === "CategoryWebsite";
 }
 
 function isPhotoPortfolioItem(
 	item: PortfolioItemType
-): item is PhotoPortfolioItemsType & { id: number } {
+): item is PhotoPortfolioItemsType & {
+	id: number;
+	category: "CategoryPhotography";
+} {
 	return item.category === "CategoryPhotography";
 }
 
 function isVideoPortfolioItem(
 	item: PortfolioItemType
-): item is VideoPortfolioItemsType & { id: number } {
+): item is VideoPortfolioItemsType & { id: number; category: "CategoryVideo" } {
 	return item.category === "CategoryVideo";
 }
 

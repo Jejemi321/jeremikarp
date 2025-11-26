@@ -1,12 +1,10 @@
 import { VideoPortfolioItemsType } from "../VideoPortfolioItems";
-
 export const OneOz: VideoPortfolioItemsType = {
 	title: "1ozTitle",
 	description: "1ozDescription",
 	imageCover: "/assets/img/portfolio/Video/Covers/1oz.webp",
 	date: "2023-10-20",
 	favorite: false,
-	category: "CategoryVideo",
 	dop: "Jeremi Karp",
 	directedBy: "Jeremi Karp",
 	editBy: "Daniel Dutkiewicz",

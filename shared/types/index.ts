@@ -1,3 +1,5 @@
+export * from "./CategoryType.type";
+export * from "./PortfolioSortType.type";
 export * from "./contactInfo.type";
 export * from "./faqType.type";
 export * from "./hobbyType.type";
@@ -6,6 +8,7 @@ export * from "./language.type";
 export * from "./model.type";
 export * from "./navItems.type";
 export * from "./portfolioCategory.type";
+export * from "./portfolioItems.type";
 export * from "./portfolioSortItems.type";
 export * from "./schools.type";
 export * from "./socialMedia.type";

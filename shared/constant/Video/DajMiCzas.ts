@@ -1,12 +1,10 @@
 import { VideoPortfolioItemsType } from "../VideoPortfolioItems";
-
 export const DajMiCzas: VideoPortfolioItemsType = {
 	title: "DajMiCzasTitle",
 	description: "DajMiCzasDescription",
 	imageCover: "/assets/img/portfolio/Video/Covers/DajMiCzas.jpg",
 	date: "2024-01-30",
 	favorite: false,
-	category: "CategoryVideo",
 	dop: "Jeremi Karp",
 	directedBy: "Jeremi Karp",
 	editBy: "Daniel Dutkiewicz",

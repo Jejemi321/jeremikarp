@@ -6,7 +6,6 @@ export const Cracow: PhotoPortfolioItemsType = {
 	imageCover: "/assets/img/portfolio/photo/Cracow/04.webp",
 	date: "2023-05-26",
 	favorite: false,
-	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 22 }, (_, i) => ({
 		id: i + 1,
 		title: `Cracow - ${String(i + 1).padStart(2, "0")}`,

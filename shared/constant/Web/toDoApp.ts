@@ -8,7 +8,6 @@ export const toDoApp: WebPortfolioItemType = {
 	starterDate: "2025-10-24",
 	url: "https://to-do-app-next-js-two.vercel.app",
 	favorite: false,
-	category: "CategoryWebsite",
 	status: "Finish",
 	client: "Jeremi Karp",
 	role: "FullStack Developer",

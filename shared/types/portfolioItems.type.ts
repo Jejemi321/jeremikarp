@@ -1,0 +1,12 @@
+import { CategoryType } from "./CategoryType.type";
+
+export interface PortfolioItem {
+	id: number;
+	title: string;
+	description: string;
+	imageCover: string;
+	date: string;
+	favorite: boolean;
+	category: CategoryType;
+	fromDate?: string;
+}

@@ -7,7 +7,6 @@ export const Skate: PhotoPortfolioItemsType = {
 	class: "sm:grid-cols-2 md:grid-cols-4",
 	date: "2022-10-09",
 	favorite: false,
-	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 53 }, (_, i) => ({
 		id: i + 1,
 		title: `Skate - ${String(i + 1).padStart(2, "0")}`,

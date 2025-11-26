@@ -1,3 +1,4 @@
+//TODO:same size all of skill
 "use client";
 
 import { TechStackArray } from "@/shared/constant/TechStack";

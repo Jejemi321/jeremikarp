@@ -6,7 +6,8 @@ export default function ChangeColorMode() {
 	return (
 		<button
 			onClick={toggleTheme}
-			className='transition-colors duration-300 outline-none cursor-pointer'>
+			className='transition-colors duration-300 outline-none cursor-pointer'
+			aria-label='Change Color mode'>
 			{theme === "dark" ? (
 				<i className='text-xl fi fi-rr-moon'></i>
 			) : (

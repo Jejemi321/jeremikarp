@@ -6,7 +6,6 @@ export const PhilippineArchitecture: PhotoPortfolioItemsType = {
 	imageCover: "/assets/img/portfolio/photo/PhilippineArchitecture/28.webp",
 	date: "2022-11-25",
 	favorite: false,
-	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 54 }, (_, i) => ({
 		id: i + 1,
 		title: `Philippine Architecture - ${String(i + 1).padStart(2, "0")}`,

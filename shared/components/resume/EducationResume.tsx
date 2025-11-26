@@ -1,9 +1,8 @@
 "use client";
-
-import { SchoolsArray } from "@/shared/constant/const";
 import SectionTitle from "../ui/SectionTitle";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { SchoolsArray } from "@/shared/constant/data";
 
 function EducationResume() {
 	const tSection = useTranslations("sectionTitle");

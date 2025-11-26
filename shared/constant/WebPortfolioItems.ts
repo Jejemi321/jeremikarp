@@ -1,5 +1,5 @@
 //TODO Note app || ToDo 2.0 || currency || roulette || voting || ciekawostka
-import { PortfolioItem } from "./PortfolioItems";
+import { PortfolioItem } from "../types";
 import { currency, jeremikarp, toDoApp } from "./Web/";
 type statusType = "Archive" | "InProgress" | "Finish";
 type roleType =
@@ -16,8 +16,9 @@ type duration =
 	| "2Months"
 	| "3Months"
 	| "6Months";
-export interface WebPortfolioItemType extends Omit<PortfolioItem, "id"> {
-	techStack?: number[];
+export interface WebPortfolioItemType
+	extends Omit<PortfolioItem, "id" | "category"> {
+	techStack: number[];
 	starterDate?: string;
 	url?: string;
 	status: statusType;

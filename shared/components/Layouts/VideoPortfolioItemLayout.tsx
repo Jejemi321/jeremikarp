@@ -2,6 +2,7 @@
 import { VideoPortfolioItemsType } from "@/shared/constant/VideoPortfolioItems";
 import { useTranslations } from "next-intl";
 import VimeoPlayer from "../VimeoPlayer";
+import PortfolioTitleElement from "../ui/PortfolioTitleElement";
 
 function VideoPortfolioItemLayout({ el }: { el: VideoPortfolioItemsType }) {
 	const tvP = useTranslations("videoPortfolio");
@@ -23,17 +24,10 @@ function VideoPortfolioItemLayout({ el }: { el: VideoPortfolioItemsType }) {
 	];
 	return (
 		<section className='space-y-10'>
-			{/* --- HEADER --- */}
-			<header className='mb-4 space-y-2'>
-				<h2 className='text-5xl font-bold leading-none uppercase sm:text-6xl md:text-7xl xl:text-8xl 2xl:text-9xl'>
-					{tvPP(el.title)}
-				</h2>
-
-				<p className='max-w-2xl text-sm sm:text-base opacity-80'>
-					{tvPP(el.description)}
-				</p>
-			</header>
-			{/* --- VIDEO --- */}
+			<PortfolioTitleElement
+				title={tvPP(el.title)}
+				desc={tvPP(el.description)}
+			/>
 			<VimeoPlayer videoId={el.vimeoId} title={el.title} />
 			<div className='grid items-start text-sm text-center lg:text-start sm:grid-cols-2 lg:grid-cols-4 gap-y-4 gap-x-6'>
 				{credits.map(

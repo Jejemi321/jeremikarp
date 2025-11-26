@@ -1,10 +1,10 @@
 "use client";
-import { TrainingArray } from "@/shared/constant/const";
 import SectionTitle from "../ui/SectionTitle";
 import { PortfolioItems } from "@/shared/constant/PortfolioItems";
 import AnimatedCounter from "../AnimatedCounter";
 import { TechStackArray } from "@/shared/constant/TechStack";
 import { useTranslations } from "next-intl";
+import { TrainingArray } from "@/shared/constant/data";
 
 type stats = {
 	id: number;

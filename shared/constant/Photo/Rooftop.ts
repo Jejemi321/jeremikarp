@@ -6,7 +6,6 @@ export const Rooftop: PhotoPortfolioItemsType = {
 	imageCover: "/assets/img/portfolio/photo/Rooftop/13.webp",
 	date: "2023-06-15",
 	favorite: false,
-	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 13 }, (_, i) => ({
 		id: i + 1,
 		title: `Rooftop - ${String(i + 1).padStart(2, "0")}`,

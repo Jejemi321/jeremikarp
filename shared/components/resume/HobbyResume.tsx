@@ -1,8 +1,8 @@
 "use client";
-import { Hobby } from "@/shared/constant/const";
 import SectionTitle from "../ui/SectionTitle";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { Hobby } from "@/shared/constant/data";
 
 function HobbyResume() {
 	const date = new Date();

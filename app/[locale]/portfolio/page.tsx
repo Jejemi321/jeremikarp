@@ -2,17 +2,17 @@
 import Pagination from "@/shared/components/Pagination";
 import PortfolioItem from "@/shared/components/PortfolioItem";
 import PageTitle from "@/shared/components/ui/PageTitle";
-import {
-	CategoryType,
-	PortfolioCategories,
-	PortfolioSortItems,
-	PortfolioSortType,
-} from "@/shared/constant/const";
+
 import { PortfolioItems } from "@/shared/constant/PortfolioItems";
 import { NextPage } from "next";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
+import {
+	PortfolioCategories,
+	PortfolioSortItems,
+} from "@/shared/constant/data";
+import { CategoryType, PortfolioSortType } from "@/shared/types";
 
 const Portfolio: NextPage = () => {
 	const [Category, setCategory] = useState<CategoryType>(
@@ -21,34 +21,32 @@ const Portfolio: NextPage = () => {
 	const [SortBy, setSortBy] = useState<PortfolioSortType>(
 		PortfolioSortItems[0].name
 	);
-	const t = useTranslations("portfolio");
-	const ITEMS_PER_PAGE = 20;
 	const [currentPage, setCurrentPage] = useState(1);
+	const ITEMS_PER_PAGE = 20;
 
-	const filteredItems = PortfolioItems.filter(
-		item => item.category === Category || Category === "CategoryAll"
-	).sort((a, b) => {
-		let result = 0;
+	const t = useTranslations("portfolio");
+	const titleT = useTranslations("title");
 
-		if (SortBy === "AtoZ") {
-			result = a.title.localeCompare(b.title);
-		} else if (SortBy === "ZtoA") {
-			result = b.title.localeCompare(a.title);
-		} else if (SortBy === "Newest") {
-			result = new Date(b.date).getTime() - new Date(a.date).getTime();
-		} else if (SortBy === "Oldest") {
-			result = new Date(a.date).getTime() - new Date(b.date).getTime();
-		} else if (SortBy === "Favorites") {
-			result = (b.favorite ? 1 : 0) - (a.favorite ? 1 : 0);
-		}
+	// Filtrowanie i sortowanie
+	const filteredItems = useMemo(() => {
+		return PortfolioItems.filter(
+			item => item.category === Category || Category === "CategoryAll"
+		).sort((a, b) => {
+			let result = 0;
+			if (SortBy === "AtoZ") result = a.title.localeCompare(b.title);
+			else if (SortBy === "ZtoA") result = b.title.localeCompare(a.title);
+			else if (SortBy === "Newest")
+				result = new Date(b.date).getTime() - new Date(a.date).getTime();
+			else if (SortBy === "Oldest")
+				result = new Date(a.date).getTime() - new Date(b.date).getTime();
+			else if (SortBy === "Favorites")
+				result = (b.favorite ? 1 : 0) - (a.favorite ? 1 : 0);
 
-		// jeśli wynik jest 0, dodatkowo sortujemy po najnowszej dacie
-		if (result === 0) {
-			return new Date(b.date).getTime() - new Date(a.date).getTime();
-		}
-
-		return result;
-	});
+			if (result === 0)
+				return new Date(b.date).getTime() - new Date(a.date).getTime();
+			return result;
+		});
+	}, [Category, SortBy]);
 
 	const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE);
 	const paginatedItems = filteredItems.slice(
@@ -56,8 +54,7 @@ const Portfolio: NextPage = () => {
 		currentPage * ITEMS_PER_PAGE
 	);
 
-	const titleT = useTranslations("title");
-
+	// Framer Motion variants
 	const containerVariants = {
 		hidden: {},
 		show: {
@@ -85,19 +82,20 @@ const Portfolio: NextPage = () => {
 							}`}
 							onClick={() => {
 								setCategory(category.name);
-								setCurrentPage(1); // wracamy na pierwszą stronę
-								window.scrollTo({ top: 0, behavior: "smooth" }); // opcjonalnie przewijamy do góry
+								setCurrentPage(1);
+								window.scrollTo({ top: 0, behavior: "smooth" });
 							}}>
 							{t(category.name)}
 						</div>
 					))}
 				</div>
+
 				<select
 					value={SortBy}
 					onChange={e => {
-						setSortBy(e.target.value);
-						setCurrentPage(1); // wracamy na pierwszą stronę
-						window.scrollTo({ top: 0, behavior: "smooth" }); // opcjonalnie przewijamy do góry
+						setSortBy(e.target.value as PortfolioSortType);
+						setCurrentPage(1);
+						window.scrollTo({ top: 0, behavior: "smooth" });
 					}}
 					className='border rounded-md px-2.5 py-0.5 cursor-pointer'>
 					{PortfolioSortItems.map(el => (
@@ -109,12 +107,13 @@ const Portfolio: NextPage = () => {
 			</div>
 
 			<motion.div
+				key={currentPage} // wymusza re-render przy zmianie strony
 				className='grid grid-cols-1 gap-4 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'
 				variants={containerVariants}
 				initial='hidden'
 				animate='show'>
 				{paginatedItems.map(el => (
-					<motion.div key={el.id} variants={itemVariants}>
+					<motion.div key={`${el.id}-${currentPage}`} variants={itemVariants}>
 						<PortfolioItem el={el} />
 					</motion.div>
 				))}
@@ -126,7 +125,7 @@ const Portfolio: NextPage = () => {
 					totalPages={totalPages}
 					setCurrentPage={page => {
 						setCurrentPage(page);
-						window.scrollTo({ top: 0, behavior: "smooth" }); // przewija do góry
+						window.scrollTo({ top: 0, behavior: "smooth" });
 					}}
 				/>
 			)}

@@ -1,3 +1,4 @@
+//TODO: Docker || Python || translate desc
 type KnowledgeLevel =
 	| "Beginner"
 	| "Intermediate"
@@ -10,14 +11,11 @@ type TechCategory =
 	| "Database"
 	| "Deployment"
 	| "Tools";
-
-type KnowledgeWidth = "20%" | "40%" | "60%" | "80%" | "100%";
 export type TechStackBase = {
 	id: number;
 	name: string;
 	description: string;
 	knowledge: KnowledgeLevel;
-	KnowledgeWidth: KnowledgeWidth;
 	type: "Framework" | "Language" | "Library" | "Tool" | "Others";
 	category: TechCategory;
 	docsUrl?: string;
@@ -41,7 +39,6 @@ export const TechStackArray: TechStack[] = [
 		name: "HTML",
 		description: "Markup language for structuring web pages.",
 		knowledge: "Master",
-		KnowledgeWidth: "100%",
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2022, 0, 1),
@@ -54,7 +51,6 @@ export const TechStackArray: TechStack[] = [
 		name: "CSS",
 		description: "Stylesheet language for designing web pages.",
 		knowledge: "Master",
-		KnowledgeWidth: "100%",
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2022, 0, 1),
@@ -67,7 +63,6 @@ export const TechStackArray: TechStack[] = [
 		name: "Scss/Sass",
 		description: "CSS preprocessor for nested and maintainable styles.",
 		knowledge: "Expert",
-		KnowledgeWidth: "80%",
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2023, 0, 1),
@@ -79,7 +74,6 @@ export const TechStackArray: TechStack[] = [
 		name: "JavaScript",
 		description: "High-level programming language for web development.",
 		knowledge: "Expert",
-		KnowledgeWidth: "80%",
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2022, 0, 1),
@@ -92,7 +86,6 @@ export const TechStackArray: TechStack[] = [
 		name: "TypeScript",
 		description: "Superset of JavaScript adding static typing.",
 		knowledge: "Advanced",
-		KnowledgeWidth: "60%",
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2025, 3, 1),
@@ -105,7 +98,6 @@ export const TechStackArray: TechStack[] = [
 		name: "React",
 		description: "Library for building user interfaces.",
 		knowledge: "Expert",
-		KnowledgeWidth: "80%",
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2024, 0, 1),
@@ -120,7 +112,6 @@ export const TechStackArray: TechStack[] = [
 		description:
 			"React framework for server-side rendering and fullstack apps.",
 		knowledge: "Advanced",
-		KnowledgeWidth: "60%",
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2025, 0, 1),
@@ -134,7 +125,6 @@ export const TechStackArray: TechStack[] = [
 		name: "Tailwind CSS",
 		description: "Utility-first CSS framework for rapid UI development.",
 		knowledge: "Master",
-		KnowledgeWidth: "100%",
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2023, 0, 1),
@@ -148,7 +138,6 @@ export const TechStackArray: TechStack[] = [
 		name: "Framer Motion",
 		description: "Animation library for React applications.",
 		knowledge: "Expert",
-		KnowledgeWidth: "80%",
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2023, 0, 1),
@@ -162,7 +151,6 @@ export const TechStackArray: TechStack[] = [
 		description:
 			"Backend language used for web development and server-side logic.",
 		knowledge: "Expert",
-		KnowledgeWidth: "80%",
 		type: "Language",
 		category: "Backend",
 		since: new Date(2022, 0, 1),
@@ -175,7 +163,6 @@ export const TechStackArray: TechStack[] = [
 		name: "SQL",
 		description: "Structured Query Language for relational databases.",
 		knowledge: "Master",
-		KnowledgeWidth: "100%",
 		type: "Language",
 		category: "Database",
 		since: new Date(2022, 0, 1),
@@ -188,7 +175,6 @@ export const TechStackArray: TechStack[] = [
 		name: "NodeJs",
 		description: "JavaScript runtime for backend development.",
 		knowledge: "Advanced",
-		KnowledgeWidth: "60%",
 		type: "Framework",
 		category: "Backend",
 		since: new Date(2024, 0, 1),
@@ -201,7 +187,6 @@ export const TechStackArray: TechStack[] = [
 		name: "ExpressJs",
 		description: "Web framework for Node.js to build APIs quickly.",
 		knowledge: "Intermediate",
-		KnowledgeWidth: "40%",
 		type: "Framework",
 		category: "Backend",
 		since: new Date(2025, 0, 1),
@@ -215,7 +200,6 @@ export const TechStackArray: TechStack[] = [
 		name: "Supabase",
 		description: "Open-source Firebase alternative with Postgres database.",
 		knowledge: "Expert",
-		KnowledgeWidth: "80%",
 		type: "Others",
 		category: "Backend",
 		since: new Date(2024, 0, 1),
@@ -229,7 +213,6 @@ export const TechStackArray: TechStack[] = [
 		name: "Vercel",
 		description: "Deployment and hosting platform for frontend apps.",
 		knowledge: "Advanced",
-		KnowledgeWidth: "60%",
 		type: "Others",
 		category: "Deployment",
 		since: new Date(2025, 0, 1),
@@ -242,7 +225,6 @@ export const TechStackArray: TechStack[] = [
 		name: "Cloudflare",
 		description: "CDN and security platform for web apps.",
 		knowledge: "Intermediate",
-		KnowledgeWidth: "40%",
 		type: "Others",
 		category: "Deployment",
 		since: new Date(2023, 0, 1),
@@ -255,7 +237,6 @@ export const TechStackArray: TechStack[] = [
 		name: "Git",
 		description: "Distributed version control system.",
 		knowledge: "Advanced",
-		KnowledgeWidth: "60%",
 		type: "Others",
 		category: "Tools",
 		since: new Date(2023, 0, 1),
@@ -268,7 +249,6 @@ export const TechStackArray: TechStack[] = [
 		name: "GitHub",
 		description: "Platform for hosting and collaborating on Git repositories.",
 		knowledge: "Advanced",
-		KnowledgeWidth: "60%",
 		type: "Others",
 		category: "Tools",
 		since: new Date(2023, 2, 7),
@@ -280,7 +260,6 @@ export const TechStackArray: TechStack[] = [
 		name: "ESLint",
 		description: "Tool for identifying and reporting on code issues.",
 		knowledge: "Expert",
-		KnowledgeWidth: "80%",
 		type: "Others",
 		category: "Tools",
 		since: new Date(2024, 0, 1),
@@ -293,7 +272,6 @@ export const TechStackArray: TechStack[] = [
 		name: "Prettier",
 		description: "Code formatter for consistent code style.",
 		knowledge: "Expert",
-		KnowledgeWidth: "80%",
 		type: "Others",
 		category: "Tools",
 		since: new Date(2024, 0, 1),
@@ -307,7 +285,6 @@ export const TechStackArray: TechStack[] = [
 		description:
 			"Modern mobile touch slider with hardware accelerated transitions.",
 		knowledge: "Advanced",
-		KnowledgeWidth: "60%",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2025, 5, 1),
@@ -320,7 +297,6 @@ export const TechStackArray: TechStack[] = [
 		name: "React-Icons",
 		description: "Popular icon sets as React components.",
 		knowledge: "Master",
-		KnowledgeWidth: "100%",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2024, 3, 1),
@@ -333,7 +309,6 @@ export const TechStackArray: TechStack[] = [
 		name: "HamburgerReact",
 		description: "Animated hamburger menu icons for React.",
 		knowledge: "Expert",
-		KnowledgeWidth: "80%",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2025, 2, 1),
@@ -345,7 +320,6 @@ export const TechStackArray: TechStack[] = [
 		name: "Sonner",
 		description: "An opinionated toast component for React apps.",
 		knowledge: "Intermediate",
-		KnowledgeWidth: "40%",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2025, 8, 1),
@@ -359,7 +333,6 @@ export const TechStackArray: TechStack[] = [
 		description:
 			"Send emails directly from client-side JavaScript without a backend.",
 		knowledge: "Expert",
-		KnowledgeWidth: "80%",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2025, 2, 1),
@@ -372,7 +345,6 @@ export const TechStackArray: TechStack[] = [
 		name: "i18n",
 		description: "Internationalization framework for React.",
 		knowledge: "Advanced",
-		KnowledgeWidth: "60%",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2025, 0, 1),
@@ -384,7 +356,18 @@ export const TechStackArray: TechStack[] = [
 		name: "Tailwind-Scrollbar",
 		description: "Tailwind CSS plugin to style scrollbars.",
 		knowledge: "Intermediate",
-		KnowledgeWidth: "40%",
+		type: "Library",
+		category: "Tools",
+		since: new Date(2024, 2, 1),
+		iconImg: "/assets/icons/light/TailwindCssLight.png",
+		darkIconImg: "/assets/icons/dark/TailwindCssDark.png",
+		docsUrl: "https://www.npmjs.com/package/tailwind-scrollbar",
+	},
+	{
+		id: 28,
+		name: "Docker",
+		description: "",
+		knowledge: "Intermediate",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2024, 2, 1),

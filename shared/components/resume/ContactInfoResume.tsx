@@ -1,9 +1,9 @@
 "use client";
-import { ContactInfo, SocialMedia } from "@/shared/constant/const";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SectionTitle from "../ui/SectionTitle";
 import { useTranslations } from "next-intl";
+import { ContactInfo, SocialMedia } from "@/shared/constant/data";
 
 function ContactInfoResume() {
 	const [Show, setShow] = useState<boolean>(false);
@@ -12,7 +12,11 @@ function ContactInfoResume() {
 		<>
 			<div className='flex justify-between'>
 				<SectionTitle>{tSection("ContactInfo")}</SectionTitle>
-				<p className='cursor-pointer' onClick={() => setShow(!Show)}>
+				<p
+					className='cursor-pointer'
+					onClick={() => {
+						setShow(!Show);
+					}}>
 					{!Show ? "Show" : "Hide"}
 				</p>
 			</div>

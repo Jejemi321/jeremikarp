@@ -6,7 +6,6 @@ export const Adisz: PhotoPortfolioItemsType = {
 	imageCover: "/assets/img/portfolio/photo/Adisz/17.webp",
 	date: "2023-10-07",
 	favorite: false,
-	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 30 }, (_, i) => ({
 		id: i + 1,
 		title: `Adisz - ${String(i + 1).padStart(2, "0")}`,

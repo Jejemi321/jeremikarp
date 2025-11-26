@@ -1,9 +1,9 @@
 "use client";
-import { FaqArray } from "@/shared/constant/const";
 import SectionTitle from "../ui/SectionTitle";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { FaqArray } from "@/shared/constant/data";
 
 function AbtMeFaq() {
 	const [activeId, setActiveId] = useState<number | undefined>();
@@ -19,7 +19,9 @@ function AbtMeFaq() {
 					<div
 						key={el.id}
 						className='w-full px-4 py-3 transition border rounded-lg shadow-sm sm:w-3/4 xl:w-1/2 bg-white/5 backdrop-blur-sm hover:cursor-pointer hover:bg-white/10'
-						onClick={() => toggleFaq(el.id)}>
+						onClick={() => {
+							toggleFaq(el.id);
+						}}>
 						<div className='flex items-center justify-between'>
 							<p className='font-medium text-start'>{t(el.question)}</p>
 							<motion.div

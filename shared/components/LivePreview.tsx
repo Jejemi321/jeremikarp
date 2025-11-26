@@ -44,7 +44,9 @@ function LivePreview({ el }: { el: WebPortfolioItemType }) {
 							title='Live preview'
 							className='w-full h-[50vh] lg:h-full rounded-lg overflow-x-hidden'
 							sandbox='allow-scripts allow-same-origin allow-forms'
-							onLoad={() => setLoading(false)}
+							onLoad={() => {
+								setLoading(false);
+							}}
 						/>
 					</motion.div>
 				</AnimatePresence>

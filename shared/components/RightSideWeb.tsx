@@ -11,7 +11,7 @@ function ProjectInfoPanel({ el }: { el: WebPortfolioItemType }) {
 	};
 	const t = useTranslations("portfolioWeb");
 	const tTime = useTranslations("time");
-	const tInfo = useTranslations("portfolioProjects");
+	const tInfo = useTranslations("webPortfolioProjects");
 
 	return (
 		<div className='flex-shrink-0 w-full p-4 space-y-4 overflow-y-auto rounded-lg shadow-lg lg:w-1/4 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700'>
@@ -102,23 +102,20 @@ function ProjectInfoPanel({ el }: { el: WebPortfolioItemType }) {
 				</div>
 			</motion.div>
 
-			{/* Tech Stack */}
-			{el?.techStack && (
-				<motion.div {...fadeInUp} transition={{ duration: 0.3, delay: 0.2 }}>
-					<h4 className='mb-2 text-xl font-semibold text-center lg:text-left'>
-						Tech Stack
-					</h4>
-					<div className='flex flex-wrap gap-2'>
-						{el?.techStack?.map((id, i) => (
-							<span
-								key={i}
-								className='flex items-center gap-1 px-2 py-1 text-xs font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-200'>
-								<TechIcon id={id} />
-							</span>
-						))}
-					</div>
-				</motion.div>
-			)}
+			<motion.div {...fadeInUp} transition={{ duration: 0.3, delay: 0.2 }}>
+				<h4 className='mb-2 text-xl font-semibold text-center lg:text-left'>
+					Tech Stack
+				</h4>
+				<div className='flex flex-wrap gap-2'>
+					{el.techStack.map((id, i) => (
+						<span
+							key={i}
+							className='flex items-center gap-1 px-2 py-1 text-xs font-medium text-gray-800 bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-200'>
+							<TechIcon id={id} />
+						</span>
+					))}
+				</div>
+			</motion.div>
 		</div>
 	);
 }

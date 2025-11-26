@@ -8,7 +8,6 @@ export const currency: WebPortfolioItemType = {
 	starterDate: "2025-09-28",
 	url: "https://currency-zeta-ashy.vercel.app",
 	favorite: false,
-	category: "CategoryWebsite",
 	status: "Finish",
 	client: "Jeremi Karp",
 	role: "FullStack Developer",

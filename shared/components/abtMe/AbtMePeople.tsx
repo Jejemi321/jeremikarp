@@ -1,7 +1,7 @@
-import { WorkPeopleArray } from "@/shared/constant/const";
 import SectionTitle from "../ui/SectionTitle";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { WorkPeopleArray } from "@/shared/constant/data";
 
 function AbtMePeople() {
 	const tSection = useTranslations("sectionTitle");

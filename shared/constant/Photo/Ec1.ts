@@ -6,7 +6,6 @@ export const Ec1: PhotoPortfolioItemsType = {
 	imageCover: "/assets/img/portfolio/photo/Ec1/03.webp",
 	date: "2023-03-17",
 	favorite: false,
-	category: "CategoryPhotography",
 	imgArray: Array.from({ length: 18 }, (_, i) => ({
 		id: i + 1,
 		title: `Ec1 - ${String(i + 1).padStart(2, "0")}`,

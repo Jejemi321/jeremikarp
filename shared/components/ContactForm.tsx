@@ -34,7 +34,9 @@ export default function ContactForm() {
 			const timer = setTimeout(() => {
 				setStatus("idle"); // reset status po 3 sekundach
 			}, 3000);
-			return () => clearTimeout(timer);
+			return () => {
+				clearTimeout(timer);
+			};
 		}
 	}, [status]);
 
@@ -48,9 +50,15 @@ export default function ContactForm() {
 		if (!form.message.trim()) return toast.error(t("ErrorMessage"));
 		if (!agree) return toast.error(t("ErrorAgree"));
 
-		const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID!;
-		const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID!;
-		const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY!;
+		const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID;
+		if (!serviceId) throw new Error("NEXT_PUBLIC_SERVICE_ID is not defined");
+
+		const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+		if (!templateId) throw new Error("NEXT_PUBLIC_TEMPLATE_ID is not defined");
+
+		const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY;
+		if (!publicKey) throw new Error("NEXT_PUBLIC_PUBLIC_KEY is not defined");
+
 		const templateParams = {
 			from_name: form.name,
 			from_mail: form.email,
@@ -87,20 +95,29 @@ export default function ContactForm() {
 			<h1 className='mt-5 text-xl font-medium tracking-widest text-center uppercase sm:text-2xl xl:text-3xl'>
 				{t("ContactForm")}
 			</h1>
-			<form className='p-2.5' onSubmit={handleSubmit}>
+			<form
+				className='p-2.5'
+				onSubmit={e => {
+					e.preventDefault();
+					handleSubmit(e);
+				}}>
 				<div className='flex flex-col justify-between mt-5 sm:flex-row gap-x-10'>
 					<input
 						type='text'
 						placeholder={t("InputName")}
 						value={form.name}
-						onChange={e => handleChange("name", e.target.value)}
+						onChange={e => {
+							handleChange("name", e.target.value);
+						}}
 						className='pb-2 mb-5 tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 					/>
 					<input
 						type='text'
 						placeholder={t("InputCompany")}
 						value={form.company}
-						onChange={e => handleChange("company", e.target.value)}
+						onChange={e => {
+							handleChange("company", e.target.value);
+						}}
 						className='pb-2 mb-5 tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 					/>
 				</div>
@@ -110,14 +127,18 @@ export default function ContactForm() {
 						type='number'
 						placeholder={t("InputNumber")}
 						value={form.number}
-						onChange={e => handleChange("number", e.target.value)}
+						onChange={e => {
+							handleChange("number", e.target.value);
+						}}
 						className='pb-2 mb-5 tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 					/>
 					<input
 						type='text'
 						placeholder={t("InputEmail")}
 						value={form.email}
-						onChange={e => handleChange("email", e.target.value)}
+						onChange={e => {
+							handleChange("email", e.target.value);
+						}}
 						className='pb-2 mb-5 tracking-wide border-b outline-none sm:w-1/2 sm:text-base text-foreground dark:text-dark-foreground'
 					/>
 				</div>
@@ -125,7 +146,9 @@ export default function ContactForm() {
 				<textarea
 					placeholder={t("InputMessages")}
 					value={form.message}
-					onChange={e => handleChange("message", e.target.value)}
+					onChange={e => {
+						handleChange("message", e.target.value);
+					}}
 					className='w-full h-32 pb-2 mb-5 tracking-wide border-b outline-none resize-none sm:text-base text-foreground dark:text-dark-foreground'
 				/>
 
@@ -134,7 +157,9 @@ export default function ContactForm() {
 						<input
 							type='checkbox'
 							checked={agree}
-							onChange={() => setAgree(!agree)}
+							onChange={() => {
+								setAgree(!agree);
+							}}
 							className='w-4 h-4 transition duration-500 border-2 rounded-md appearance-none cursor-pointer border-foreground dark:border-dark-foreground checked:bg-foreground dark:checked:bg-dark-foreground hover:opacity-80'
 						/>
 						<span className='text-xs font-medium select-none'>

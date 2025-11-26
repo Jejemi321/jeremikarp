@@ -1,8 +1,8 @@
-import { TrainingArray } from "@/shared/constant/const";
 import SectionTitle from "../ui/SectionTitle";
 import TechIcon from "../TechIcon";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { TrainingArray } from "@/shared/constant/data";
 
 function CertificationsResume() {
 	const tMonth = useTranslations("months");

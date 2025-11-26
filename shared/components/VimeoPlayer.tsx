@@ -28,7 +28,7 @@ const VimeoPlayer = ({
 				allow='autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share'
 				referrerPolicy='strict-origin-when-cross-origin'
 				title={videoTitle}
-				onLoad={() => setIsLoading(false)} // ukrywa loader po załadowaniu iframe
+				onLoad={() => setIsLoading(false)}
 			/>
 		</div>
 	);

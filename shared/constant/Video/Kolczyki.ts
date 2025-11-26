@@ -1,12 +1,10 @@
 import { VideoPortfolioItemsType } from "../VideoPortfolioItems";
-
 export const Kolczyki: VideoPortfolioItemsType = {
 	title: "KolczykiTitle",
 	description: "KolczykiDescription",
 	imageCover: "/assets/img/portfolio/Video/Covers/kolczyki.webp",
 	date: "2023-12-29",
 	favorite: false,
-	category: "CategoryVideo",
 	dop: "Jeremi Karp",
 	directedBy: "Mateusz Mierzejewski",
 	editBy: "Daniel Dutkiewicz",

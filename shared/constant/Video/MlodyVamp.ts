@@ -1,12 +1,10 @@
 import { VideoPortfolioItemsType } from "../VideoPortfolioItems";
-
 export const MłodyVamp: VideoPortfolioItemsType = {
 	title: "MłodyVampTitle",
 	description: "MłodyVampDescription",
 	imageCover: "/assets/img/portfolio/Video/Covers/mlodywamp.webp",
 	date: "2023-11-30",
 	favorite: false,
-	category: "CategoryVideo",
 	dop: "Jeremi Karp",
 	directedBy: "Mateusz Mierzejewski",
 	editBy: "Daniel Dutkiewicz",

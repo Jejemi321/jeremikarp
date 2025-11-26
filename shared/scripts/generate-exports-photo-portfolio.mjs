@@ -1,10 +1,11 @@
+/* eslint-env node */
 import { readdirSync, writeFileSync, statSync } from "fs";
 import { join, basename } from "path";
 
 const constantDir = join(process.cwd(), "shared", "constant");
-const subfolders = ["Photo", "Web", "Video"];
+const allowedSubfolders = ["Photo", "Web", "Video"];
 
-subfolders.forEach(subfolder => {
+allowedSubfolders.forEach(subfolder => {
 	const folderPath = join(constantDir, subfolder);
 
 	if (!statSync(folderPath).isDirectory()) return;

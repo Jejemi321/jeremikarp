@@ -7,9 +7,11 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"gen": "run-s gen-photo gen-type",
+		"gen": "run-s gen-photo gen-type gen-data",
 		"gen-photo": "node shared/scripts/generate-exports-photo-portfolio.mjs",
-		"gen-type": "node shared/scripts/generate-type-exports.mjs"
+		"gen-type": "node shared/scripts/generate-type-exports.mjs",
+		"gen-data": "node shared/scripts/generate-data-exports.mjs",
+		"check:dup": "jscpd app shared messages --ignore node_modules --ignore .next --ignore public --reporters console,html --min-tokens 30"
 	},
 	"dependencies": {
 		"@emailjs/browser": "^4.4.1",
@@ -37,11 +39,12 @@
 		"@svgr/webpack": "^8.1.0",
 		"@tailwindcss/postcss": "^4",
 		"@types/css-modules": "^1.0.5",
-		"@types/node": "^20",
+		"@types/node": "^20.19.25",
 		"@types/react": "^19",
 		"@types/react-dom": "^19",
 		"eslint": "^9",
 		"eslint-config-next": "15.4.6",
+		"jscpd": "^4.0.5",
 		"npm-run-all": "^4.1.5",
 		"tailwindcss": "^4",
 		"typescript": "^5"
