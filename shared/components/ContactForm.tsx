@@ -99,7 +99,7 @@ export default function ContactForm() {
 				className='p-2.5'
 				onSubmit={e => {
 					e.preventDefault();
-					handleSubmit(e);
+					void handleSubmit(e);
 				}}>
 				<div className='flex flex-col justify-between mt-5 sm:flex-row gap-x-10'>
 					<input

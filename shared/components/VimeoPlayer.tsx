@@ -24,11 +24,12 @@ const VimeoPlayer = ({
 			<iframe
 				src={`https://player.vimeo.com/video/${videoId}?badge=0&autopause=0&autoplay=${autoplayParam}`}
 				className='absolute top-0 left-0 w-full h-full rounded-axl'
-				frameBorder='0'
 				allow='autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share'
 				referrerPolicy='strict-origin-when-cross-origin'
 				title={videoTitle}
-				onLoad={() => setIsLoading(false)}
+				onLoad={() => {
+					setIsLoading(false);
+				}}
 			/>
 		</div>
 	);

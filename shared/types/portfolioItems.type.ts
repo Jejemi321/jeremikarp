@@ -7,6 +7,5 @@ export interface PortfolioItem {
 	imageCover: string;
 	date: string;
 	favorite: boolean;
-	category: CategoryType;
 	fromDate?: string;
 }

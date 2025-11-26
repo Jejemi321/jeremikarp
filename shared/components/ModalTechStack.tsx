@@ -22,7 +22,9 @@ function ModalTechStack({
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					exit={{ opacity: 0 }}
-					onClick={() => setSelectedTech(null)}>
+					onClick={() => {
+						setSelectedTech(null);
+					}}>
 					<motion.div
 						className='relative w-11/12 max-w-md p-6 bg-white rounded-lg dark:bg-gray-800'
 						initial={{ scale: 0.8, opacity: 0 }}
@@ -31,7 +33,9 @@ function ModalTechStack({
 						transition={{ duration: 0.3, ease: "easeOut" }}
 						onClick={e => e.stopPropagation()}>
 						<button
-							onClick={() => setSelectedTech(null)}
+							onClick={() => {
+								setSelectedTech(null);
+							}}
 							className='absolute text-gray-500 top-2 right-2 hover:text-gray-700 dark:hover:text-white'>
 							✕
 						</button>
