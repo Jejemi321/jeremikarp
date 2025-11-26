@@ -1,5 +1,7 @@
 export * from "./CategoryType.type";
+export * from "./FormData.type";
 export * from "./PortfolioSortType.type";
+export * from "./Status.type";
 export * from "./contactInfo.type";
 export * from "./faqType.type";
 export * from "./hobbyType.type";

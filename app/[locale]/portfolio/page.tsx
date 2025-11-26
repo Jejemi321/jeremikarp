@@ -13,6 +13,10 @@ import {
 	PortfolioSortItems,
 } from "@/shared/constant/data";
 import { CategoryType, PortfolioSortType } from "@/shared/types";
+import {
+	containerVariants,
+	cardVariants,
+} from "@/shared/components/resume/FrameVariants";
 
 const Portfolio: NextPage = () => {
 	const [Category, setCategory] = useState<CategoryType>(
@@ -53,19 +57,6 @@ const Portfolio: NextPage = () => {
 		(currentPage - 1) * ITEMS_PER_PAGE,
 		currentPage * ITEMS_PER_PAGE
 	);
-
-	// Framer Motion variants
-	const containerVariants = {
-		hidden: {},
-		show: {
-			transition: { staggerChildren: 0.15 },
-		},
-	};
-
-	const itemVariants = {
-		hidden: { opacity: 0, y: 20 },
-		show: { opacity: 1, y: 0, transition: { duration: 0.4 } },
-	};
 
 	return (
 		<div className='m-2.5'>
@@ -113,7 +104,7 @@ const Portfolio: NextPage = () => {
 				initial='hidden'
 				animate='show'>
 				{paginatedItems.map(el => (
-					<motion.div key={`${el.id}-${currentPage}`} variants={itemVariants}>
+					<motion.div key={`${el.id}-${currentPage}`} variants={cardVariants}>
 						<PortfolioItem el={el} />
 					</motion.div>
 				))}

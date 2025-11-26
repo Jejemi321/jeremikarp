@@ -1,5 +1,3 @@
-import { CategoryType } from "./CategoryType.type";
-
 export interface PortfolioItem {
 	id: number;
 	title: string;

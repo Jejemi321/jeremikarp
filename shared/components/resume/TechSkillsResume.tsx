@@ -7,6 +7,8 @@ import SectionTitle from "../ui/SectionTitle";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import CardResume from "./CardResume";
+import { cardVariants, containerVariants } from "./FrameVariants";
 
 function TechSkillsResume() {
 	const sortedTechStack = [...TechStackArray]
@@ -15,24 +17,6 @@ function TechSkillsResume() {
 
 	const tTime = useTranslations("time");
 	const tSection = useTranslations("sectionTitle");
-
-	// kontener dla animacji siatki
-	const containerVariants = {
-		hidden: {},
-		show: {
-			transition: { staggerChildren: 0.15 },
-		},
-	};
-
-	// pojedyncza karta
-	const cardVariants = {
-		hidden: { opacity: 0, y: 20 },
-		show: {
-			opacity: 1,
-			y: 0,
-			transition: { duration: 0.4, ease: "easeOut" as const },
-		},
-	};
 
 	return (
 		<>
@@ -50,29 +34,14 @@ function TechSkillsResume() {
 				whileInView='show'
 				viewport={{ once: true, amount: 0.2 }}>
 				{sortedTechStack.map(el => (
-					<motion.div
+					<CardResume
+						id={el.id}
 						key={el.id}
-						className='px-5 py-2.5 rounded-xl border'
-						variants={cardVariants}>
-						{/* Nagłówek */}
-						<div className='flex items-center justify-between'>
-							<TechIcon id={el.id} />
-							<p className='text-sm capitalize'>
-								{tTime("since")} {el.since.getFullYear()}
-							</p>
-						</div>
-
-						{/* Pasek wiedzy */}
-						{/* <div className='border rounded-2xl h-2.5 mt-2.5 mb-1 overflow-hidden'>
-							<motion.div
-								className='h-full bg-foreground dark:bg-dark-foreground rounded-2xl'
-								initial={{ width: "0%" }}
-								whileInView={{ width: el.KnowledgeWidth }} // np. "80%"
-								transition={{ duration: 0.8, ease: "easeOut" }}
-								viewport={{ once: true }}
-							/>
-						</div> */}
-					</motion.div>
+						title={el.name}
+						icon={<TechIcon id={el.id} />}
+						subTitle={`${tTime("since")} ${el.since.getFullYear()}`}
+						variants={cardVariants}
+					/>
 				))}
 			</motion.div>
 		</>
