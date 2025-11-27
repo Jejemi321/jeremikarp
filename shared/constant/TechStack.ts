@@ -1,11 +1,11 @@
-//TODO: Docker || Python || translate desc
+//TODO: translate desc
 type KnowledgeLevel =
 	| "Beginner"
 	| "Intermediate"
 	| "Advanced"
 	| "Expert"
 	| "Master";
-type TechCategory =
+export type TechCategory =
 	| "Frontend"
 	| "Backend"
 	| "Database"

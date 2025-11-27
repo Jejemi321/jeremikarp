@@ -2,11 +2,13 @@
 import Pagination from "@/shared/components/Pagination";
 import PortfolioItem from "@/shared/components/PortfolioItem";
 import PageTitle from "@/shared/components/ui/PageTitle";
-
-import { PortfolioItems } from "@/shared/constant/PortfolioItems";
+import {
+	PortfolioItems,
+	PortfolioItemType,
+} from "@/shared/constant/PortfolioItems";
 import { NextPage } from "next";
 import { useTranslations } from "next-intl";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 import { motion } from "framer-motion";
 import {
 	PortfolioCategories,
@@ -17,7 +19,6 @@ import {
 	containerVariants,
 	cardVariants,
 } from "@/shared/components/resume/FrameVariants";
-
 const Portfolio: NextPage = () => {
 	const [Category, setCategory] = useState<CategoryType>(
 		PortfolioCategories[0].name
@@ -27,41 +28,45 @@ const Portfolio: NextPage = () => {
 	);
 	const [currentPage, setCurrentPage] = useState(1);
 	const ITEMS_PER_PAGE = 20;
-
 	const t = useTranslations("portfolio");
 	const titleT = useTranslations("title");
-
-	// Filtrowanie i sortowanie
+	const sortPortfolio = useCallback(
+		(a: PortfolioItemType, b: PortfolioItemType) => {
+			switch (SortBy) {
+				case "AtoZ":
+					return a.title.localeCompare(b.title);
+				case "ZtoA":
+					return b.title.localeCompare(a.title);
+				case "Newest":
+					return new Date(b.date).getTime() - new Date(a.date).getTime();
+				case "Oldest":
+					return new Date(a.date).getTime() - new Date(b.date).getTime();
+				case "Favorites":
+					return (b.favorite ? 1 : 0) - (a.favorite ? 1 : 0);
+				default:
+					return 0;
+			}
+		},
+		[SortBy]
+	);
 	const filteredItems = useMemo(() => {
 		return PortfolioItems.filter(
 			item => item.category === Category || Category === "CategoryAll"
 		).sort((a, b) => {
-			let result = 0;
-			if (SortBy === "AtoZ") result = a.title.localeCompare(b.title);
-			else if (SortBy === "ZtoA") result = b.title.localeCompare(a.title);
-			else if (SortBy === "Newest")
-				result = new Date(b.date).getTime() - new Date(a.date).getTime();
-			else if (SortBy === "Oldest")
-				result = new Date(a.date).getTime() - new Date(b.date).getTime();
-			else if (SortBy === "Favorites")
-				result = (b.favorite ? 1 : 0) - (a.favorite ? 1 : 0);
-
-			if (result === 0)
-				return new Date(b.date).getTime() - new Date(a.date).getTime();
-			return result;
+			const result = sortPortfolio(a, b);
+			return result === 0
+				? new Date(b.date).getTime() - new Date(a.date).getTime()
+				: result;
 		});
-	}, [Category, SortBy]);
-
+	}, [Category, sortPortfolio]);
 	const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE);
 	const paginatedItems = filteredItems.slice(
 		(currentPage - 1) * ITEMS_PER_PAGE,
 		currentPage * ITEMS_PER_PAGE
 	);
-
 	return (
 		<div className='m-2.5'>
 			<PageTitle>{titleT("Portfolio")}</PageTitle>
-
 			<div className='flex items-center justify-end mb-4 sm:justify-between'>
 				<div className='items-center hidden gap-1 sm:flex'>
 					{PortfolioCategories.map(category => (
@@ -80,7 +85,6 @@ const Portfolio: NextPage = () => {
 						</div>
 					))}
 				</div>
-
 				<select
 					value={SortBy}
 					onChange={e => {
@@ -96,9 +100,8 @@ const Portfolio: NextPage = () => {
 					))}
 				</select>
 			</div>
-
 			<motion.div
-				key={currentPage} // wymusza re-render przy zmianie strony
+				key={currentPage}
 				className='grid grid-cols-1 gap-4 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'
 				variants={containerVariants}
 				initial='hidden'
@@ -109,7 +112,6 @@ const Portfolio: NextPage = () => {
 					</motion.div>
 				))}
 			</motion.div>
-
 			{totalPages > 1 && (
 				<Pagination
 					currentPage={currentPage}
@@ -123,5 +125,4 @@ const Portfolio: NextPage = () => {
 		</div>
 	);
 };
-
 export default Portfolio;

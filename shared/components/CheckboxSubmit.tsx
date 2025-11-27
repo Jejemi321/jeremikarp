@@ -3,7 +3,7 @@ import Link from "next/link";
 
 interface CheckboxSubmitProps {
 	agree: boolean;
-	setAgree: (value: boolean) => void;
+	setAgree: (_: boolean) => void;
 	status: string;
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	t: any;

@@ -68,9 +68,7 @@ export default function TechStackPage() {
 					{filteredTechs.map(el => (
 						<motion.div
 							key={el.id}
-							onClick={() => {
-								setSelectedTech(el);
-							}}
+							onClick={() => setSelectedTech(el as TechStackBase)} // ✅ assert shared base
 							layout
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}

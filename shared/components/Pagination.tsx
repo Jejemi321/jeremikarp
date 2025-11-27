@@ -5,7 +5,7 @@ function Pagination({
 }: {
 	totalPages: number;
 	currentPage: number;
-	setCurrentPage: (page: number) => void;
+	setCurrentPage: (_: number) => void;
 }) {
 	const handlePageChange = (page: number) => {
 		if (page >= 1 && page <= totalPages) setCurrentPage(page);

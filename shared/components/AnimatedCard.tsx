@@ -7,8 +7,8 @@ interface AnimatedCardProps {
 	id: number | string;
 	icon?: React.ReactNode;
 	title: string;
-	subTitle?: string | React.ReactNode;
-	description?: string | React.ReactNode;
+	subTitle?: React.ReactNode;
+	description?: React.ReactNode;
 	className?: string;
 	index?: number;
 	resume?: boolean;

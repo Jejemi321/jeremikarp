@@ -7,7 +7,7 @@ export type Field = { name: keyof FormData; type: string; placeholder: string };
 interface FormRowProps {
 	fields: Field[];
 	form: FormData;
-	handleChange: (field: keyof FormData, value: string) => void;
+	handleChange: (_: keyof FormData, value: string) => void;
 }
 
 export default function FormRow({ fields, form, handleChange }: FormRowProps) {

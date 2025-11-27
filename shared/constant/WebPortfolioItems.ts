@@ -1,5 +1,4 @@
 //TODO Note app || ToDo 2.0 || currency || roulette || voting || ciekawostka
-//TODO tax 15 may 2024
 import { PortfolioItem } from "../types";
 import { currency, jeremikarp, taxConsulting, toDoApp } from "./Web/";
 type statusType = "Archive" | "InProgress" | "Finish";
