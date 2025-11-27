@@ -1,6 +1,7 @@
 //TODO Note app || ToDo 2.0 || currency || roulette || voting || ciekawostka
+//TODO tax 15 may 2024
 import { PortfolioItem } from "../types";
-import { currency, jeremikarp, toDoApp } from "./Web/";
+import { currency, jeremikarp, taxConsulting, toDoApp } from "./Web/";
 type statusType = "Archive" | "InProgress" | "Finish";
 type roleType =
 	| "Frontend Developer"
@@ -40,5 +41,6 @@ const WebPortfolioItems: WebPortfolioItemType[] = [
 	jeremikarp,
 	currency,
 	toDoApp,
+	taxConsulting,
 ];
 export default WebPortfolioItems;

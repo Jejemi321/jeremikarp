@@ -366,13 +366,25 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 28,
 		name: "Docker",
-		description: "",
-		knowledge: "Intermediate",
-		type: "Library",
+		description:
+			"A platform for containerization and managing application environments.",
+		knowledge: "Advanced",
+		type: "Tool",
 		category: "Tools",
-		since: new Date(2024, 2, 1),
-		iconImg: "/assets/icons/light/TailwindCssLight.png",
-		darkIconImg: "/assets/icons/dark/TailwindCssDark.png",
-		docsUrl: "https://www.npmjs.com/package/tailwind-scrollbar",
+		since: new Date(2025, 9, 1),
+		iconClass: "fi fi-brands-docker",
+		docsUrl: "https://www.docker.com/",
+	},
+	{
+		id: 29,
+		name: "Python",
+		description:
+			"A versatile programming language used for backend development, automation, and AI.",
+		knowledge: "Beginner",
+		type: "Language",
+		category: "Backend",
+		since: new Date(2025, 8, 1),
+		iconClass: "fi fi-brands-python",
+		docsUrl: "https://www.python.org/doc/",
 	},
 ];

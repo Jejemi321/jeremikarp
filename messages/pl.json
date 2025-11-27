@@ -207,6 +207,8 @@
     "25": "Wysyłanie e-maili bezpośrednio z JavaScript po stronie klienta, bez backendu.",
     "26": "Framework do internacjonalizacji w React.",
     "27": "Plugin Tailwind CSS do stylowania pasków przewijania.",
+    "28": "Platforma do konteneryzacji i zarządzania środowiskami aplikacji.",
+    "29": "Wszechstronny język programowania używany do tworzenia backendu, automatyzacji i sztucznej inteligencji.",
     "Documentation": "Dokumentacja"
   },
   "levels": {
@@ -289,7 +291,9 @@
     "currencyTitle": "Wymiana Walut",
     "currencyDescription": "Stworzyłem aplikację do wymiany walut w celach treningowych. Aktualne kursy walut pobieram z API Frankfurter.",
     "toDoAppDescription": "Aplikacja Menedżer zadań – narzędzie do zarządzania projektami zbudowane przy użyciu Next.js, TypeScript i localStorage. Użytkownicy mogą tworzyć projekty, dodawać/edytować/usuwać zadania, zarządzać priorytetami i oznaczać zadania jako ukończone. Funkcje obejmują moduły, zmianę nazwy projektu i trwałość stanu dzięki przejrzystemu i dostępnemu interfejsowi użytkownika.",
-    "toDoAppTitle": "Do Zrobienia"
+    "toDoAppTitle": "Do Zrobienia",
+    "taxConsultingTitle": "Tax Consulting",
+    "taxConsultingDescription": "Moje pierwsza strona wykonana dla klienta."
   },
   "photoPortfolioProjects": {
     "AdiszTitle": "Koncert Young Adisz",

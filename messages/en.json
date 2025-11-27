@@ -192,7 +192,9 @@
 		"currencyTitle": "Exchange Currency",
 		"currencyDescription": "I’m creating a currency exchange app for practice. I get the current exchange rates from the Frankfurter API.",
 		"toDoAppTitle": "ToDoApp",
-		"toDoAppDescription": "Task Manager App – A project management tool built with Next.js, TypeScript, and localStorage. Users can create projects, add/edit/delete tasks, manage priorities, and mark tasks as completed. Features include modals, project renaming, and state persistence with a clean and accessible UI."
+		"toDoAppDescription": "Task Manager App – A project management tool built with Next.js, TypeScript, and localStorage. Users can create projects, add/edit/delete tasks, manage priorities, and mark tasks as completed. Features include modals, project renaming, and state persistence with a clean and accessible UI.",
+		"taxConsultingTitle": "Tax Consulting",
+		"taxConsultingDescription": "My first website for client."
 	},
 	"photoPortfolioProjects": {
 		"warsaw01Title": "Warsaw01",
@@ -373,6 +375,8 @@
 		"25": "Send emails directly from client-side JavaScript without a backend.",
 		"26": "Internationalization framework for React.",
 		"27": "Tailwind CSS plugin to style scrollbar.",
+		"28": "A platform for containerization and managing application environments.",
+		"29": "A versatile programming language used for backend development, automation, and AI.",
 		"Documentation": "Documentation"
 	},
 	"stats": {
