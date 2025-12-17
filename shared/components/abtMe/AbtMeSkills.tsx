@@ -22,7 +22,6 @@ function AbtMeSkills() {
 						index={i}
 						icon={<TechIcon id={el.id} />}
 						title={el.name}
-						subTitle={tLevels(el.knowledge)}
 						description={tDesc(el.id.toString())}
 					/>
 				))}
