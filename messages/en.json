@@ -194,7 +194,9 @@
 		"toDoAppTitle": "ToDoApp",
 		"toDoAppDescription": "Task Manager App – A project management tool built with Next.js, TypeScript, and localStorage. Users can create projects, add/edit/delete tasks, manage priorities, and mark tasks as completed. Features include modals, project renaming, and state persistence with a clean and accessible UI.",
 		"taxConsultingTitle": "Tax Consulting",
-		"taxConsultingDescription": "My first website for client."
+		"taxConsultingDescription": "My first website for client.",
+		"ovStudioTitle": "OV studio",
+		"ovStudioDescription": "Website for company OV studio."
 	},
 	"photoPortfolioProjects": {
 		"warsaw01Title": "Warsaw01",
@@ -225,10 +227,14 @@
 		"ZakopaneDescription": "Photos from mountains and city Zakopane.",
 		"PhilocalyTitle": "Philocaly",
 		"PhilocalyDescription": "Photoshot in studio for clothing brand Philocaly",
+		"Portraits01Title": "Portraits01",
+		"Portraits01Description": "Portraits create in studio.",
 		"ElevatorTitle": "Elevator",
 		"ElevatorDescription": "Photoshot in elevator",
 		"RooftopTitle": "Rooftop",
 		"RooftopDescription": "Photoshot in rooftop in city Łódź.",
+		"RefittedTitle": "Refitted",
+		"RefittedDescription": "Open of Refitted shop in Warsaw",
 		"Shop&ConcreteTitle": "Shop & Concrete",
 		"Shop&ConcreteDescription": "Photoshot in shop and on the rooftop where photos was taken from upper view.",
 		"Ec1Title": "Ec1",
@@ -377,6 +383,9 @@
 		"27": "Tailwind CSS plugin to style scrollbar.",
 		"28": "A platform for containerization and managing application environments.",
 		"29": "A versatile programming language used for backend development, automation, and AI.",
+		"30": "Automated code quality platform that performs static analysis, detects issues, and enforces coding standards.",
+		"31": "Tool for detecting copy–paste and duplicated code across multiple programming languages.",
+		"32": "The foundational language for system programming, offering speed and direct hardware control.",
 		"Documentation": "Documentation"
 	},
 	"stats": {

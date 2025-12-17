@@ -1,4 +1,4 @@
-//TODO portrety seria zdjęć
+//! portrety seria zdjęć
 import { imgArrayPhoto, PortfolioItem } from "../types";
 import {
 	ModelsFromLodz,
@@ -47,6 +47,8 @@ import {
 	NikMakino,
 	Iga,
 	GermanyVienna,
+	Refitted,
+	Portraits01,
 } from "./Photo";
 export interface PhotoPortfolioItemsType
 	extends Omit<PortfolioItem, "id" | "category"> {
@@ -84,7 +86,9 @@ const PhotoPortfolioItems: PhotoPortfolioItemsType[] = [
 	PhilippineCouple,
 	PhilippineLife,
 	Philippines,
+	Portraits01,
 	Rooftop,
+	Refitted,
 	ShopConcrete,
 	Skate,
 	Skyscraper,

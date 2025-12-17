@@ -1,6 +1,6 @@
-//TODO Note app || ToDo 2.0 || currency || roulette || voting || ciekawostka
+//! Note app || ToDo 2.0 || currency || roulette || voting || ciekawostka
 import { PortfolioItem } from "../types";
-import { currency, jeremikarp, taxConsulting, toDoApp } from "./Web/";
+import { currency, jeremikarp, ovStudio, taxConsulting, toDoApp } from "./Web/";
 type statusType = "Archive" | "InProgress" | "Finish";
 type roleType =
 	| "Frontend Developer"
@@ -41,5 +41,6 @@ const WebPortfolioItems: WebPortfolioItemType[] = [
 	currency,
 	toDoApp,
 	taxConsulting,
+	ovStudio,
 ];
 export default WebPortfolioItems;

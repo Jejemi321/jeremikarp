@@ -11,7 +11,6 @@ function ModalTechStack({
 	setSelectedTech: React.Dispatch<React.SetStateAction<TechStackBase | null>>;
 }) {
 	const tDesc = useTranslations("techDesc");
-	const tLevels = useTranslations("levels");
 	const tLanguages = useTranslations("Languages");
 	return (
 		<AnimatePresence>
@@ -41,9 +40,7 @@ function ModalTechStack({
 						</button>
 						<div className='flex flex-col items-center space-y-4'>
 							<TechIcon id={selectedTech.id} />
-							<p>
-								{tLanguages("Level")}: {tLevels(selectedTech.knowledge)}
-							</p>
+							{/* <p>{selectedTech.since}</p> */}
 							<p className='text-center text-gray-700 dark:text-gray-300'>
 								{tDesc(selectedTech.id.toString())}
 							</p>

@@ -29,6 +29,8 @@ export * from "./PhilippineModels01";
 export * from "./PhilippineModels02";
 export * from "./Philippines";
 export * from "./Philocaly";
+export * from "./Portraits01";
+export * from "./Refitted";
 export * from "./Rooftop";
 export * from "./ShopAndConcrete";
 export * from "./Skate";

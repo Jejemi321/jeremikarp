@@ -101,7 +101,7 @@ const Portfolio: NextPage = () => {
 				</select>
 			</div>
 			<motion.div
-				key={currentPage}
+				key={`${Category}-${SortBy}-${currentPage}`}
 				className='grid grid-cols-1 gap-4 px-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'
 				variants={containerVariants}
 				initial='hidden'

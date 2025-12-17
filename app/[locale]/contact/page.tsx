@@ -1,4 +1,4 @@
-//TODO:code split ||number don' t show the up and down arrow
+//TODO: number don' t show the up and down arrow
 import ContactForm from "@/shared/components/ContactForm";
 import ContactInfo from "@/shared/components/ContactInfo";
 import PageTitle from "@/shared/components/ui/PageTitle";

@@ -1,4 +1,5 @@
 // TODO://Layout// Miasto Lodz/Zakopane 2023/Roof/Solitude/Cracow/Fade/Ec1/Staircase/
+//TODO || losowość w zdjęciach
 "use client";
 
 import { useTranslations } from "next-intl";

@@ -1,4 +1,3 @@
-//TODO: link in good position
 import { useTranslations } from "next-intl";
 
 function ContactInfo() {

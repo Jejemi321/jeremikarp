@@ -209,6 +209,9 @@
     "27": "Plugin Tailwind CSS do stylowania pasków przewijania.",
     "28": "Platforma do konteneryzacji i zarządzania środowiskami aplikacji.",
     "29": "Wszechstronny język programowania używany do tworzenia backendu, automatyzacji i sztucznej inteligencji.",
+    "30": "Zautomatyzowana platforma jakości kodu, która przeprowadza analizę statyczną, wykrywa problemy i egzekwuje standardy kodowania.",
+    "31": "Narzędzie do wykrywania kopiuj-wklej i zduplikowanego kodu w wielu językach programowania.",
+    "32": "Podstawowy język programowania systemów, oferujący szybkość i bezpośrednią kontrolę sprzętu.",
     "Documentation": "Dokumentacja"
   },
   "levels": {
@@ -293,7 +296,9 @@
     "toDoAppDescription": "Aplikacja Menedżer zadań – narzędzie do zarządzania projektami zbudowane przy użyciu Next.js, TypeScript i localStorage. Użytkownicy mogą tworzyć projekty, dodawać/edytować/usuwać zadania, zarządzać priorytetami i oznaczać zadania jako ukończone. Funkcje obejmują moduły, zmianę nazwy projektu i trwałość stanu dzięki przejrzystemu i dostępnemu interfejsowi użytkownika.",
     "toDoAppTitle": "Do Zrobienia",
     "taxConsultingTitle": "Tax Consulting",
-    "taxConsultingDescription": "Moje pierwsza strona wykonana dla klienta."
+    "taxConsultingDescription": "Moje pierwsza strona wykonana dla klienta.",
+    "ovStudioDescription": "Strona internetowa firmy OV studio.",
+    "ovStudioTitle": "OV studio"
   },
   "photoPortfolioProjects": {
     "AdiszTitle": "Koncert Young Adisz",
@@ -387,7 +392,11 @@
     "ŁódźDescription": "Zdjęcia z miasta Łódź.",
     "ŁódźTitle": "Miasto Łódź",
     "IgaDescription": "Sejja zdjęciowa Igi Kosakowskiej w Warszawie.",
-    "IgaTitle": "Iga"
+    "IgaTitle": "Iga",
+    "RefittedTitle": "Refitted",
+    "RefittedDescription": "Otwarcie sklepu Refitted w Warszawie",
+    "Portraits01Title": "Portrety01",
+    "Portraits01Description": "Portrety stworzone w studiu."
   },
   "contact": {
     "CityCountry": "Łódź/Warszawa, Polska",

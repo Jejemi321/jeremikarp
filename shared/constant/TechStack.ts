@@ -1,10 +1,3 @@
-//TODO: translate desc
-type KnowledgeLevel =
-	| "Beginner"
-	| "Intermediate"
-	| "Advanced"
-	| "Expert"
-	| "Master";
 export type TechCategory =
 	| "Frontend"
 	| "Backend"
@@ -14,8 +7,6 @@ export type TechCategory =
 export type TechStackBase = {
 	id: number;
 	name: string;
-	description: string;
-	knowledge: KnowledgeLevel;
 	type: "Framework" | "Language" | "Library" | "Tool" | "Others";
 	category: TechCategory;
 	docsUrl?: string;
@@ -37,8 +28,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 1,
 		name: "HTML",
-		description: "Markup language for structuring web pages.",
-		knowledge: "Master",
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2022, 0, 1),
@@ -49,8 +38,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 2,
 		name: "CSS",
-		description: "Stylesheet language for designing web pages.",
-		knowledge: "Master",
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2022, 0, 1),
@@ -61,8 +48,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 3,
 		name: "Scss/Sass",
-		description: "CSS preprocessor for nested and maintainable styles.",
-		knowledge: "Expert",
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2023, 0, 1),
@@ -72,8 +57,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 4,
 		name: "JavaScript",
-		description: "High-level programming language for web development.",
-		knowledge: "Expert",
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2022, 0, 1),
@@ -84,8 +67,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 5,
 		name: "TypeScript",
-		description: "Superset of JavaScript adding static typing.",
-		knowledge: "Advanced",
 		type: "Language",
 		category: "Frontend",
 		since: new Date(2025, 3, 1),
@@ -96,8 +77,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 6,
 		name: "React",
-		description: "Library for building user interfaces.",
-		knowledge: "Expert",
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2024, 0, 1),
@@ -109,9 +88,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 7,
 		name: "NextJs",
-		description:
-			"React framework for server-side rendering and fullstack apps.",
-		knowledge: "Advanced",
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2025, 0, 1),
@@ -123,8 +99,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 8,
 		name: "Tailwind CSS",
-		description: "Utility-first CSS framework for rapid UI development.",
-		knowledge: "Master",
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2023, 0, 1),
@@ -136,8 +110,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 9,
 		name: "Framer Motion",
-		description: "Animation library for React applications.",
-		knowledge: "Expert",
 		type: "Framework",
 		category: "Frontend",
 		since: new Date(2023, 0, 1),
@@ -148,9 +120,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 10,
 		name: "PHP",
-		description:
-			"Backend language used for web development and server-side logic.",
-		knowledge: "Expert",
 		type: "Language",
 		category: "Backend",
 		since: new Date(2022, 0, 1),
@@ -161,8 +130,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 11,
 		name: "SQL",
-		description: "Structured Query Language for relational databases.",
-		knowledge: "Master",
 		type: "Language",
 		category: "Database",
 		since: new Date(2022, 0, 1),
@@ -173,8 +140,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 12,
 		name: "NodeJs",
-		description: "JavaScript runtime for backend development.",
-		knowledge: "Advanced",
 		type: "Framework",
 		category: "Backend",
 		since: new Date(2024, 0, 1),
@@ -185,8 +150,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 13,
 		name: "ExpressJs",
-		description: "Web framework for Node.js to build APIs quickly.",
-		knowledge: "Intermediate",
 		type: "Framework",
 		category: "Backend",
 		since: new Date(2025, 0, 1),
@@ -198,8 +161,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 14,
 		name: "Supabase",
-		description: "Open-source Firebase alternative with Postgres database.",
-		knowledge: "Expert",
 		type: "Others",
 		category: "Backend",
 		since: new Date(2024, 0, 1),
@@ -211,8 +172,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 15,
 		name: "Vercel",
-		description: "Deployment and hosting platform for frontend apps.",
-		knowledge: "Advanced",
 		type: "Others",
 		category: "Deployment",
 		since: new Date(2025, 0, 1),
@@ -223,8 +182,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 16,
 		name: "Cloudflare",
-		description: "CDN and security platform for web apps.",
-		knowledge: "Intermediate",
 		type: "Others",
 		category: "Deployment",
 		since: new Date(2023, 0, 1),
@@ -235,8 +192,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 17,
 		name: "Git",
-		description: "Distributed version control system.",
-		knowledge: "Advanced",
 		type: "Others",
 		category: "Tools",
 		since: new Date(2023, 0, 1),
@@ -247,8 +202,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 18,
 		name: "GitHub",
-		description: "Platform for hosting and collaborating on Git repositories.",
-		knowledge: "Advanced",
 		type: "Others",
 		category: "Tools",
 		since: new Date(2023, 2, 7),
@@ -258,8 +211,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 19,
 		name: "ESLint",
-		description: "Tool for identifying and reporting on code issues.",
-		knowledge: "Expert",
 		type: "Others",
 		category: "Tools",
 		since: new Date(2024, 0, 1),
@@ -270,8 +221,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 20,
 		name: "Prettier",
-		description: "Code formatter for consistent code style.",
-		knowledge: "Expert",
 		type: "Others",
 		category: "Tools",
 		since: new Date(2024, 0, 1),
@@ -282,9 +231,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 21,
 		name: "Swiper",
-		description:
-			"Modern mobile touch slider with hardware accelerated transitions.",
-		knowledge: "Advanced",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2025, 5, 1),
@@ -295,8 +241,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 22,
 		name: "React-Icons",
-		description: "Popular icon sets as React components.",
-		knowledge: "Master",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2024, 3, 1),
@@ -307,8 +251,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 23,
 		name: "HamburgerReact",
-		description: "Animated hamburger menu icons for React.",
-		knowledge: "Expert",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2025, 2, 1),
@@ -318,8 +260,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 24,
 		name: "Sonner",
-		description: "An opinionated toast component for React apps.",
-		knowledge: "Intermediate",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2025, 8, 1),
@@ -330,9 +270,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 25,
 		name: "EmailJS",
-		description:
-			"Send emails directly from client-side JavaScript without a backend.",
-		knowledge: "Expert",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2025, 2, 1),
@@ -343,8 +280,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 26,
 		name: "i18n",
-		description: "Internationalization framework for React.",
-		knowledge: "Advanced",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2025, 0, 1),
@@ -354,8 +289,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 27,
 		name: "Tailwind-Scrollbar",
-		description: "Tailwind CSS plugin to style scrollbars.",
-		knowledge: "Intermediate",
 		type: "Library",
 		category: "Tools",
 		since: new Date(2024, 2, 1),
@@ -366,9 +299,6 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 28,
 		name: "Docker",
-		description:
-			"A platform for containerization and managing application environments.",
-		knowledge: "Advanced",
 		type: "Tool",
 		category: "Tools",
 		since: new Date(2025, 9, 1),
@@ -378,13 +308,100 @@ export const TechStackArray: TechStack[] = [
 	{
 		id: 29,
 		name: "Python",
-		description:
-			"A versatile programming language used for backend development, automation, and AI.",
-		knowledge: "Beginner",
 		type: "Language",
 		category: "Backend",
 		since: new Date(2025, 8, 1),
 		iconClass: "fi fi-brands-python",
 		docsUrl: "https://www.python.org/doc/",
+	},
+	{
+		id: 30,
+		name: "Codacy",
+		type: "Tool",
+		category: "Tools",
+		since: new Date(2025, 9, 1),
+		iconClass: "fi fi-rr-shield-check",
+		docsUrl: "https://docs.codacy.com/",
+	},
+	{
+		id: 31,
+		name: "jscpd",
+		type: "Library",
+		category: "Deployment",
+		since: new Date(2025, 9, 1),
+		iconClass: "fi fi-rr-search",
+		docsUrl: "https://github.com/kucherenko/jscpd",
+	},
+	{
+		id: 32,
+		name: "c",
+		type: "Library",
+		category: "Backend",
+		since: new Date(2025, 5, 1),
+		iconClass: "fi fi-brands-c",
+		docsUrl: "https://devdocs.io/c/",
+	},
+	{
+		id: 33,
+		name: "clsx",
+		type: "Library",
+		category: "Tools",
+		since: new Date(2025, 2, 1),
+		iconClass: "",
+		docsUrl: "https://www.npmjs.com/package/clsx",
+	},
+	{
+		id: 34,
+		name: "twMerge",
+		type: "Library",
+		category: "Tools",
+		since: new Date(2025, 2, 1),
+		iconClass: "",
+		docsUrl: "https://www.npmjs.com/package/tailwind-merge",
+	},
+	{
+		id: 35,
+		name: "JSON",
+		type: "Language",
+		category: "Database",
+		since: new Date(2024, 1, 1),
+		iconClass: "",
+		docsUrl: "https://www.json.org/json-en.html",
+	},
+	{
+		id: 36,
+		name: "npm",
+		type: "Tool",
+		category: "Tools",
+		since: new Date(2024, 1, 1),
+		iconClass: "",
+		docsUrl: "https://www.npmjs.com/",
+	},
+	{
+		id: 37,
+		name: "pnpm",
+		type: "Tool",
+		category: "Tools",
+		since: new Date(2024, 1, 1),
+		iconClass: "",
+		docsUrl: "https://pnpm.io/",
+	},
+	{
+		id: 38,
+		name: "JEST",
+		type: "Tool",
+		category: "Tools",
+		since: new Date(2025, 1, 1),
+		iconClass: "",
+		docsUrl: "https://jestjs.io/docs/getting-started",
+	},
+	{
+		id: 39,
+		name: "Sonar",
+		type: "Tool",
+		category: "Tools",
+		since: new Date(2025, 1, 1),
+		iconClass: "",
+		docsUrl: "https://docs.sonarsource.com/",
 	},
 ];

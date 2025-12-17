@@ -1,3 +1,4 @@
+// TODO check the curses
 import { training } from "@/shared/types";
 
 export const TrainingArray: training[] = [

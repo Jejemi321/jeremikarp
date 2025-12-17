@@ -1,4 +1,4 @@
-//TODO  favicon || better code splitting || advice from Borys || better loading management || SEO optimization || text no copy || not found
+//TODO  favicon || better code splitting || SEO optimization || text no copy || cn() || check the code
 //TODO: same size title of section
 import AbtMeHowIWork from "@/shared/components/abtMe/AbtMeHowIWork";
 import ContactInfo from "@/shared/components/ContactInfo";

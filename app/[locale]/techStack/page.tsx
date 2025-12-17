@@ -1,4 +1,4 @@
-//TODO: showing projects with this language
+//TODO: showing projects with this languages/showing from newest/date if < year show months
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
