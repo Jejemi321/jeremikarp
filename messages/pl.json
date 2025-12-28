@@ -396,7 +396,13 @@
     "RefittedTitle": "Refitted",
     "RefittedDescription": "Otwarcie sklepu Refitted w Warszawie",
     "Portraits01Title": "Portrety01",
-    "Portraits01Description": "Portrety stworzone w studiu."
+    "Portraits01Description": "Portrety stworzone w studiu.",
+    "HalasBazarTitle": "Hałas (Bazar)",
+    "HalasConcertTitle": "HAŁAS (koncerty)",
+    "HalasPortraitsTitle": "HAŁAS (Portrety)",
+    "HalasPortraitsDescription": "Portrety wykonane podczas wydarzenia HAŁAS.",
+    "HalasBazarDescription": "Zdjęcia z imprezy HAŁAS z bazaru.",
+    "HalasConcertDescription": "Zdjęcia z imprezy HAŁAS z koncertów."
   },
   "contact": {
     "CityCountry": "Łódź/Warszawa, Polska",
@@ -432,5 +438,8 @@
     "KolczykiTitle": "Kolczyki",
     "MłodyVampTitle": "Młody Vamp",
     "MłodyVampDescription": "Teledysk dla artysty Qwerstin do utworu Młody Vamp."
+  },
+  "socialMedia": {
+    "abtMe": "Cześć, jestem Jeremi! Za dnia fotograf, nocą programista. Tutaj znajdziesz moje sociale — dzięki za wsparcie! <3"
   }
 }

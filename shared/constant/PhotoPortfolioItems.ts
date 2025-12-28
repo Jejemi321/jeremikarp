@@ -49,6 +49,9 @@ import {
 	GermanyVienna,
 	Refitted,
 	Portraits01,
+	HalasBazar,
+	HalasConcert,
+	HalasPortraits,
 } from "./Photo";
 export interface PhotoPortfolioItemsType
 	extends Omit<PortfolioItem, "id" | "category"> {
@@ -67,6 +70,9 @@ const PhotoPortfolioItems: PhotoPortfolioItemsType[] = [
 	Elevator,
 	Fade,
 	GermanyVienna,
+	HalasConcert,
+	HalasPortraits,
+	HalasBazar,
 	Hotel,
 	Lodz,
 	Lodz01,

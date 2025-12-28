@@ -8,6 +8,9 @@
 		"Contact": "Contact",
 		"RightsReserved": "All rights reserved."
 	},
+	"socialMedia": {
+		"abtMe": "Hi, I'm Jeremi! Photographer by day, programmer by night. Here are my socials — thanks for the support! <3"
+	},
 	"title": {
 		"Portfolio": "Portfolio",
 		"About": "About me",
@@ -294,7 +297,13 @@
 		"BagioTitle": "Bagio",
 		"BagioDescription": "Photos taken in city Bagio.",
 		"IgaTitle": "Iga",
-		"IgaDescription": "Photoshot of Iga Kosakowska in Warsaw."
+		"IgaDescription": "Photoshot of Iga Kosakowska in Warsaw.",
+		"HalasBazarTitle": "Hałas (Bazar)",
+		"HalasBazarDescription": "Photos from event HAŁAS from bazar.",
+		"HalasConcertTitle": "Hałas (Concert)",
+		"HalasConcertDescription": "Photos from event HAŁAS from concerts.",
+		"HalasPortraitsTitle": "Hałas (Portraits)",
+		"HalasPortraitsDescription": "Portraits taken on event HAŁAS."
 	},
 	"videoPortfolio": {
 		"Dop": "Director of Photography",

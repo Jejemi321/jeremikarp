@@ -14,6 +14,7 @@
 		"check:dup": "jscpd app shared --ignore node_modules --ignore .next --ignore public --ignore messages --ignore shared/scripts --reporters console,html --min-tokens 40"
 	},
 	"dependencies": {
+		"@behold/react": "^0.1.11",
 		"@emailjs/browser": "^4.4.1",
 		"@flaticon/flaticon-uicons": "^3.3.1",
 		"@vercel/analytics": "^1.5.0",

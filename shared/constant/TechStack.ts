@@ -341,6 +341,7 @@ export const TechStackArray: TechStack[] = [
 		iconClass: "fi fi-brands-c",
 		docsUrl: "https://devdocs.io/c/",
 	},
+	//TODO no te ponizej logo
 	{
 		id: 33,
 		name: "clsx",
