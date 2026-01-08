@@ -7,7 +7,6 @@ import VideoPortfolioItems, {
 } from "./VideoPortfolioItems";
 import WebPortfolioItems, { WebPortfolioItemType } from "./WebPortfolioItems";
 
-// Mapowanie tablic na kategorie
 const portfolioData = [
 	{ items: WebPortfolioItems, category: "CategoryWebsite" as CategoryType },
 	{
@@ -17,18 +16,28 @@ const portfolioData = [
 	{ items: VideoPortfolioItems, category: "CategoryVideo" as CategoryType },
 ];
 
-let currentId = 1;
-
 export type PortfolioItemType =
 	| (WebPortfolioItemType & { id: number; category: CategoryType })
 	| (PhotoPortfolioItemsType & { id: number; category: CategoryType })
 	| (VideoPortfolioItemsType & { id: number; category: CategoryType });
 
+const ID_OFFSETS: Record<CategoryType, number> = {
+	CategoryWebsite: 1,
+	CategoryVideo: 500,
+	CategoryPhotography: 1000,
+};
+
+const currentCounters = { ...ID_OFFSETS };
+
 export const PortfolioItems: PortfolioItemType[] = portfolioData.flatMap(
 	({ items, category }) =>
-		items.map(item => ({
-			...item,
-			id: currentId++,
-			category,
-		}))
+		items.map(item => {
+			const id = currentCounters[category]++;
+
+			return {
+				...item,
+				id,
+				category,
+			};
+		})
 );
