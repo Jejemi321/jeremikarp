@@ -52,6 +52,8 @@ import {
 	HalasBazar,
 	HalasConcert,
 	HalasPortraits,
+	RapGround,
+	MenCanWearBagsDominik,
 } from "./Photo";
 export interface PhotoPortfolioItemsType
 	extends Omit<PortfolioItem, "id" | "category"> {
@@ -110,5 +112,7 @@ const PhotoPortfolioItems: PhotoPortfolioItemsType[] = [
 	Winter,
 	Zakopane,
 	Iga,
+	RapGround,
+	MenCanWearBagsDominik,
 ];
 export default PhotoPortfolioItems;
